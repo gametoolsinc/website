@@ -3,7 +3,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/caching/caching.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/template/webpage/webpage.php");
 
 $webpage_path = $_SERVER['REQUEST_URI'];
-$type = "debug";
+$type = "cached";
 
 // Find correct page
 $regexs = [
