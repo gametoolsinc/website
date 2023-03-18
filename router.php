@@ -2,12 +2,12 @@
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/caching/caching.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/template/webpage/webpage.php");
 
-$webpage_path = $_GET['path'];
-$type = $_GET["type"];
+$webpage_path = $_SERVER['REQUEST_URI'];
+$type = "cached";
 
 // Find correct page
 $regexs = [
-    "/^$/" => "/public/main/homepage/webpage.php?",
+    "/^\/$/" => "/public/main/homepage/webpage.php?",
 
     "/^\/games$/" => "/public/indexes/indexIndex/indexIndex.php?type=game",
     "/^\/games\/(\w+)$/" => "/public/indexes/toolIndex/toolIndex.php?game=$1",
@@ -20,7 +20,7 @@ $regexs = [
 
     "/^\/tools$/" => "/public/indexes/toolIndex/toolIndex.php?",
     "/^\/tools\/([0-9]+)$/" => "/public/applications/router.php?id=$1",
-
+    "/^\/admingamertools$/"=> "/public/main/admin/webpage.php",
 ];
 
 foreach ($regexs as $regex => $replace) {
@@ -30,9 +30,17 @@ foreach ($regexs as $regex => $replace) {
     }
 }
 
+
 if (!isset($internal_path)){
     Webpage::show404();
 }
+
+// Cached
+if ($type == "cached") {
+  $internal_path = $_SERVER['DOCUMENT_ROOT'] . preg_replace("/^\/([0-9a-zA-Z\/_]*)\?{0,1}([0-9a-zA-Z\/_=&]*)$/", "/cachedWebpages/$1-/webpage.html?$2", $webpage_path);
+}
+
+error_log($type.": ".$webpage_path." to ".$internal_path);
 
 // Set parameters
 $_GET = [];

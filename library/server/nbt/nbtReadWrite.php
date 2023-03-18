@@ -98,12 +98,25 @@ class NbtReader {
     function readString($binary): string {
         $str_length = $this->readShort($binary);
         $bytes = substr($binary, $this->offset, $str_length);
-        $value = utf8_decode($bytes);
+        $value = mb_convert_encoding($bytes, 'ISO-8859-1', 'UTF-8');
+        //$value = $bytes;
         $this->offset += strlen($value); //String length (in bytes)
         return $value;
     }
     function readList($binary) {
+        $list_element_type = $this->readByte($binary);
+        $type = $this->typeToString($list_element_type);
+        $length = $this->readInt($binary);
 
+        $result = [
+            "types" => $type,
+            "elements" => []
+        ];
+        $i = 0;
+        for ($i = 0; $i < $length; $i++) {
+            $result["elements"][] = $this->readEntry($binary, false, $type);
+        }
+        return $result;
     }
     function readCompound(string $binary): array {
         global $types;
@@ -138,9 +151,8 @@ class NbtReader {
         return $result;
     }
     function readTagData(string $binary): array {
-        global $types;
         $type = $this->readByte($binary);
-        $type = array_search($type, $types);
+        $type = $this->typeToString($type);
 
         if ($type !== "end") {
             $tag_name = $this->readString($binary);
@@ -153,17 +165,21 @@ class NbtReader {
             "name" => $tag_name
         ];
     }
-    function readEntry(string $binary) {
+    function typeToString($type): string {
         global $types;
-
-        $tag_data = $this->readTagData($binary);
-        $type = $tag_data["type"];
-        $tag_name = $tag_data["name"];
+        return array_search($type, $types);
+    }
+    function readEntry(string $binary, bool $readHeader = true, string $type = null) {
+        if ($readHeader) {
+            $tag_data = $this->readTagData($binary);
+            $type = $tag_data["type"];
+            $tag_name = $tag_data["name"];
+            //echo "\nReading type " . $type . " with name $tag_name";
+        } else {
+            $tag_name = null;
+        }
 
         // echo "\nTag data offset " . $tag_data["offset"];
-
-        // echo "\nReading type " . $type . " with name $tag_name";
-
         if ($type === "byte") {
             $value = $this->readByte($binary);
         } else if ($type === "short") {
@@ -191,7 +207,7 @@ class NbtReader {
             $value = $this->readString($binary);
         } else if ($type === "list") {
             //Not done yet
-            $value = null;
+            $value = $this->readList($binary);
         } else if ($type === "compound") {
             $value = $this->readCompound($binary);
         } else {
@@ -261,7 +277,7 @@ class NbtWriter {
     function writeString($value) {
         if (gettype($value) === "string") {
             $length = $this->writeShort(strlen($value));
-            $binary = utf8_encode($value);
+            $binary = mb_convert_encoding($value,'UTF-8','ISO-8859-1');
             return $length . $binary;
         } else {
             throw new Exception('No string given for writeString()');

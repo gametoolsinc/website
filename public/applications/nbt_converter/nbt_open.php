@@ -70,6 +70,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/library/server/nbt/nbtReadWrite.php');
 // $binary = $writer -> writeObject($map_file);
 // writeFile($binary);
 
+// error_reporting(E_ERROR);
 $reader = new NbtReader();
 
 $filename = $_FILES['fileblob']['tmp_name'];
@@ -78,14 +79,13 @@ $file_data = fread($handle, filesize($filename));
 $file_data = mb_convert_encoding($file_data, 'ISO-8859-1');
 fclose($handle);
 
-// echo $file_data;
-
 //Check if file is gzipped by checking first byte
 if (substr($file_data, 0, 1) === chr(0x1F)) {
     $file_data = gzdecode($file_data);   
-}
+} 
 
 $data = $reader -> readData($file_data);
-echo json_encode($data, JSON_PRETTY_PRINT);
+
+echo json_encode($data);
 
 ?>
