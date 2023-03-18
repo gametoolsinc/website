@@ -4,7 +4,9 @@
             <h2>About us</h2>
             <?php
             $texts = [
-                "Gamertools is a website full of tools for various games. These tools try to make the gaming experience better for you! We do this by calculating the most optimal way to do things or by explaining to you how something works."
+                "Welcome to Gamertools, your one-stop website for enhancing your gaming experience! Our goal is to make your gaming experience the best it can be. Whether you need help with calculating something or want to understand the optimal strategy, our tools have got you covered.",
+                "Gamertools is a website dedicated to elevating your gaming experience! Our objective is to provide you with the best gaming experience. Our tools cover a lot of different games. Let our tools help you in your gaming journey!",
+                "Gamertools provides an array of tools for various games. Our tools are designed to enhance your gaming experience by enabling you to optimize your gaming strategy or improve your understanding of the game better.",
             ];
             $text = $texts[array_rand($texts)];
             echo "<p>".$text."</p>";

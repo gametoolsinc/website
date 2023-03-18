@@ -13,7 +13,7 @@ echo '<p class="counter">' . $object["counter"] . ' classes rolled </p>';
     <h3>Generate Class</h3>
 </div>
 
-<div class="generated_class">This tool is currently in maintenance, sorry for the inconvenience</div>
+<div class="generated_class"></div>
 
 <?php
 $tool_webpage->endContent();

@@ -2,12 +2,12 @@
     "version": 4,
     "application": {
         "name": "Unit Calculator",
-        "description": "A tool to convert different types of units to other units.",
+        "description": "Effortlessly convert between units with our online tool. Make accurate conversions for any calculation you need.",
         "keywords": []
     },
     "tool": {
         "name": "{game_name} {units.first_unit_name} Calculator",
-        "description": "Here you can convert {units.second_unit_name} to {units.first_unit_name}. You can also convert many other units to other units for {game_name}.",
+        "description": "Easily convert between {game_name} units, including {units.first_unit_name} and {units.second_unit_name}, with our online tool. Get accurate conversions in seconds!",
         "game_specific_words": [
             "units"
         ],
@@ -17,18 +17,18 @@
             "{game_name} Unit Converter",
             "{game_name} Numbers Converter"
         ],
-        "introduction": "Welcome to the {tool_name}! If you are playing {game_name} you are always using a lot of blocks. {units.first_unit_name} only goes to 64, but a lot of times you are using more than 64 Items. This tool can convert between the different types of units for you! We also explain the mathematics behind it so you can also do it yourself.",
+        "introduction": "For players who want to simplify {units.first_unit_name} calculations, the {tool_name} is a useful tool. With the ability to convert between different unit types and explanations on the math involved, {tool_name} just got easier. Upgrade your experience with the {tool_name} today.",
         "examples": [
             {
                 "title": "How many {units.first_unit_name} are <script>document.write({units.first_unit_size} * 10 + 1)</script> {units.second_unit_name}?",
-                "text": "You can calculate the anwer of this question by dividing <script>document.write({units.first_unit_size} * 10 + 1)</script> with {units.first_unit_size}. This will result in 10 with as remainder 1. So the answer to the questions is 10 {units.first_unit_name} with as remainder 1 {units.second_unit_name}."
+                "text": "To determine the solution to this question, divide <script>document.write({units.first_unit_size} * 10 + 1)</script> by {units.first_unit_size}. The quotient is 10 and the remainder is 1. Therefore, the answer to the question is 10 {units.first_unit_name} and 1 {units.second_unit_name}."
             },
             {
-                "title": "How many {units.first_unit_name} are <script>document.write({units.first_unit_size} * 56)</script> {units.second_unit_name}?",
+                "title": "What is the conversion of <script>document.write({units.first_unit_size} * 56)</script> {units.second_unit_name} to {units.first_unit_name}?",
                 "text": "You can calculate the anwer of this question by dividing <script>document.write({units.first_unit_size} * 56)</script> with {units.first_unit_size}. This will result in 56. So the answer to the questions is 56 {units.first_unit_name}."
             },
             {
-                "title": "How many {units.first_unit_name} are <script>document.write({units.first_unit_size} * 64)</script> {units.second_unit_name}?",
+                "title": "What is the equivalent quantity of {units.first_unit_name} for <script>document.write({units.first_unit_size} * 64)</script> {units.second_unit_name} in {game_name}?",
                 "text": "You can calculate the anwer to this question by dividing <script>document.write({units.first_unit_size} * 64)</script> with {units.first_unit_size}. This will result in 64 {units.first_unit_name}."
             }
         ],
@@ -39,7 +39,11 @@
             },
             {
                 "title": "How to use the {tool_name}?",
-                "text": "A {tool_name} is a calculator that can convert {units.second_unit_name} to {units.first_unit_name}, {units.first_unit_name} to {units.second_unit_name}, and many other combinations of units. All you need to do is select the unit in which you have an amount and select the desired unit. Then enter your amount and we will convert it to the amount in your desired unit."
+                "text": "This calculator is designed to convert between  {units.second_unit_name} to {units.first_unit_name}, as well as other unit combinations. Begin by choosing the unit that corresponds to your current quantity, then select your desired unit. Next, input the amount you have, and the calculator will convert it to the corresponding amount in your desired unit."
+            },
+            {
+                "title": "How many {units.second_unit_name} fit in a single {units.first_unit_name}?",
+                "text": "There are {units.first_unit_size} {units.second_unit_name} in a single {units.first_unit_name}."
             },
             {
                 "title": "Why is this {tool_name} useful?",

@@ -55,7 +55,7 @@ class Webpage
 
     public function setTitle(string $title)
     {
-        $this->title = $title . " - Gamertools";
+        $this->title = $title;
     }
 
     public function setDescription(string $description)

@@ -2,12 +2,14 @@
     "version": 4,
     "application": {
         "name": "Resource Calculator",
-        "description": "A tool to calculate the amount of (base) resources needed to make an item with the help of a guide in your game.",
-        "keywords": []
+        "description": "This tool helps in the calculation of the required quantity of resources for making an item with the assistance of a guide.",
+        "keywords": [
+            "{application_name}"
+        ]
     },
     "tool": {
         "name": "{game_name} Resource Calculator",
-        "description": "A {tool_name} that calculates the amount of raw recources you need for your builds and creations! It also provides a guide on how to create the items! All quick and easy!",
+        "description": "{tool_name} quickly calculates the raw resources you need for your builds and provides an easy guide with instructions.",
         "game_specific_words": [
             "items"
         ],
@@ -17,7 +19,7 @@
             "{game_name} crafting calculator",
             "{game_name} item calculator"
         ],
-        "introduction": "Welcome to the {tool_name}! In {game_name} you have to craft a lot of items to make progression in the game or to build something epic. This  {tool_name} can calculate the amount of resources needed to make a certain amount of items. When using this tool, you will never have too little resources to finish your build.",
+        "introduction": "For {game_name} enthusiasts who want to streamline their building process, the {tool_name} is a must-have tool. Crafting is an essential part of the game, whether you're progressing or working on an epic project. Our calculator takes the guesswork out of the process by accurately calculating the amount of resources needed for any item and instructions on how to craft them.",
         "examples": [
             {
                 "title": "What are the base resources for {items.difficult_item_name}?",
@@ -35,11 +37,11 @@
             },
             {
                 "title": "How to use the {tool_name}?",
-                "text": "First you need to decide which item and how many of that item you want to make in {game_name}. After you know this, find your item by typing the name of the item in the search bar or by selecting the item in one of the tabs. When you have found your item, click on it and type in the amount you need of this item. The resource menu now shows which resources and how many you need to make your item. The guide menu shows you the steps you have to make to create your item. Now you can go back to your game and make your item!"
+                "text": "To begin creating an item in {game_name}, first determine which item you wish to make and the desired quantity. Next, locate the item by either searching for its name in the search bar or selecting it from the tabs. Once you have found the item, specify the required amount. The resource menu will display the necessary resources and quantities to make the item, while the guide menu will provide step-by-step instructions. You can now return to the game and proceed with crafting your item."
             },
             {
                 "title": "Why is the {tool_name} useful?",
-                "text": "When you are creating something in {game_name} you want to concentrate on the creating part and not on the part where you need to gather the required resources. This tool calculates how many items you are going to need for your creation, so that you don’t spend too much time gathering resources. This way, you will have more time to focus on your epic creations."
+                "text": "Our tool not only streamlines the resource gathering process, but it also saves a significant amount of time that would otherwise be spent on unnecessary resource collection. By providing precise calculations for the required items, you can avoid spending excessive amounts of time gathering resources and instead focus on bringing your creative ideas to life in {game_name}."
             },
             {
                 "title": "How many items exist in {game_name}?",

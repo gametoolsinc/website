@@ -39,22 +39,26 @@ RewriteRule "(^|/)\." - [F]
 #    deny from all
 #</Files>
 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?path=$1 [NC,L,QSA]
+
 # Admin page
-RewriteRule ^adminGamertools$ /public/main/admin/webpage.php
+# RewriteRule ^adminGamertools$ /public/main/admin/webpage.php
 
 # rewrite to index.php for pages that need to be generated
-RewriteRule ^(debug|cach)([0-9a-zA-Z\/_]*)$ router.php?path=$2&type=$1
+# RewriteRule ^(debug|cach)([0-9a-zA-Z\/_]*)$ router.php?path=$2&type=$1
 
 # Caching
-RewriteRule ^([0-9a-zA-Z\/_]*)$   /cachedWebpages/$1-/webpage.html?%{QUERY_STRING}
+# RewriteRule ^([0-9a-zA-Z\/_]*)$   /cachedWebpages/$1-/webpage.html?%{QUERY_STRING}
 
 # Error handeling
-ErrorDocument 400 /public/main/error/webpage.php?errormessage=400
-ErrorDocument 401 /public/main/error/webpage.php?errormessage=401
-ErrorDocument 403 /public/main/error/webpage.php?errormessage=403
-ErrorDocument 404 /public/main/error/webpage.php?errormessage=404
-ErrorDocument 500 /public/main/error/webpage.php?errormessage=500
-ErrorDocument 503 /public/main/error/webpage.php?errormessage=503
-ErrorDocument 508 /public/main/error/webpage.php?errormessage=508
+# ErrorDocument 400 /public/main/error/webpage.php?errormessage=400
+# ErrorDocument 401 /public/main/error/webpage.php?errormessage=401
+# ErrorDocument 403 /public/main/error/webpage.php?errormessage=403
+# ErrorDocument 404 /public/main/error/webpage.php?errormessage=404
+# ErrorDocument 500 /public/main/error/webpage.php?errormessage=500
+# ErrorDocument 503 /public/main/error/webpage.php?errormessage=503
+# ErrorDocument 508 /public/main/error/webpage.php?errormessage=508
 
 
