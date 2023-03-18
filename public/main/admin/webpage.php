@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/library/server/sitemap/sitemap.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/library/sitemap/sitemap.php";
 
 
 // Get all webpages

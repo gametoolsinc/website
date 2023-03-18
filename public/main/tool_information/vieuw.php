@@ -1,5 +1,5 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/dataManagement/application.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/application.php");
 
 $ids = Application::getAllApplicationIds();
 

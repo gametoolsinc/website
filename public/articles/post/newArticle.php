@@ -1,5 +1,5 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/articles/articles.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/articles/articles.php");
 
 $id = Articles::saveArticle($_POST);
 

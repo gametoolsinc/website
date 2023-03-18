@@ -1,8 +1,8 @@
 <?php
 
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/dataManagement/game.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/dataManagement/tool.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/template/webpage/webpage.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/game.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/tool.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/webpage/webpage.php");
 
 $game_id = $_GET['id'];
 

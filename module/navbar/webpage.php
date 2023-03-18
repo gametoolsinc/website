@@ -1,10 +1,10 @@
 <?php
 
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/dataManagement/game.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/dataManagement/application.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/articles/articles.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/dataManagement/tool.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/template/webpage/webpage.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/game.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/application.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/articles/articles.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/tool.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/webpage/webpage.php");
 
 ?>
 

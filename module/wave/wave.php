@@ -1,7 +1,7 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/colours/colours.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/colours/colours.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/module/module.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/template/webpage/webpage.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/webpage/webpage.php");
 
 class Waves extends Module
 {
@@ -13,7 +13,7 @@ class Waves extends Module
     private int $amount_of_layers;
     private float $height_difference;
     private int $space_between_points;
-    private int $height_layer;
+    private float $height_layer;
 
     function __construct(Webpage $webpage)
     {
@@ -80,7 +80,7 @@ class Waves extends Module
             $previousLayer = end($layers);
             for ($j = 0; $j <= $this->amount_of_points; $j++) {
                 if ($previousLayer == false) {
-                    $offset = rand(0, $this->height_layer);
+                    $offset = rand(0, (int) round($this->height_layer));
                 } else {
                     $previousOffset = $previousLayer[$j][1] - $this->height_layer * ($i - 1);
                     $min = max(0, $previousOffset - $this->height_difference * $this->height_layer);

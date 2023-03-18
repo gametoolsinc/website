@@ -1,5 +1,5 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/template/webpage/webpage.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/webpage/webpage.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/module/module.php");
 
 class Footer extends Module {

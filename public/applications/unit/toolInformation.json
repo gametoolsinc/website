@@ -30,6 +30,10 @@
             {
                 "title": "What is the equivalent quantity of {units.first_unit_name} for <script>document.write({units.first_unit_size} * 64)</script> {units.second_unit_name} in {game_name}?",
                 "text": "You can calculate the anwer to this question by dividing <script>document.write({units.first_unit_size} * 64)</script> with {units.first_unit_size}. This will result in 64 {units.first_unit_name}."
+            },
+            {
+                "title": "How many {units.second_unit_name} fit in a single {units.first_unit_name}?",
+                "text": "There are {units.first_unit_size} {units.second_unit_name} in a single {units.first_unit_name}."
             }
         ],
         "questions": [
@@ -40,10 +44,6 @@
             {
                 "title": "How to use the {tool_name}?",
                 "text": "This calculator is designed to convert between  {units.second_unit_name} to {units.first_unit_name}, as well as other unit combinations. Begin by choosing the unit that corresponds to your current quantity, then select your desired unit. Next, input the amount you have, and the calculator will convert it to the corresponding amount in your desired unit."
-            },
-            {
-                "title": "How many {units.second_unit_name} fit in a single {units.first_unit_name}?",
-                "text": "There are {units.first_unit_size} {units.second_unit_name} in a single {units.first_unit_name}."
             },
             {
                 "title": "Why is this {tool_name} useful?",

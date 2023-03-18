@@ -1,6 +1,6 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/template/webpage/webpage.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/redirect/redirect.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/webpage/webpage.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/redirect/redirect.php");
 
 if (strpos($_SERVER['REQUEST_URI'], '?') !== false) {
     $url = explode("?", $_SERVER['REQUEST_URI'])[0];

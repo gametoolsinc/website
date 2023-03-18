@@ -1,6 +1,6 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/template/tool/toolWebpage.php");
-include_once $_SERVER['DOCUMENT_ROOT'] . "/library/server/dataManagement/games/units.php";
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/tool/toolWebpage.php");
+include_once $_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/games/units.php";
 
 $tool_webpage = new ToolWebpage($_GET["id"]);
 $transportation = new Units($tool_webpage->getTool(),  $unitType = "transportation");

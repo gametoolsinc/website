@@ -1,6 +1,6 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/articles/article.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/template/webpage/webpage.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/articles/article.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/webpage/webpage.php");
 
 $article = new Article($_GET['id']);
 $webpage = new Webpage();

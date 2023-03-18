@@ -1,11 +1,10 @@
-php_value display_errors On
-php_value mbstring.http_input auto
+# php_value mbstring.http_input auto
 php_value date.timezone Europe/Amsterdam
-
-# show errors
-php_flag  display_errors        on
-php_value error_reporting       2039
 RewriteEngine On
+
+# show errors (DOESNT WORK)
+# php_flag display_errors on
+# php_flag error_reporting 32767
 
 # make everything https
 RewriteCond %{HTTPS} !on

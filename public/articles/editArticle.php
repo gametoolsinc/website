@@ -1,5 +1,5 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/articles/article.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/articles/article.php");
 
 $id = $_GET["id"];
 $article = new Article($id);

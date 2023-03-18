@@ -18,10 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var url = window.location.href;
     if (!url.includes('/debug') && !url.includes('views.js')) {
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "/library/client/view/views.php");
+        xhr.open("POST", "/module/analytics/views.php");
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
-                console.log(xhr.response);
             }
         }
         xhr.send(JSON.stringify({
@@ -34,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 var data;
 function randomClass() {
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/tools/randomclassgenerator/randomclass.php");
+    xhr.open("POST", "/public/applications/randomclassgenerator/randomclass.php");
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.send("data hier");
     xhr.onreadystatechange = function () {
@@ -79,7 +78,7 @@ function displayClass(classData) {
     <div class="attachment">
         <h3>{type}</h3>
         <div class="attachment_content">
-            <img src="{img src}" onerror="this.onerror=null; this.src='/data/codcoldwar/user_interface/attachments/not_found.png'">
+            <img src="{img src}" onerror="this.onerror=null; this.src='/resources/games/codcoldwar/user_interface/attachments/not_found.png'">
             <p>{name}</p>
         </div>
     </div>`;
@@ -167,7 +166,7 @@ function displayClass(classData) {
     var firstWeaponData = classData["class"]["weapons"][firstWeaponName];
     var firstWeaponHTML = weaponHTML.replace(/{weaponName}/g, firstWeaponName).replace(/{number}/g, 'primary_weapon').replace(/{type}/g, 'Primary Weapon');
     console.log(firstWeaponName);
-    firstWeaponHTML = firstWeaponHTML.replace(/{img url}/g, '/data/codcoldwar/user_interface/weapons/' + firstWeaponName.format());
+    firstWeaponHTML = firstWeaponHTML.replace(/{img url}/g, '/resources/games/codcoldwar/user_interface/weapons/' + firstWeaponName.format());
     firstWeaponHTML = firstWeaponHTML.replace(/{events}/g, 'onmouseover="tooltipDataCheck(this)" onmouseout="tooltipHide()"');
 
     //Attachments
@@ -184,7 +183,7 @@ function displayClass(classData) {
     //Second Weapon
     var secondWeaponData = classData["class"]["weapons"][secondWeaponName];
     var secondWeaponHTML = weaponHTML.replace(/{weaponName}/g, secondWeaponName).replace(/{number}/g, 'secondary_weapon').replace(/{type}/g, 'Secondary Weapon');
-    secondWeaponHTML = secondWeaponHTML.replace(/{img url}/g, '/data/codcoldwar/user_interface/weapons/' + secondWeaponName.format());
+    secondWeaponHTML = secondWeaponHTML.replace(/{img url}/g, '/resources/games/codcoldwar/user_interface/weapons/' + secondWeaponName.format());
     secondWeaponHTML = secondWeaponHTML.replace(/{events}/g, 'onmouseover="tooltipDataCheck(this)" onmouseout="tooltipHide()"');
 
     //Attachments
@@ -203,7 +202,7 @@ function displayClass(classData) {
     for (var type in classData["class"]["equipment"]) {
         var name = classData["class"]["equipment"][type];
         var string = equipmentItemHTML.replace(/{type}/g, type).replace(/{name}/g, name);
-        string = string.replace(/{img url}/g, '/data/codcoldwar/user_interface/equipment/' + classData["class"]["equipment"][type].format());
+        string = string.replace(/{img url}/g, '/resources/games/codcoldwar/user_interface/equipment/' + classData["class"]["equipment"][type].format());
         equipmentString += string;
     }
     equipmentHTML = equipmentHTML.replace(/{items}/g, equipmentString);
@@ -211,7 +210,7 @@ function displayClass(classData) {
     //---------------------------//
     //Wildcard & Perks
     var other = otherHTML.replace(/{name}/g, classData["class"]["wildcard"]["name"]);
-    other = other.replace(/{img url}/g, '/data/codcoldwar/user_interface/wildcards/' + classData["class"]["wildcard"]["name"].format());
+    other = other.replace(/{img url}/g, '/resources/games/codcoldwar/user_interface/wildcards/' + classData["class"]["wildcard"]["name"].format());
     other = other.replace(/{perk1img}/g, getPerks(classData["class"]["perks"]["1st"]));
     other = other.replace(/{perk2img}/g, getPerks(classData["class"]["perks"]["2nd"]));
     other = other.replace(/{perk3img}/g, getPerks(classData["class"]["perks"]["3rd"]));
@@ -241,7 +240,7 @@ function getAttachmentHTML(weaponData, types, attachmentHTML, attachmentNoneHTML
             currentAttachmentHTML = currentAttachmentHTML.replace(/{name}/g, weaponData[type]);
 
             //img
-            var imgSrc = '/data/codcoldwar/user_interface/attachments/' + type.toLowerCase() + '/' + weaponData[type].format();
+            var imgSrc = '/resources/games/codcoldwar/user_interface/attachments/' + type.toLowerCase() + '/' + weaponData[type].format();
             currentAttachmentHTML = currentAttachmentHTML.replace(/{img src}/g, imgSrc);
 
             //update
@@ -258,7 +257,7 @@ function getPerks(array) {
     for (var number in array) {
         //Get img
         string += '<div class="perk_item">'
-        string += '<img draggable="false" src="{src}" alt="">'.replace(/{src}/g, '/data/codcoldwar/user_interface/perks/' + array[number]["name"].format());
+        string += '<img draggable="false" src="{src}" alt="">'.replace(/{src}/g, '/resources/games/codcoldwar/user_interface/perks/' + array[number]["name"].format());
         string += '<p>{name}</p>'.replace(/{name}/g, array[number]["name"]);
         string += '</div>'
     }
@@ -288,7 +287,8 @@ function hoverInfo() {
     }
     string += '</div>';
     tooltip.firstChild.innerHTML += string;
-};
+}
+;
 //Custom tooltip
 //© Gamertools 2021
 

@@ -1,5 +1,5 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/template/tool/toolWebpage.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/tool/toolWebpage.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/module/dice/dice.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/module/coin_flip/coinFlip.php");
 

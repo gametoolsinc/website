@@ -97,7 +97,7 @@ function sendDataFormat($str) {
 //***********************************\\
 
 //include nbt reader/writer
-include($_SERVER['DOCUMENT_ROOT'] . '/library/server/nbt/nbtReadWrite.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/library/nbt/nbtReadWrite.php');
 
 // start time
 $start = microtime(true);

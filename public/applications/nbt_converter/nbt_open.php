@@ -1,6 +1,6 @@
 <?php 
 
-include($_SERVER['DOCUMENT_ROOT'] . '/library/server/nbt/nbtReadWrite.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/library/nbt/nbtReadWrite.php');
 
 // $map_file = [
 //     "type" => "compound",

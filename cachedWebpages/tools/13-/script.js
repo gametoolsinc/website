@@ -18,10 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var url = window.location.href;
     if (!url.includes('/debug') && !url.includes('views.js')) {
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "/library/client/view/views.php");
+        xhr.open("POST", "/module/analytics/views.php");
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
-                console.log(xhr.response);
             }
         }
         xhr.send(JSON.stringify({
@@ -86,7 +85,8 @@ var iconContents = {
     "byte array": "&lt;&gt;",
     string: "str",
     compound: "{ }",
-    "int array": "&lt;&gt;"
+    "int array": "&lt;&gt;",
+    list: "[ ]"
 }
 
 //*************************************************\\
@@ -105,9 +105,14 @@ function openFile() {
             if (xhr.readyState == 4 && xhr.status == 200) {
                 var response = xhr.response;
 
-                // console.log(response);  
-                result = JSON.parse(response);
-                // console.log("opened", result);
+                try {
+                    result = JSON.parse(response);
+                    console.log(result);
+                } catch (e) {
+                    console.error(e);
+                    console.log(response);
+                    return;
+                }
 
                 resultTree.innerHTML = getEntryHTML(result);
             }
@@ -152,8 +157,6 @@ function saveFile() {
 function getEntryHTML(obj) {
     var type = obj.type;
 
-    if (type === "list") { return "" }
-
     var html = elementTemplateMain.replace("{type}", type);
     html = html.replace("{iconContent}", iconContents[type]);
     html = html.replace("{key}", obj.name);
@@ -165,13 +168,14 @@ function getEntryHTML(obj) {
     //     html = html.replace("{length}", "");
     // }
 
+    console.log(html);
     return html;
 }
 
 function getValueHTML(value, type) {
-    var html;
+
+    var html = "";
     if (type === "compound") {
-        html = "";
         for (var item of value) {
             html += getEntryHTML(item);
         }
@@ -182,6 +186,15 @@ function getValueHTML(value, type) {
             listHTML += valueTemplateArrItem.replace("{value}", item);
         }
         html = valueTemplateArr.replace("{list}", listHTML);
+    } else if (type === "list") {
+        var listElementTypes = value["types"];
+
+        var elements = value["elements"];
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].name = i;
+            html += getEntryHTML(elements[i]);
+        }
+        html = valueTemplateCompound.replace("{value}", html);
     } else {
         html = valueTemplateInput.replace("{value}", value);
     }
@@ -237,6 +250,8 @@ function readEntry(element) {
         entry.value = readArray(valueElement);
     } else if (type === "compound") {                                                                       //Compound / object
         entry.value = readCompound(valueElement);
+    } else if (type === "list") {
+        console.log("list");
     }
 
     return entry;

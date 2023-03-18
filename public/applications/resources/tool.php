@@ -1,7 +1,7 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/template/tool/toolWebpage.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/caching/minifier.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/dataManagement/games/items.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/tool/toolWebpage.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/caching/minifier.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/games/items.php");
 
 $tool_webpage = new ToolWebpage($_GET["id"]);
 $tool_webpage->startContent();

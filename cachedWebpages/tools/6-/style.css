@@ -702,7 +702,7 @@ body > .tooltip {
     box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.3);
     transition: opacity .3s ease, transform .3s ease;
 }
-.explanation {
+.information {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(max(300px, 18%), 1fr));
     gap: 15px;
@@ -710,7 +710,7 @@ body > .tooltip {
     grid-auto-flow: dense;
 }
 
-.explanation .cell {
+.information .cell {
     border-radius: var(--border-radius);
     background-color: var(--secondary);
     position: relative;
@@ -719,12 +719,12 @@ body > .tooltip {
     padding: 20px;
 }
 
-.explanation .cell img {
+.information .cell img {
     width: 100%;
     height: 100%;
 }
 
-.explanation .cell .tag {
+.information .cell .tag {
     font-size: 0.7em;
     color: grey;
     text-align: center;
@@ -735,7 +735,7 @@ body > .tooltip {
     top: 12px;
 }
 
-.explanation .cell .header {
+.information .cell .header {
     position: relative;
     display: flex;
     gap: 20px;
@@ -743,28 +743,28 @@ body > .tooltip {
     margin: 10px;
 }
 
-.explanation .cell .header .title {
+.information .cell .header .title {
     margin: 0px;
 }
 
-.explanation .cell .header .icon {
+.information .cell .header .icon {
     width: 40px;
     display: block;
 }
 
-.explanation > .cell:hover {
+.information > .cell:hover {
     box-shadow: 0px 0px 22px -6px rgba(0, 0, 0, 0.329);
     top: -5px;
 }
 
 /* Diffent sizes of cells */
-.explanation .important {
+.information .important {
     padding: 30px;
     font-size: 1.2em;
     grid-column: span 3;
 }
 
-.explanation .question {
+.information .question {
     grid-column: span 2;
 }
 

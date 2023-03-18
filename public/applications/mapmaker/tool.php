@@ -1,12 +1,12 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . "/library/server/template/tool/toolWebpage.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/tool/toolWebpage.php");
 $tool_webpage = new ToolWebpage($_GET["id"]);
 $tool_webpage->startContent();
 ?>
 
 
-<link href="/library/client/cropper/cropper.css" rel="stylesheet">
-<script src="/library/client/cropper/cropper.js">
+<link href="/module/cropper/cropper.css" rel="stylesheet">
+<script src="/module/cropper/cropper.js">
     var cropper;
     window.addEventListener('DOMContentLoaded', function() {
         cropper = new Cropper(cropCanvas, {
