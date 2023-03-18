@@ -85,7 +85,7 @@ class Waves extends Module
                     $previousOffset = $previousLayer[$j][1] - $this->height_layer * ($i - 1);
                     $min = max(0, $previousOffset - $this->height_difference * $this->height_layer);
                     $max = min($this->height_layer, $previousOffset + $this->height_difference * $this->height_layer);
-                    $offset = rand($min, $max);
+                    $offset = rand((int) round($min), (int) round($max));
                 }
                 $point = [$this->space_between_points * $j, $i * $this->height_layer + $offset];
                 array_push($layer, $point);
@@ -100,8 +100,8 @@ class Waves extends Module
             $d = "";
             for ($j = 0; $j <= $this->amount_of_points; $j++) {
                 $point = $layers[$i][$j];
-                $dx2 = $point[0] - rand($this->space_between_points / 3, $this->space_between_points / 3 * 2);
-                $dy2 = $point[1] - rand(-$this->height_layer / 4, $this->height_layer / 4);
+                $dx2 = $point[0] - rand((int) round($this->space_between_points / 3), (int) round($this->space_between_points / 3 * 2));
+                $dy2 = $point[1] - rand((int) round(-$this->height_layer / 4), (int) round($this->height_layer / 4));
                 if ($j == 0) {
                     $d .= "M $point[0] $point[1]";
                 } else if ($j == 1) {
