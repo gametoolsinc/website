@@ -660,25 +660,25 @@ body > .tooltip {
 }
 
 @media only screen and (max-width: 1000px) {
-    .explanation {
+    .information {
         grid-template-columns: 1fr 1fr;
     }
 
-    .explanation .important {
+    .information .important {
         grid-column: span 2;
     }
 }
 
 @media only screen and (max-width: 750px) {
-    .explanation {
+    .information {
         grid-template-columns: 1fr;
     }
 
-    .explanation .important {
+    .information .important {
         grid-column: span 1;
     }
 
-    .explanation .question {
+    .information .question {
         grid-column: span 1;
     }
 }
