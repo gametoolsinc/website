@@ -1,0 +1,415 @@
+.wave {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    padding-top: 60px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.wave-background {
+    width: 100vw;
+    position: absolute;
+    left: calc(-50vw + 50%);
+    height: calc(100% - 200px);
+    z-index: -1;
+    transform: translateY(200px);
+}
+
+.first-wave-background {
+    transform: none;
+    height: 100%;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    margin: 0;
+}
+
+footer {
+    font-family: 'Poppins';
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer .footer_wrapper {
+    margin: auto;
+    display: grid;
+    max-width: 1600px;
+    grid-template-columns: repeat(auto-fill, minmax(min(500px, 100%), 1fr));
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+footer h2 {
+    font-weight: 500;
+}
+
+footer a {
+    color: inherit;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .footer_wrapper>div {
+    margin: 0px 20px;
+}
+
+
+
+footer .social_icons,
+.contact_link {
+    display: flex;
+}
+
+footer .social_icons>a {
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer .social_icons p {
+    margin: 0;
+}
+
+footer .social_icons>a img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+footer .contact_links .contact_link {
+    align-items: center;
+}
+
+
+
+footer .contact_links .contact_link img {
+    background-color: white;
+    border-radius: 40%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+footer .contact_links .contact_link img:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+footer .copyright {
+    text-align: right;
+    padding: 10px 20px;
+    position: relative;
+    left: calc(-50vw + 50%);
+    background-color: #0000000f;
+    width: 100vw;
+}
+
+footer .copyright p {
+    margin: 0;
+    margin-left: auto;
+    margin-right: 44px;
+}
+nav {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 60px;
+    font-family: "Poppins";
+    color: white;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}
+nav .nav-wrapper {
+    display: flex;
+    max-width: 1600px;
+    max-width: var(--page-width);
+    margin: auto;
+    height: 100%;
+    padding: 0px 10px;
+}
+
+/* logo */
+nav .logo {
+    height: calc(100% - 20px);
+    padding: 10px 0px;
+    width: 6%;
+    min-width: 60px;
+}
+
+nav .logo img {
+    height: 100%;
+    width: auto;
+    margin: 0px 5px;
+}
+
+/* menu */
+nav .navigation {
+    display: flex;
+    gap: 20px;
+}
+
+nav .navigation > div {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: .2s ease;
+    cursor: pointer;
+    font-size: 1.17em;
+    width: 200px;
+    text-align: center;
+}
+nav .navigation > div:hover {
+    background: var(--accent);
+}
+nav .navigation > div:hover .dropdown {
+    display: flex;
+}
+nav .navigation .title {
+    padding: 0;
+    margin: 0;
+    line-height: 60px;
+}
+nav .navigation div a {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+nav .navigation > div .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: var(--accent);
+    font-size: 0.9em;
+}
+nav .navigation > div .dropdown a {
+    padding: 10px 20px;
+    transition: .2s ease;
+}
+.dropdown a:hover {
+    background-color: rgb(0,0,0,0.1);
+}
+
+nav .navigation .menu .game.active {
+    background-color: #0000005b;
+}
+
+nav .navigation .menu .game {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+nav .navigation .menu .game .title {
+    margin: 0;
+    font-weight: bold;
+}
+
+nav .navigation .sub-menu {
+    background-color: #0000005b;
+    margin: auto;
+}
+
+nav .navigation .sub-menu .game {
+    display: none;
+    justify-content: space-around;
+}
+
+nav .navigation .sub-menu .game.active {
+    display: flex;
+}
+
+nav .navigation .sub-menu .game a {
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+nav .navigation .sub-menu .game a p {
+    margin: 0;
+    color: white;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* mobile */
+.hamburger-icon {
+    align-self: center;
+    display: none;
+}
+.hamburger-icon > span {
+    user-select: none;
+    cursor: pointer;
+    font-size: 35px;
+    align-self: center;
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    background-color: var(--accent);
+    padding: 20px;
+    min-width: 250px;
+    height: 100vh;
+    z-index: 11;
+    transition: .3s ease;
+}
+.mobile-menu span {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.mobile-menu > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.2em;
+}
+.mobile-menu a {
+    text-decoration: none;
+    color: #000000;
+}
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+/* hide mobile */
+.mobile-menu {
+    transform: translateX(-100%);
+}
+.mobile-menu, .overlay {
+    display: none;
+    
+}
+
+/* visibility toggle classes */
+.menu-open, .overlay-visible {
+    transform: translateX(0%)!important;
+}
+.overlay-visible {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-wrapper {
+        justify-content: space-between;
+    }
+    nav .navigation {
+        display: none;
+    }
+    .mobile-menu, .overlay {
+        display: block;
+    }
+    .overlay {
+        transform: translateX(-100%);
+    }
+    .hamburger-icon {
+        display: flex;
+    }
+}
+html {
+    overflow-x: hidden;
+}
+
+:root {
+    --border-radius: 16px;
+    --page-width: min(1600px, calc(98% - 15px));
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    background: var(--background);
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    box-sizing: border-box;
+    width: var(--page-width);
+    height: fit-content;
+}
+
+.ad {
+    width: 100%;
+    margin-bottom: 22px;
+}
+article {
+    max-width: 90ch;
+    margin: auto;
+    width: 100%;
+}
+
+article .information p {
+    font-size: 1rem;
+}
+
+article h1 {
+    font-size: 2rem;
+}
+
+article h2 {
+    margin: 0px;
+}
+
+article p {
+    display: block;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+article img {
+    float: right;
+    margin: 10px 0px 10px 10px;
+    clear: both;
+    width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+    article img {
+        width: 100%;
+    }
+}

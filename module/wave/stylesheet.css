@@ -1,0 +1,22 @@
+.wave {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    padding-top: 60px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.wave-background {
+    width: 100vw;
+    position: absolute;
+    left: calc(-50vw + 50%);
+    height: calc(100% - 200px);
+    z-index: -1;
+    transform: translateY(200px);
+}
+
+.first-wave-background {
+    transform: none;
+    height: 100%;
+}

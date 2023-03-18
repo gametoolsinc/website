@@ -1,0 +1,98 @@
+.tool {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(max(300px,20%),1fr));
+    gap: 20px;
+}
+.flex {
+    display: flex;
+    gap: 10px;
+}
+.smelt_type {
+    width: 100%;
+    /* background: linear-gradient(50deg, rgba(124,186,115,1) 20%, rgba(101,177,90,1) 100%); */
+    background-color: var(--main);
+    margin-bottom: 10px;
+    border-radius: 1.2vh;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.smelt_type .time_calculator {
+    display: flex;
+    height: 150px;
+}
+.smelt_type .furnace_calculator {
+    padding: 20px;
+    padding-top: 10px;
+}
+.smelt_type hr {
+    margin: 5px 0px;
+}
+.smelt_type h2 {
+    font-size: 1.2em;
+    margin: 0;
+    margin-bottom: 5px;
+    color: rgb(32, 50, 30);
+}
+.smelt_type .images {
+    display: grid;
+    grid-auto-rows: 100%;
+}
+.smelt_type img {
+    padding: 20px;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.2));
+    height: 100%;
+    box-sizing: border-box;
+    grid-column: 1;
+    grid-row: 1;
+    transition: opacity 0.25s ease;
+}
+.smelt_type #smelting {
+    opacity: 0;
+}
+.smelt_type .lit {
+    opacity: 1!important;
+}
+.smelt_type .input {
+    padding: 20px;
+    padding-left: 0px;
+}
+.smelt_type label {
+    display: block;
+}
+.smelt_type input {
+    width: 100%;
+    max-width: 200px;
+    font-family: inherit;
+    font-size: 1em;
+    padding: 5px 10px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.smelt_type p {
+    margin: 0;
+    margin-top: 5px;
+    color: rgb(36, 60, 33);
+}
+.smelt_type #output, #furnace_output {
+    margin: 0;
+    font-weight: 600;
+}
+.smelt_type input:focus {
+    outline: none;
+}
+.furnace_calculator input {
+    margin-bottom: 5px;
+    max-width: 120px;
+}
+.time_input {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(max(90px,20%),1fr));
+    gap: 10px;
+}
+#amount {
+    margin-top: 10px;
+    max-width: 200px;
+}

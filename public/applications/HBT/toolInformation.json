@@ -1,0 +1,26 @@
+{
+    "version": 4,
+    "application": {
+        "name": "Hanbury Brown Twiss Experiment",
+        "description": "Hanbury Brown and Twiss (HBT) effect is any of a variety of correlation and anti-correlation effects in the intensities received by two detectors from a beam of particles.",
+        "keywords": []
+    },
+    "tool": {
+        "name": "Hanbury Brown Twiss Experiment",
+        "description": "View the simulated Hanbury Brown and Twiss effect here!",
+        "game_specific_words": [],
+        "keywords": [
+            "HBT",
+            "Hanbury Brown and Twiss experiment"
+        ],
+        "introduction": "Hanbury Brown and Twiss (HBT) effect is any of a variety of correlation and anti-correlation effects in the intensities received by two detectors from a beam of particles.",
+        "examples": [
+        ],
+        "questions": [
+            {
+                "title": "What does the HBT experiment prove?",
+                "text": "The experiment checks whether there is a correlation or anti-correlation effect between the intensities received by two detectors from a beam of particles."
+            }
+        ]
+    }
+}

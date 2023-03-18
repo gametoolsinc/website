@@ -1,0 +1,14 @@
+select {
+    font-size: .9rem;
+    padding: 8px;
+    border: 0;
+    background-color: var(--accent);
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tools {
+    margin: 10px;
+}

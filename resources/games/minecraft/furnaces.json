@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Furnace",
+        "time": 10,
+        "item_image": "furnace_item.png",
+        "smelting_image": "furnace_item_lit.png"
+    },
+    {
+        "name": "Blast Furnace",
+        "time": 5,
+        "item_image": "blast_furnace_item.png",
+        "smelting_image": "blast_furnace_item_lit.gif"
+    },
+    {
+        "name": "Smoker",
+        "time": 5,
+        "item_image": "smoker_item.png",
+        "smelting_image": "smoker_item_lit.gif"
+    }
+]

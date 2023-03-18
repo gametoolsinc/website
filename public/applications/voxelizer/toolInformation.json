@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "name": "Voxelizer",
+    "title": "Voxelizer for {game}",
+    "description": "A tool to convert a 3d model to a voxelized 3d model",
+    "game_description": "Convert 3d models to {game}!",
+    "data": ["colorInformation.json"],
+    "keywords": ["{game} voxelizer"],
+    "gameSpecificWords": {
+        "normal": []
+    },
+    "explanation": [
+        {
+            "title": "How to voxelize",
+            "text": "You can convert a image to a {game} Map using this Map Maker for {game}! First, upload your images. Afterwards, customize your image, choose the settings and the converting process wil begin! Follow the instructions given (after converting) on how to get it in your {game} world."
+        }
+    ],
+    "settings": {
+        "visible": false,
+        "content": true
+    }
+}

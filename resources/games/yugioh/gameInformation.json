@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "Yu Gi Oh",
+    "description": "A game where two opponents battle each other with a big arsenal of monsters, traps and spells.",
+    "commercial use": {
+        "allowed": false,
+        "source": ""
+    },
+    "main-color": 35
+}

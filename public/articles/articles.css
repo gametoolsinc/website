@@ -1,0 +1,15 @@
+.articles {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(min(max(400px,24%),100%),1fr));
+    gap: 20px;
+}
+
+.article-link {
+    text-decoration: none;
+    color: black;
+    background-color: #00000021;
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 10px;
+}

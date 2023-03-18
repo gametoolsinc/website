@@ -1,0 +1,36 @@
+{
+    "version": 4,
+    "application": {
+        "name": "Online NBT editor",
+        "description": "A universal editor for NBT file formats.",
+        "keywords": []
+    },
+    "tool": {
+        "name": "Online NBT editor",
+        "description": "Using this universal NBT editor you can edit and save your game NBT files for {game_name}.",
+        "game_specific_words": [],
+        "keywords": [
+            "{tool_name}",
+            "{game_name} NBT editor",
+            "{game_name} NBT converter",
+            "{game_name} file editor"
+        ],
+        "introduction": "NBT files are binary files which are difficult to read for humans. NBT files however are crucial to store data in {game_name}. To easily create and edit this data, there is the {tool_name}. The program handles all binary data back-end, so you don’t have to worry about it. The process is simple and uncluttered, making editing of NBT files easier than ever.",
+        "examples": [
+            {
+                "title": "How to use the Online NBT editor?",
+                "text": "Upload your NBT file using the input field on top of the editor. After uploading your file, it will automatically be loaded into the editor. Simply click on some text or number to edit its value, or click on the type-indicating icons to change the binary type. You can also add or remove new elements by clicking on the type-indicating icon and clicking on 'new' or 'delete'. When you are done, simply press ‘Save’ in the top right and download your file."
+            }
+        ],
+        "questions": [
+            {
+                "title": "What is a NBT file?",
+                "text": "Named Binary Tag (short as NBT) is a {game_name} file format that contains in-game data. It is used to store big amounts of binary data, without taking up more space than needed. In {game_name} it is for example being used as the data for maps and schematics."
+            },
+            {
+                "title": "Why use the {tool_name}?",
+                "text": "Using the Online NBT editor, you can edit and save NBT files. These files can later be used to spice up your {game_name} world. The {tool_name} features a clean and structured user interface, to make editing the files as simple as possible. Simple click on the text and edit the values."
+            }
+        ]
+    }
+}

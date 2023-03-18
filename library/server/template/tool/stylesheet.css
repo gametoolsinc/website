@@ -1,0 +1,80 @@
+/* main */
+.small-nav {
+    display: flex;
+    margin: auto;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+}
+
+.small-nav a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0px 5px;
+    border-bottom: 1px solid transparent;
+    transition: border-color .3 ease;
+}
+
+.small-nav a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.wrapper>h1 {
+    text-align: center;
+    font-family: 'Hammersmith One', sans-serif;
+    width: 100%;
+    margin-top: 0;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #00000021;
+    margin: 30px 0;
+    padding: 0;
+}
+
+/* explanation section */
+/* .explanation>.boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(60%, max(450px, 32%)), 1fr));
+    gap: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.explanation>.boxes>.text {
+    padding: 20px;
+    background-color: var(--secondary);
+    box-shadow: 0px 0px 22px -6px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+    transition: top ease 0.3s;
+    position: relative;
+    top: 0;
+}
+
+.explanation>.boxes>.text:hover {
+    box-shadow: 0px 0px 22px -6px rgba(0, 0, 0, 0.329);
+    top: -5px;
+}
+
+.explanation>.boxes>.text .icon {
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+.explanation>.boxes>.text h2 {
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 0;
+} */

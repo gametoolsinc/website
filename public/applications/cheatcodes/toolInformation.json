@@ -1,0 +1,27 @@
+{
+    "version": 4,
+    "application": {
+        "name": "Cheatcodes",
+        "description": "View all the cheatcodes you will ever need!",
+        "keywords": []
+    },
+    "tool": {
+        "name": "{game_name} Cheatcodes",
+        "description": "All the cheatcodes for {game_name} you will ever need!", 
+        "game_specific_words": [],
+        "keywords": [
+            "{game_name} cheatcodes",
+            "{game_name} cheatcode"
+        ],
+        "introduction": "Welcome to {tool_name}! This tool has a lot of different cheatcodes for you. A cheatcode is a line of text or series of commands which can be used to change a game's behavior, alter a character's looks and abilities, skip levels, or access other hidden features.",
+        "examples": [
+
+        ],
+        "questions": [
+            {
+                "title": "What are {game_name} cheatcodes?",
+                "text": "Cheatcodes in {game_name} are a serie of codes you can type into {game_name} to gain acces to advantages. Like getting some coins for free or getting an extra live. These codes were put in by the developers of {game_name} so that the public can try to find and use them."
+            }
+        ]
+    }
+}

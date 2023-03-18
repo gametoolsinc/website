@@ -1,0 +1,26 @@
+{
+    "version": 4,
+    "application": {
+        "name": "Colour Guessing Game",
+        "description": "Try to guess as many colour in as little time possible!",
+        "keywords": []
+    },
+    "tool": {
+        "name": "Colour Guessing Game",
+        "description": "Try to guess as many colour in as little time possible!", 
+        "game_specific_words": [],
+        "keywords": [
+            "Colour Guessing Game"
+        ],
+        "introduction": "Try to guess the RGB colour by clicking on the colour you think it represents!",
+        "examples": [
+
+        ],
+        "questions": [
+            {
+                "title": "What is RGB?",
+                "text": "The RGB color model is an additive color model[1] in which the red, green and blue primary colors of light are added together in various ways to reproduce a broad array of colors. The name of the model comes from the initials of the three additive primary colors, red, green, and blue."
+            }
+        ]
+    }
+}

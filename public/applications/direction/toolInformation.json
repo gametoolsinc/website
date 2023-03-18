@@ -1,0 +1,33 @@
+{
+    "version": 4,
+    "application": {
+        "name": "Direction finder",
+        "description": "Find the direction you want to travel in!",
+        "keywords": []
+    },
+    "tool": {
+        "name": "{game_name} Direction Finder",
+        "description": "Find the direction your want to travel in {game_name}!",
+        "game_specific_words": [],
+        "keywords": [
+            "{game_name} direction finder"
+        ],
+        "introduction": "The {game_name} world is really large, and often when travelling from A to B you need to cover large distances. Sometimes it is difficult to wrap your head around the coordinate system, and you do not know in which way to travel. The {tool_name} calculates your heading by specifying your start coordinates and destination coordinates. Simply look at the heading in your F3 menu, and adjust it to the calculated result.",
+        "examples": [
+            {
+                "title": "In which direction do I have to go from (100, 200) to (700, 400)?",
+                "text": "You are travelling from (100, 200) to (700, 400). Begin by filling in your start coordinates under ‘Start location’. In the input field next to ‘x’, fill in 100. At ‘y’, fill in 200. Repeat this process for the destination coordinates, under ‘End location’. Your result will appear below, together with some additional info."
+            }
+        ],
+        "questions": [
+            {
+                "title": "How to use the {tool_name}?",
+                "text": "Enter your {game_name} world, press F3 and check your x- and y-coordinate and enter these values in the {tool_name}. Now fill in your destination x- and y-coordinate. Your heading will be instantly calculated. Align yourself (with the help of the F3 menu, under ‘heading’) to the correct heading. Now start travelling towards your destination."
+            },
+            {
+                "title": "How to calculate the direction you have to travel?",
+                "text": "The formula is heading = atan2(x, z), with x and z being the horizontal coordinates relative to the world plain. The height coordinate, y, is insignificant in this case. These two values are passed into the atan2 function, which calculates the arc tangent with 2 arguments, in this case x and z."
+            }
+        ]
+    }
+}

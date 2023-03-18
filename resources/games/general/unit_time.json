@@ -1,0 +1,19 @@
+{
+    "Seconds": {
+        "size": 1,
+        "important": true,
+        "start": true
+    },
+    "Minutes": {
+        "size": 60,
+        "important": true,
+        "start": true
+    },
+    "Hours": {
+        "size": 3600,
+        "important": true
+    },
+    "Days": {
+        "size": 86400
+    }
+}

@@ -1,0 +1,60 @@
+php_value display_errors On
+php_value mbstring.http_input auto
+php_value date.timezone Europe/Amsterdam
+
+# show errors
+php_flag  display_errors        on
+php_value error_reporting       2039
+RewriteEngine On
+
+# make everything https
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# make everything non-www
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteCond %{HTTPS}s ^on(s)|off
+RewriteCond http%1://%{HTTP_HOST} ^(https?://)(www\.)?(.+)$
+RewriteRule ^ %1%3%{REQUEST_URI} [R=301,L]
+
+# Remove slash add the end
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# acces denied filesystem
+Options -Indexes
+
+# rewrite to sitemap
+RewriteRule sitemap.xml /public/main/sitemap/sitemap.php
+
+# acces denied to file that start with .
+RewriteCond %{SCRIPT_FILENAME} -d [OR]
+RewriteCond %{SCRIPT_FILENAME} -f
+RewriteRule "(^|/)\." - [F]
+
+# acces denied php files
+# RewriteRule ^(?!(index|webpages\/main\/admin\/webpage|webpages\/main\/error\/webpage|webpages\/main\/admin\/cachSmart)\.php$).+?\.php$ - [F,NC]
+#<Files *.php>
+#    order allow,deny 
+#    deny from all
+#</Files>
+
+# Admin page
+RewriteRule ^adminGamertools$ /public/main/admin/webpage.php
+
+# rewrite to index.php for pages that need to be generated
+RewriteRule ^(debug|cach)([0-9a-zA-Z\/_]*)$ router.php?path=$2&type=$1
+
+# Caching
+RewriteRule ^([0-9a-zA-Z\/_]*)$   /cachedWebpages/$1-/webpage.html?%{QUERY_STRING}
+
+# Error handeling
+ErrorDocument 400 /public/main/error/webpage.php?errormessage=400
+ErrorDocument 401 /public/main/error/webpage.php?errormessage=401
+ErrorDocument 403 /public/main/error/webpage.php?errormessage=403
+ErrorDocument 404 /public/main/error/webpage.php?errormessage=404
+ErrorDocument 500 /public/main/error/webpage.php?errormessage=500
+ErrorDocument 503 /public/main/error/webpage.php?errormessage=503
+ErrorDocument 508 /public/main/error/webpage.php?errormessage=508
+
+

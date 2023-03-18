@@ -1,0 +1,38 @@
+{
+    "version": 4,
+    "application": {
+        "name": "Art Maker",
+        "description": "A tool to convert a image to a Minecraft map.",
+        "keywords": []
+    },
+    "tool": {
+        "name": "{game_name} Art Maker",
+        "description": "Convert images to Minecraft maps in {game_name}!",
+        "game_specific_words": [],
+        "keywords": [
+            "{game_name} map tool",
+            "{game_name} image to map",
+            "{game_name} map maker",
+            "{game_name} custom map maker",
+            "{game_name} custom map",
+            "{game_name} covert image to map"
+        ],
+        "introduction": "This tool can create beautiful map art for you! You can use this map art to make your build even more beautiful. You need to give our website an image where you want you map art based on. After filling in some settings we calculate the {game_name} map for you and show it when it is done.",
+        "examples": [
+            {
+                "title": "Map art of The Blue Marble",
+                "text": "<img src='/public/applications/mapmaker/example.png'></img>"
+            }
+        ],
+        "questions": [
+            {
+                "title": "How to convert an image to a {game_name} Map?",
+                "text": "You can convert an image to a {game_name} Map using this Map Maker for Minecraft! First, upload your images. Afterwards, customise your image, choose the settings and the converting process will begin! Follow the instructions given (after converting) on how to get it in your {game_name} world."
+            },
+            {
+                "title": "Why do I need to tell how many maps I have in my world?",
+                "text": "We need this number so we don't accidentally overwrite other maps. This is because all maps you create in {game_name} have an id. This id increments with each time. When creating a new map with our tool, we want to add it to {game_name} as if it was a new map. This is why we need to know how many maps you have in your world."
+            }
+        ]
+    }
+}

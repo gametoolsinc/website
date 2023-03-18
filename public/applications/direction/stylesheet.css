@@ -1,0 +1,124 @@
+.tool h3 {
+    margin: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* input */
+.input {
+    display: flex;
+    max-width: 1100px;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.inputs, .output {
+    background-color: rgba(0, 0, 0, 0.116);
+    border-radius: var(--border-radius);
+    padding: 15px;
+}
+
+.input .location {
+    width: 100%;
+}
+
+@media screen and (min-width: 630px) {
+    .input .location {
+        flex: 1;
+    }
+}
+
+.input .location label {
+    background-color: var(--accent);;
+    height: 40px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+.input .location .number {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+.input .location .number p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.input .location input {
+    display: inline;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 3px calc(var(--border-radius) / 2);
+    border: 0;
+    font-size: inherit;
+    height: 100%;
+    position: absolute;
+    border-radius: var(--border-radius);
+}
+
+/* output */
+.output {
+    display: flex;
+    max-width: 1100px;
+    margin: 50px auto 10px auto;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.output .direction-output {
+    width: 50%;
+    min-width: 200px;
+    margin: auto;
+}
+
+.output .movement-output {
+    width: 50%;
+    margin: auto;
+    min-width: 200px;
+}
+
+.output .movement-types {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.output .movement-output-item {
+    width: 50%;
+    min-width: 200px;
+}
+
+.output #direction {
+    height: 40px;
+    margin: auto;
+    display: inline;
+    vertical-align:middle;
+}
+
+.output p {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.output .movement-time {
+    font-style: italic;
+    text-overflow: clip;
+}
+
+.output #direction-number {
+    font-size: 2em;
+    vertical-align:middle;
+}

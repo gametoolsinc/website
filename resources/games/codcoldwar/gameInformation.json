@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "name": "CoD: Cold War",
+    "description": "A First Person Shooting game that takes place in the Cold War",
+    "visible": true,
+    "commercial use": {
+        "allowed": false,
+        "source": ""
+    },
+    "main-color": 65,
+    "pages": [
+        "randomclassgenerator"
+    ]
+}

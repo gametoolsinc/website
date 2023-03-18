@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "name": "Factorio",
+    "description": "Factorio is a construction and management simulation game.",
+    "visible": false,
+    "commercial-use": {
+        "allowed": false,
+        "source": ""
+    },
+    "main-color": 44,
+    "pages": [
+        "articles"
+    ]
+}

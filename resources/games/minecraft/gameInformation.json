@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "name": "Minecraft",
+    "description": "A sandbox video game that you can play in survival and creative.",
+    "visible": true,
+    "commercial-use": {
+        "allowed": true,
+        "source": "https://account.mojang.com/documents/commercial_guidelines"
+    },
+    "main-color": 125,
+    "pages": [
+        "resources",
+        "stacks",
+        "nether",
+        "mapmaker",
+        "smelting",
+        "articles"
+    ]
+}

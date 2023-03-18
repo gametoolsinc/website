@@ -1,0 +1,3028 @@
+{
+    "equipment": {
+        "Field Upgrades": [
+            "Proximity Mine",
+            "Field Mic",
+            "Trophy System",
+            "Assault Pack",
+            "SAM Turret",
+            "Jammer",
+            "Gas Mine"
+        ],
+        "Lethal": [
+            "Frag",
+            "C4",
+            "Molotov",
+            "Semtex",
+            "Tomahawk"
+        ],
+        "Tactical": [
+            "Stun Grenade",
+            "Stimshot",
+            "Smoke Grenade",
+            "Flashbang",
+            "Decoy"
+        ]
+    },
+    "weapons": {
+        "1911": {
+            "name": "1911",
+            "type": "Pistol",
+            "mag_size": "8 rounds",
+            "attachments": {
+                "Optic": [
+                    "Quickdot LED",
+                    "Otero Mini Reflex",
+                    "Microflex LED"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake .45 APC",
+                    "Flashguard .45 APC",
+                    "Sound Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "6.83\" Extended",
+                    "5.42\" Cavalry Lancer",
+                    "6.45\" Reinforced Heavy",
+                    "7.12\" Chrome Lined",
+                    "5.63\" Takedown",
+                    "6.53\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Magazine": [
+                    "12 Rnd",
+                    "Fast Mag",
+                    "12 Rd Speed Mag",
+                    "STANAG 14 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 14 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Dual Wield"
+                ]
+            }
+        },
+        "XM4": {
+            "name": "XM4",
+            "damage": "30-28 (MP)",
+            "type": "Assault Rifle",
+            "mag_size": "30 rounds",
+            "reload_time": "2.1 seconds",
+            "rate_of_fire": "722 RPM",
+            "attachments": {
+                "Optic": [
+                    "Millstop Reflex",
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Quickdot LED",
+                    "Axial Arms 3x",
+                    "Sillix Holoscout",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Diamondback Reflex",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 5.56",
+                    "Flashguard 5.56",
+                    "Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "11.8\" Extended",
+                    "12.5\" Cavalry Lancer",
+                    "13.5\" Reinforced Heavy",
+                    "13.7\" Ranger",
+                    "13.7\" Takedown",
+                    "13.5\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Grip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "40 Rnd",
+                    "Jungle-Style Mag",
+                    "40 Rnd Speed Mag",
+                    "STANAG 50 Rnd",
+                    "SAS Mag Clamp",
+                    "Salvo 50 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "Buffer Tube",
+                    "SAS Combat Stock",
+                    "Raider Pad"
+                ]
+            }
+        },
+        "AK-47": {
+            "name": "AK-47",
+            "damage": "38-30 (MP)",
+            "type": "Assault Rifle",
+            "mag_size": "30 rounds",
+            "rate_of_fire": "600 RPM",
+            "attachments": {
+                "Optic": [
+                    "Millstop Reflex",
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Quickdot LED",
+                    "Axial Arms 3x",
+                    "Sillix Holoscout",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Diamondback Reflex",
+                    "Noch Sova Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 7.62",
+                    "Flashguard 7.62",
+                    "Suppressor",
+                    "Spetsnaz Compensator",
+                    "KGB Eliminator",
+                    "GRU Suppressor"
+                ],
+                "Barrel": [
+                    "15.5\" Ultralight",
+                    "16.5\" Cavalry Lancer",
+                    "18.2\" VDV Reinforced",
+                    "20\" Liberator",
+                    "18.2\" Takedown",
+                    "20\" Spetsnaz RPK Barrel"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "KGB Target Designator",
+                    "GRU 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Spetsnaz Grip",
+                    "Spetsnaz Speedgrip"
+                ],
+                "Magazine": [
+                    "40 Rnd",
+                    "Taped Mags",
+                    "40 Rnd Speed Mag",
+                    "Bakelite 50 Rnd",
+                    "GRU Mag Clamp",
+                    "VDV 50 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "Spetsnaz Field Grip",
+                    "Serpent Wrap",
+                    "GRU Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "Spetsnaz PKM Stock",
+                    "KGB Skeletal Stock"
+                ]
+            }
+        },
+        "Krig 6": {
+            "name": "Krig 6",
+            "damage": "35-28 (MP)",
+            "type": "Assault Rifle",
+            "mag_size": "30 rounds",
+            "rate_of_fire": "652 RPM",
+            "attachments": {
+                "Optic": [
+                    "Millstop Reflex",
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Quickdot LED",
+                    "Axial Arms 3x",
+                    "Sillix Holoscout",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Diamondback Reflex",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 5.56",
+                    "Flashguard 5.56",
+                    "Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "16.5\" Ultralight",
+                    "17.7\" Cavalry Lancer",
+                    "15.5\" Contour",
+                    "19.7\" Ranger",
+                    "19.7\" Takedown",
+                    "15\" CMV Mil-Spec"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Grip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "40 Rnd",
+                    "Jungle-Style Mag",
+                    "40 Rnd Speed Mag",
+                    "STANAG 50 Rnd",
+                    "SAS Mag Clamp",
+                    "Salvo 50 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "QBZ-83": {
+            "name": "QBZ-83",
+            "damage": "32-28 (MP)",
+            "type": "Assault Rifle",
+            "mag_size": "30 rounds",
+            "rate_of_fire": "681 RPM",
+            "attachments": {
+                "Optic": [
+                    "Millstop Reflex",
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Quickdot LED",
+                    "Axial Arms 3x",
+                    "Sillix Holoscout",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Diamondback Reflex",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 5.56",
+                    "Flashguard 5.56",
+                    "Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "13.7\" Ultralight",
+                    "13.7\" Cavalry Lancer",
+                    "15.5\" Reinforced Heavy",
+                    "16.5\" Ranger",
+                    "15.5\" Takedown",
+                    "15.5\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Grip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "40 Rnd Drum",
+                    "Jungle-Style Mag",
+                    "40 Rnd Speed Mag",
+                    "STANAG 50 Rnd Drum",
+                    "SAS Mag Clamp",
+                    "Salvo 50 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Marathon Stock",
+                    "Duster Pad",
+                    "CQB Pad",
+                    "SAS Combat Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "FFAR 1": {
+            "name": "FFAR 1",
+            "damage": "27-23 (MP)",
+            "type": "Assault Rifle",
+            "mag_size": "25 rounds",
+            "reload_time": "2.1s",
+            "rate_of_fire": "909 RPM",
+            "attachments": {
+                "Optic": [
+                    "Millstop Reflex",
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Quickdot LED",
+                    "Axial Arms 3x",
+                    "Sillix Holoscout",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Diamondback Reflex",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 5.56",
+                    "Flashguard 5.56",
+                    "Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "17.9\" Ultralight",
+                    "18.7\" Cavalry Lancer",
+                    "19.5\" Reinforced Heavy",
+                    "21.2\" Ranger",
+                    "20.3\" Takedown",
+                    "19.5\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Grip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "38 Rnd",
+                    "Jungle-Style Mag",
+                    "38 Rnd Speed Mag",
+                    "STANAG 44 Rnd",
+                    "SAS Mag Clamp",
+                    "Salvo 44 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Marathon Stock",
+                    "Duster Pad",
+                    "CQB Pad",
+                    "SAS Combat Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "Groza": {
+            "name": "Groza",
+            "damage": "34-28 (MP)",
+            "type": "Assault Rifle",
+            "mag_size": "30 rounds",
+            "reload_time": "2.3 seconds",
+            "rate_of_fire": "750 RPM",
+            "attachments": {
+                "Optic": [
+                    "Millstop Reflex",
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Quickdot LED",
+                    "Axial Arms 3x",
+                    "Sillix Holoscout",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Diamondback Reflex",
+                    "Noch Sova Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 7.62",
+                    "Flashguard 7.62",
+                    "Suppressor",
+                    "Spetsnaz Compensator",
+                    "KGB Eliminator",
+                    "GRU Suppressor"
+                ],
+                "Barrel": [
+                    "15.3\" Ultralight",
+                    "16.2\" Cavalry Lancer",
+                    "16.7\" VDV Reinforced",
+                    "16.2\" GRU Composite",
+                    "15.7\" Contour M2",
+                    "16.5\" CMV Mil-Spec"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "KGB Target Designator",
+                    "GRU 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Spetsnaz Grip",
+                    "Spetsnaz Speedgrip"
+                ],
+                "Magazine": [
+                    "40 Rnd Drum",
+                    "Taped Mags",
+                    "40 Rnd Speed Mag",
+                    "Spetsnaz 50 Rnd Drum",
+                    "GRU Mag Clamp",
+                    "VDV 50 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "Spetsnaz Field Grip",
+                    "Serpent Wrap",
+                    "GRU Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Marathon Stock",
+                    "Duster Pad",
+                    "CQB Pad",
+                    "Spetsnaz PKM Stock",
+                    "KGB Pad"
+                ]
+            }
+        },
+        "FARA 83": {
+            "name": "FARA 83",
+            "damage": "31",
+            "type": "Assault Rifle",
+            "mag_size": "30 rounds",
+            "reload_time": "2.8 seconds",
+            "rate_of_fire": "800 RPM",
+            "attachments": {
+                "Optic": [
+                    "Millstop Reflex",
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Quickdot LED",
+                    "Axial Arms 3x",
+                    "Sillix Holoscout",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Diamondback Reflex",
+                    "Noch Sova Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 5.56",
+                    "Flashguard 5.56",
+                    "Suppressor",
+                    "Spetsnaz Compensator",
+                    "KGB Eliminator",
+                    "GRU Suppressor"
+                ],
+                "Barrel": [
+                    "14.8\" Ultralight",
+                    "15.9\" Cavalry Lancer",
+                    "17.5\" Contour",
+                    "19.5\" Liberator",
+                    "18.1\" Takedown",
+                    "18.7\" Spetsnaz RPK Barrel"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "KGB Target Designator",
+                    "GRU 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Spetsnaz Grip",
+                    "Spetsnaz Speedgrip"
+                ],
+                "Magazine": [
+                    "40 Rnd",
+                    "Taped Mags",
+                    "40 Rnd Speed Mag",
+                    "Spetsnaz 50 Rnd",
+                    "GRU Mag Clamp",
+                    "VDV 50 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "Spetsnaz Field Grip",
+                    "Serpent Wrap",
+                    "GRU Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "Raider Stock",
+                    "KGB Skeletal Stock"
+                ]
+            }
+        },
+        "C58": {
+            "name": "C58",
+            "damage": "38",
+            "type": "Assault Rifle",
+            "mag_size": "",
+            "reload_time": "2.4 seconds",
+            "rate_of_fire": "555 RPM",
+            "attachments": {}
+        },
+        "MP5": {
+            "name": "MP5",
+            "damage": "32-23",
+            "type": "Submachine Gun",
+            "mag_size": "30 rounds",
+            "rate_of_fire": "857 RPM",
+            "attachments": {
+                "Optic": [
+                    "Quickdot LED",
+                    "Millstop Reflex",
+                    "Kobra Red Dot",
+                    "Visiontech 2x",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "SnapPoint",
+                    "Diamondback Reflex",
+                    "Sillix Holoscout",
+                    "Fastpoint Reflex",
+                    "Axial Arms 3x",
+                    "SUSAT Multizoom"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 9",
+                    "Flashguard 9",
+                    "Sound Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "9.5\" Extended",
+                    "10.1\" Cavalry Lancer",
+                    "9.5\" Reinforced Heavy",
+                    "9.5\" Ranger",
+                    "9.1\" Rifled",
+                    "9.5\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Red Cell Foregrip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Grip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "40 Rnd Drum",
+                    "Jungle-Style Mag",
+                    "40 Rnd Speed Mag",
+                    "STANAG 50 Rnd Drum",
+                    "SAS Mag Clamp",
+                    "Salvo 50 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Collapsed Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "Milano 821": {
+            "name": "Milano 821",
+            "damage": "42-30-28",
+            "type": "Submachine Gun",
+            "mag_size": "32 rounds",
+            "attachments": {
+                "Optic": [
+                    "Quickdot LED",
+                    "Millstop Reflex",
+                    "Kobra Red Dot",
+                    "Visiontech 2x",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "SnapPoint",
+                    "Diamondback Reflex",
+                    "Sillix Holoscout",
+                    "Fastpoint Reflex",
+                    "Axial Arms 3x",
+                    "SUSAT Multizoom"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 9",
+                    "Flashguard 9",
+                    "Sound Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "8.9\" Extended",
+                    "9.5\" Cavalry Lancer",
+                    "10.1\" Reinforced Heavy",
+                    "10.5\" Ranger",
+                    "9.5\" Rifled",
+                    "10.6\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Red Cell Foregrip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Grip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "45 Rnd Drum",
+                    "Fast Mag",
+                    "45 Rnd Speed Mag",
+                    "STANAG 55 Rnd Drum",
+                    "Vandal Speed Loader",
+                    "Salvo 55 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "Marathon Stock",
+                    "SAS Combat Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "AK-74u": {
+            "name": "AK-74u",
+            "damage": "38-31-30-27 (MP)",
+            "type": "Submachine Gun",
+            "mag_size": "30 rounds",
+            "rate_of_fire": "697 RPM",
+            "attachments": {
+                "Optic": [
+                    "Quickdot LED",
+                    "Millstop Reflex",
+                    "Kobra Red Dot",
+                    "Visiontech 2x",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "SnapPoint",
+                    "Diamondback Reflex",
+                    "Sillix Holoscout",
+                    "Fastpoint Reflex",
+                    "Axial Arms 3x",
+                    "SUSAT Multizoom"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 5.45",
+                    "Flashguard 5.45",
+                    "Sound Suppressor",
+                    "Spetsnaz Compensator",
+                    "KGB Eliminator",
+                    "GRU Suppressor"
+                ],
+                "Barrel": [
+                    "9.3\" Extended",
+                    "8.4\" Cavalry Lancer",
+                    "9.3\" VDV Reinforced",
+                    "10.3\" Liberator",
+                    "8.4\" Rifled",
+                    "10.3\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "KGB Target Designator",
+                    "GRU 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Red Cell Foregrip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Spetsnaz Grip",
+                    "Spetsnaz Speedgrip"
+                ],
+                "Magazine": [
+                    "40 Rnd Drum",
+                    "Taped Mags",
+                    "40 Rnd Speed Mag",
+                    "Spetsnaz 50 Rnd Drum",
+                    "GRU Mag Clamp",
+                    "VDV 50 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "Spetsnaz Field Grip",
+                    "Serpent Wrap",
+                    "GRU Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "Spetsnaz PKM Stock",
+                    "KGB Skeletal Stock"
+                ]
+            }
+        },
+        "KSP 45": {
+            "name": "KSP 45",
+            "damage": "50",
+            "type": "Submachine Gun",
+            "mag_size": "30 rounds",
+            "reload_time": "2.4s",
+            "rate_of_fire": "722 RPM",
+            "attachments": {
+                "Optic": [
+                    "Quickdot LED",
+                    "Millstop Reflex",
+                    "Kobra Red Dot",
+                    "Visiontech 2x",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "SnapPoint",
+                    "Diamondback Reflex",
+                    "Sillix Holoscout",
+                    "Fastpoint Reflex",
+                    "Axial Arms 3x",
+                    "SUSAT Multizoom"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake .45 APC",
+                    "Flashguard .45 APC",
+                    "Sound Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "8.9\" Extended",
+                    "9.6\" Cavalry Lancer",
+                    "10.5\" Reinforced Heavy",
+                    "9.5\" Ranger",
+                    "10.2\" Rifled",
+                    "10.5\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Front Grip",
+                    "Red Cell Foregrip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Grip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "42 Rnd",
+                    "Fast Mag",
+                    "42 Rnd Speed Mag",
+                    "STANAG 48 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 48 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Collapsed Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "Bullfrog": {
+            "name": "Bullfrog",
+            "damage": "34",
+            "type": "Submachine Gun",
+            "mag_size": "50 rounds",
+            "reload_time": "2.8s",
+            "rate_of_fire": "750 RPM",
+            "attachments": {
+                "Optic": [
+                    "Quickdot LED",
+                    "Millstop Reflex",
+                    "Kobra Red Dot",
+                    "Visiontech 2x",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "SnapPoint",
+                    "Diamondback Reflex",
+                    "Sillix Holoscout",
+                    "Fastpoint Reflex",
+                    "Axial Arms 3x",
+                    "SUSAT Multizoom"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 9",
+                    "Flashguard 9",
+                    "Sound Suppressor",
+                    "Spetsnaz Compensator",
+                    "KGB Eliminator",
+                    "GRU Suppressor"
+                ],
+                "Barrel": [
+                    "7.1\" Extended",
+                    "7\" Cavalry Lancer",
+                    "6.7\" VDV Reinforced",
+                    "8.1\" Liberator",
+                    "7.6\" Rifled",
+                    "7.4\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "KGB Target Designator",
+                    "GRU 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Red Cell Foregrip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Spetsnaz Grip",
+                    "Spetsnaz Speedgrip"
+                ],
+                "Magazine": [
+                    "65 Rnd",
+                    "Fast Mag",
+                    "65 Rnd Speed Mag",
+                    "Spetsnaz 85 Rnd",
+                    "Vandal Speed Loader",
+                    "VDV 85 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "Spetsnaz Field Grip",
+                    "Serpent Wrap",
+                    "GRU Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "Spetsnaz Stock",
+                    "KGB Skeletal Stock"
+                ]
+            }
+        },
+        "MAC-10": {
+            "name": "MAC-10",
+            "damage": "27-24-22 (MP)",
+            "type": "Submachine Gun",
+            "mag_size": "32 rounds",
+            "rate_of_fire": "1111 RPM",
+            "attachments": {
+                "Optic": [
+                    "Quickdot LED",
+                    "Millstop Reflex",
+                    "Kobra Red Dot",
+                    "Visiontech 2x",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "SnapPoint",
+                    "Diamondback Reflex",
+                    "Sillix Holoscout",
+                    "Fastpoint Reflex",
+                    "Axial Arms 3x",
+                    "SUSAT Multizoom"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 9",
+                    "Flashguard 9",
+                    "Sound Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "5.3\" Extended",
+                    "6.5\" Cavalry Lancer",
+                    "6.1\" Reinforced Heavy",
+                    "5.3\" Ranger",
+                    "6.5\" Rifled",
+                    "5.9\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Red Cell Foregrip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Grip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "43 Rnd Drum",
+                    "Fast Mag",
+                    "43 Rnd Speed Mag",
+                    "STANAG 53 Rnd Drum",
+                    "Vandal Speed Loader",
+                    "Salvo 53 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "LC10": {
+            "name": "LC10",
+            "damage": "30",
+            "type": "Submachine Gun",
+            "mag_size": "34 rounds",
+            "reload_time": "2.2 seconds",
+            "rate_of_fire": "800 RPM",
+            "attachments": {
+                "Optic": [
+                    "Quickdot LED",
+                    "Millstop Reflex",
+                    "Kobra Red Dot",
+                    "Visiontech 2x",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "SnapPoint",
+                    "Diamondback Reflex",
+                    "Sillix Holoscout",
+                    "Fastpoint Reflex",
+                    "Axial Arms 3x",
+                    "SUSAT Multizoom"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake .45 APC",
+                    "Flashguard .45 APC",
+                    "Sound Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "12.5\" Extended",
+                    "11.4\" Cavalry Lancer",
+                    "11.9\" Reinforced Heavy",
+                    "14.5\" Ranger",
+                    "13.2\" Rifled",
+                    "13.9\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Red Cell Foregrip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Grip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "45 Rnd",
+                    "Fast Mag",
+                    "42 Rnd Speed Mag",
+                    "STANAG 55 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 52 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "PPSh-41": {
+            "name": "PPSh-41",
+            "damage": "28",
+            "type": "Submachine Gun",
+            "mag_size": "32 rounds",
+            "reload_time": "2.2 seconds",
+            "rate_of_fire": "909 RPM",
+            "attachments": {
+                "Optic": [
+                    "Quickdot LED",
+                    "Millstop Reflex",
+                    "Kobra Red Dot",
+                    "Visiontech 2x",
+                    "Microflex LED",
+                    "Hawksmoor",
+                    "SnapPoint",
+                    "Diamondback Reflex",
+                    "Sillix Holoscout",
+                    "Fastpoint Reflex",
+                    "Axial Arms 3x",
+                    "SUSAT Multizoom"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake .45 APC",
+                    "Flashguard .45 APC",
+                    "Sound Suppressor",
+                    "Spetsnaz Compensator",
+                    "KGB Eliminator",
+                    "GRU Suppressor"
+                ],
+                "Barrel": [
+                    "14.3\" Extended",
+                    "12.7\" Cavalry Lancer",
+                    "14.9\" Reinforced Heavy",
+                    "14.9\" Ranger",
+                    "14.9\" Rifled",
+                    "15.7\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "KGB Target Designator",
+                    "GRU 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Red Cell Foregrip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Spetsnaz Grip",
+                    "Spetsnaz Speedgrip"
+                ],
+                "Magazine": [
+                    "55 Rnd Drum",
+                    "Fast Mag",
+                    "40 Rnd Speed Mag",
+                    "Spetsnaz 71 Rnd Drum",
+                    "Vandal Speed Loader",
+                    "VDV 50 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "Spetsnaz Field Grip",
+                    "Serpent Wrap",
+                    "GRU Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Marathon Stock",
+                    "Duster Stock",
+                    "CQB Stock",
+                    "Spetsnaz Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "Type 63": {
+            "name": "Type 63",
+            "damage": "68",
+            "type": "Tactical Rifle",
+            "mag_size": "25 rounds",
+            "reload_time": "2.5s",
+            "rate_of_fire": "327 RPM",
+            "attachments": {
+                "Optic": [
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Axial Arms 3x",
+                    "Millstop Reflex",
+                    "Royal & Kross 4x",
+                    "Quickdot LED",
+                    "Hawksmoor",
+                    "Sillix Holoscout",
+                    "SUSAT Multizoom",
+                    "Hangman RF",
+                    "Vulture Custom Zoom",
+                    "Noch Sova Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 7.62",
+                    "Flashguard 7.62",
+                    "Silencer",
+                    "Spetsnaz Compensator",
+                    "KGB Eliminator",
+                    "GRU Suppressor"
+                ],
+                "Barrel": [
+                    "16.4\" Rapid Fire",
+                    "18.3\" Cavalry Lancer",
+                    "18.3\" Strike Team",
+                    "16.4\" Titanium",
+                    "21.5\" Match Grade",
+                    "21.5\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "KGB Target Designator",
+                    "GRU 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Front Grip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Spetsnaz Ergonomic Grip",
+                    "Spetsnaz Speedgrip"
+                ],
+                "Magazine": [
+                    "30 Rnd",
+                    "Taped Mags",
+                    "30 Rnd Speed Mag",
+                    "Bakelite 35 Rnd",
+                    "GRU Mag Clamp",
+                    "VDV 35 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "Spetsnaz Field Grip",
+                    "Serpent Wrap",
+                    "GRU Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Pad",
+                    "No Stock",
+                    "Raider Stock",
+                    "KGB Pad"
+                ]
+            }
+        },
+        "M16": {
+            "name": "M16",
+            "type": "Tactical Rifle",
+            "mag_size": "30 rounds",
+            "attachments": {
+                "Optic": [
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Axial Arms 3x",
+                    "Millstop Reflex",
+                    "Royal & Kross 4x",
+                    "Quickdot LED",
+                    "Hawksmoor",
+                    "Sillix Holoscout",
+                    "SUSAT Multizoom",
+                    "Hangman RF",
+                    "Vulture Custom Zoom",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 5.56",
+                    "Flashguard 5.56",
+                    "Silencer",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "16.3\" Rapid Fire",
+                    "15.9\" Cavalry Lancer",
+                    "15.9\" Strike Team",
+                    "16.3\" Titanium",
+                    "20.5\" Match Grade",
+                    "20.5\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Front Grip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Foregrip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "45 Rnd",
+                    "Jungle-Style Mag",
+                    "45 Rnd Speed Mag",
+                    "STANAG 54 Rnd",
+                    "SAS Mag Clamp",
+                    "Salvo 54 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "Buffer Tube",
+                    "SAS Combat Stock",
+                    "Raider Pad"
+                ]
+            }
+        },
+        "AUG": {
+            "name": "AUG",
+            "damage": "54",
+            "type": "Tactical Rifle",
+            "mag_size": "30 rounds",
+            "reload_time": "2.7s",
+            "rate_of_fire": "857 RPM",
+            "attachments": {
+                "Optic": [
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Axial Arms 3x",
+                    "Millstop Reflex",
+                    "Royal & Kross 4x",
+                    "Quickdot LED",
+                    "Hawksmoor",
+                    "Sillix Holoscout",
+                    "SUSAT Multizoom",
+                    "Hangman RF",
+                    "Vulture Custom Zoom",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 5.56",
+                    "Flashguard 5.56",
+                    "Silencer",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "18\" Rapid Fire",
+                    "17.9\" Cavalry Lancer",
+                    "18.2\" Strike Team",
+                    "17\" Titanium",
+                    "19.6\" Match Grade",
+                    "19.8\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Front Grip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Foregrip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "45 Rnd Drum",
+                    "Jungle-Style Mag",
+                    "45 Rnd Speed Mag",
+                    "STANAG 54 Rd Drum",
+                    "SAS Mag Clamp",
+                    "Salvo 54 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Marathon Stock",
+                    "Duster Pad",
+                    "CQB Pad",
+                    "SAS Combat Stock",
+                    "Raider Pad"
+                ]
+            }
+        },
+        "DMR 14": {
+            "name": "DMR 14",
+            "damage": "58",
+            "type": "Tactical Rifle",
+            "mag_size": "20 rounds",
+            "reload_time": "2.5s",
+            "rate_of_fire": "361 RPM",
+            "attachments": {
+                "Optic": [
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Axial Arms 3x",
+                    "Millstop Reflex",
+                    "Royal & Kross 4x",
+                    "Quickdot LED",
+                    "Hawksmoor",
+                    "Sillix Holoscout",
+                    "SUSAT Multizoom",
+                    "Hangman RF",
+                    "Vulture Custom Zoom",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 7.62",
+                    "Flashguard 7.62",
+                    "Silencer",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "17\" Rapid Fire",
+                    "17.1\" Cavalry Lancer",
+                    "17.1\" Strike Team",
+                    "16.3\" Titanium",
+                    "20.8\" Match Grade",
+                    "20.8\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Front Grip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Foregrip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "30 Rnd",
+                    "Jungle-Style Mag",
+                    "30 Rnd Speed Mag",
+                    "STANAG 35 Rnd",
+                    "SAS Mag Clamp",
+                    "Salvo 35 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Pad",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "CARV.2": {
+            "name": "CARV.2",
+            "damage": "39",
+            "type": "Tactical Rifle",
+            "mag_size": "",
+            "reload_time": "2.5 seconds",
+            "rate_of_fire": "540 RPM",
+            "attachments": {
+                "Optic": [
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Axial Arms 3x",
+                    "Millstop Reflex",
+                    "Royal & Kross 4x",
+                    "Quickdot LED",
+                    "Hawksmoor",
+                    "Sillix Holoscout",
+                    "SUSAT Multizoom",
+                    "Hangman RF",
+                    "Vulture Custom Zoom",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake .45 APC",
+                    "Flashguard .45 APC",
+                    "Silencer",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "19.4\" Rapid Fire",
+                    "22.3\" Cavalry Lancer",
+                    "20.8\" Strike Team",
+                    "18.9\" Titanium",
+                    "23.6\" Match Grade",
+                    "22.5\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Front Grip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Foregrip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "54 Rnd Drum",
+                    "Jungle-Style Mag",
+                    "66 Rnd Speed Mag",
+                    "STANAG 63 Rd Drum",
+                    "SAS Mag Clamp",
+                    "Salvo 75 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Marathon Stock",
+                    "Duster Pad",
+                    "CQB Pad",
+                    "SAS Combat Stock",
+                    "Raider Pad"
+                ]
+            }
+        },
+        "Stoner 63": {
+            "name": "Stoner 63",
+            "type": "Light Machine Gun",
+            "mag_size": "",
+            "attachments": {
+                "Optic": [
+                    "Kobra Red Dot",
+                    "Axial Arms 3x",
+                    "Visiontech 2x",
+                    "Millstop Reflex",
+                    "Sillix Holoscout",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Quickdot LED",
+                    "Hawksmoor",
+                    "Hangman RF",
+                    "Vulture Custom Zoom",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 5.56",
+                    "Flashguard 5.56",
+                    "Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "16\" Cut Down",
+                    "17.8\" Cavalry Lancer",
+                    "18.6\" Division",
+                    "16\" SOR Cut Down",
+                    "20.7\" Match Grade",
+                    "21.8\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Front Grip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Grip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "100 Rnd",
+                    "Fast Mag",
+                    "100 Rnd Speed Mag",
+                    "STANAG 125 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 125 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Pad",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Raider Pad"
+                ]
+            }
+        },
+        "RPD": {
+            "name": "RPD",
+            "type": "Light Machine Gun",
+            "mag_size": "",
+            "attachments": {
+                "Optic": [
+                    "Kobra Red Dot",
+                    "Axial Arms 3x",
+                    "Visiontech 2x",
+                    "Millstop Reflex",
+                    "Sillix Holoscout",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Quickdot LED",
+                    "Hawksmoor",
+                    "Hangman RF",
+                    "Vulture Custom Zoom",
+                    "Noch Sova Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 7.62",
+                    "Flashguard 7.62",
+                    "Suppressor",
+                    "Spetsnaz Compensator",
+                    "KGB Eliminator",
+                    "GRU Suppressor"
+                ],
+                "Barrel": [
+                    "16.5\" Cut Down",
+                    "16.5\" Spetsnaz RPK Barrel",
+                    "16.5\" Division",
+                    "14.7\" GRU Cut Down",
+                    "20.3\" Match Grade",
+                    "20.3\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "KGB Target Designator",
+                    "GRU 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Front Grip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Spetsnaz Grip",
+                    "Spetsnaz Speedgrip"
+                ],
+                "Magazine": [
+                    "75 Rnd",
+                    "Fast Mag",
+                    "75 Rnd Speed Mag",
+                    "Spetsnaz 100 Rnd",
+                    "Vandal Speed Loader",
+                    "VDV 100 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "Spetsnaz Field Grip",
+                    "Serpent Wrap",
+                    "GRU Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "Spetsnaz PKM Stock",
+                    "KGB Skeletal Stock"
+                ]
+            }
+        },
+        "M60": {
+            "name": "M60",
+            "type": "Light Machine Gun",
+            "mag_size": "",
+            "reload_time": "7.4s",
+            "rate_of_fire": "517 RPM",
+            "attachments": {
+                "Optic": [
+                    "Kobra Red Dot",
+                    "Axial Arms 3x",
+                    "Visiontech 2x",
+                    "Millstop Reflex",
+                    "Sillix Holoscout",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Quickdot LED",
+                    "Hawksmoor",
+                    "Hangman RF",
+                    "Vulture Custom Zoom",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 7.62",
+                    "Flashguard 7.62",
+                    "Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "18\" Cut Down",
+                    "18.9\" Cavalry Lancer",
+                    "18.9\" Division",
+                    "17.5\" SOR Cut Down",
+                    "22.8\" Match Grade",
+                    "22.8\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Grip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "100 Rnd",
+                    "Fast Mag",
+                    "100 Rnd Speed Mag",
+                    "STANAG 125 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 125 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Marathon Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "MG 82": {
+            "name": "MG 82",
+            "damage": "30",
+            "type": "Light Machine Gun",
+            "mag_size": "100 rounds",
+            "reload_time": "8 seconds",
+            "rate_of_fire": "909 RPM",
+            "attachments": {
+                "Optic": [
+                    "Kobra Red Dot",
+                    "Axial Arms 3x",
+                    "Visiontech 2x",
+                    "Millstop Reflex",
+                    "Sillix Holoscout",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Quickdot LED",
+                    "Hawksmoor",
+                    "Hangman RF",
+                    "Vulture Custom Zoom",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 5.56",
+                    "Flash Guard 5.56",
+                    "Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "14.7\" Cut Down",
+                    "17.5\" Cavalry Lancer",
+                    "14.5\" Division",
+                    "13.4\" SOR Cut Down",
+                    "17.1\" Match Grade",
+                    "16.4\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Front Grip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Field Agent Grip",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "125 Rnd",
+                    "Fast Mag",
+                    "125 Rnd Speed Mag",
+                    "STANAG 150 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 150 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Pad",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Raider Pad"
+                ]
+            }
+        },
+        "Pelington 703": {
+            "name": "Pelington 703",
+            "damage": "110",
+            "type": "Sniper Rifle",
+            "mag_size": "5 rounds",
+            "reload_time": "3.8 seconds",
+            "rate_of_fire": "54 RPM",
+            "attachments": {
+                "Optic": [
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Axial Arms 3x",
+                    "Iron Sights",
+                    "Sillix Holoscout",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Vulture Custom Zoom",
+                    "Millstop Reflex",
+                    "Hangman RF",
+                    "Ultrazoom Custom",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Stabilizer .308",
+                    "Flash Hider .308",
+                    "Sound Moderator",
+                    "Infantry Stabilizer",
+                    "Task Force Shroud",
+                    "Wrapped Suppressor"
+                ],
+                "Barrel": [
+                    "25\" Extended",
+                    "22.2\" Cavalry Lancer",
+                    "25\" Reinforced Heavy",
+                    "27.2\" Combat Recon",
+                    "21.7\" Ultralight",
+                    "26.5\" Tiger Team"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Front Grip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Bipod",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "7 Rnd",
+                    "Fast Loader",
+                    "7 Rnd Speed Mag",
+                    "STANAG 9 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 9 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "CQB Pad",
+                    "Duster Pad",
+                    "Marathon Pad",
+                    "SAS Combat Stock",
+                    "Raider Pad"
+                ]
+            }
+        },
+        "LW3 - Tundra": {
+            "name": "LW3 - Tundra",
+            "type": "Sniper Rifle",
+            "mag_size": "5 rounds",
+            "attachments": {
+                "Optic": [
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Axial Arms 3x",
+                    "Iron Sights",
+                    "Sillix Holoscout",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Vulture Custom Zoom",
+                    "Millstop Reflex",
+                    "Hangman RF",
+                    "Ultrazoom Custom",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Stabilizer .308",
+                    "Flash Hider .308",
+                    "Sound Moderator",
+                    "Infantry Stabilizer",
+                    "Task Force Shroud",
+                    "Wrapped Suppressor"
+                ],
+                "Barrel": [
+                    "28.2\" Extended",
+                    "26.5\" Cavalry Lancer",
+                    "25.8\" Rapid Fire",
+                    "29.1\" Combat Recon",
+                    "26.5\" Hammer Forged",
+                    "28.2\" Tiger Team"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Front Grip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Bipod",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "7 Rnd",
+                    "Fast Loader",
+                    "7 Rnd Speed Mag",
+                    "STANAG 9 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 9 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "CQB Pad",
+                    "Duster Pad",
+                    "Marathon Pad",
+                    "SAS Combat Stock",
+                    "Raider Pad"
+                ]
+            }
+        },
+        "M82": {
+            "name": "M82",
+            "damage": "110",
+            "type": "Sniper Rifle",
+            "mag_size": "5 rounds",
+            "reload_time": "3s",
+            "rate_of_fire": "180 RPM",
+            "attachments": {
+                "Optic": [
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Axial Arms 3x",
+                    "Iron Sights",
+                    "Sillix Holoscout",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Vulture Custom Zoom",
+                    "Millstop Reflex",
+                    "Hangman RF",
+                    "Ultrazoom Custom",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Stabilizer .50 BMG",
+                    "Flash Hider .50 BMG",
+                    "Sound Moderator",
+                    "Infantry Stabilizer",
+                    "Task Force Shroud",
+                    "Wrapped Suppressor"
+                ],
+                "Barrel": [
+                    "22.2\" Extended",
+                    "21.8\" Cavalry Lancer",
+                    "20.6\" Rapid Fire",
+                    "22.6\" Combat Recon",
+                    "19.5\" Hammer Forged",
+                    "22.6\" Tiger Team"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Front Grip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Bipod",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "7 Rnd",
+                    "Fast Loader",
+                    "7 Rnd Speed Mag",
+                    "STANAG 9 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 9 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "CQB Pad",
+                    "Duster Pad",
+                    "Marathon Pad",
+                    "SAS Combat Stock",
+                    "Raider Pad"
+                ]
+            }
+        },
+        "ZRG 20mm": {
+            "name": "ZRG 20mm",
+            "damage": "110",
+            "type": "Sniper Rifle",
+            "mag_size": "3 rounds",
+            "rate_of_fire": "27 RPM",
+            "attachments": {
+                "Optic": [
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Iron Sights",
+                    "Axial Arms 3x",
+                    "Sillix Holoscout",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Vulture Custom Zoom",
+                    "Millstop Reflex",
+                    "Hangman RF",
+                    "Ultrazoom Custom",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Stabilizer 20",
+                    "Flash Hider 20",
+                    "Sound Moderator",
+                    "Infantry Stabilizer",
+                    "Task Force Shroud",
+                    "Wrapped Suppressor"
+                ],
+                "Barrel": [
+                    "41.9\" Extended",
+                    "40.1\" Cavalry Lancer",
+                    "39.3\" Rapid Fire",
+                    "43.9\" Combat Recon",
+                    "37.9\" Ultralight",
+                    "42.7\" Sigma Special"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Infiltrator Grip",
+                    "Patrol Grip",
+                    "Bruiser Grip",
+                    "Bipod",
+                    "SFOD Speedgrip"
+                ],
+                "Magazine": [
+                    "5 Rnd",
+                    "Fast Mag",
+                    "4 Rnd Speed Mag",
+                    "STANAG 7 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 6 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Marathon Pad",
+                    "Duster Stock",
+                    "CQB Pad",
+                    "SAS Combat Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "Swiss K31": {
+            "name": "Swiss K31",
+            "damage": "110",
+            "type": "Sniper Rifle",
+            "mag_size": "",
+            "reload_time": "2.8s",
+            "attachments": {
+                "Optic": [
+                    "Visiontech 2x",
+                    "Kobra Red Dot",
+                    "Iron Sights",
+                    "Axial Arms 3x",
+                    "Sillix Holoscout",
+                    "Royal & Kross 4x",
+                    "SUSAT Multizoom",
+                    "Vulture Custom Zoom",
+                    "Millstop Reflex",
+                    "Hangman RF",
+                    "Ultrazoom Custom",
+                    "AN/PVS-4 Thermal"
+                ],
+                "Muzzle": [
+                    "Stabilizer .308",
+                    "Flash Hider .308",
+                    "Sound Moderator",
+                    "Infantry Stabilizer",
+                    "Task Force Shroud",
+                    "GRU Suppressor"
+                ],
+                "Barrel": [
+                    "24.9\" Extended",
+                    "23.6\" Cavalry Lancer",
+                    "23.6\" Rapid Fire",
+                    "24.9\" Combat Recon",
+                    "21.4\" Ultralight",
+                    "24.9\" Tiger Team"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Underbarrel": [
+                    "Foregrip",
+                    "Infiltrator Grip",
+                    "Patrol Bipod",
+                    "Bruiser Grip",
+                    "Bipod",
+                    "SFOD Bipod"
+                ],
+                "Magazine": [
+                    "8 Rnd",
+                    "Fast Mag",
+                    "7 Rnd Speed Mag",
+                    "STANAG 10 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 9 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Raider Stock"
+                ]
+            }
+        },
+        "Magnum": {
+            "name": "Magnum",
+            "type": "Pistol",
+            "mag_size": "6 rounds",
+            "attachments": {
+                "Optic": [
+                    "Quickdot LED",
+                    "Otero Mini Reflex",
+                    "Microflex LED"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake .45 APC",
+                    "Flashguard .45 APC",
+                    "Sound Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "7.2\" Extended",
+                    "5.9\" Cavalry Lancer",
+                    "6.4\" Reinforced Heavy",
+                    "7.5\" Chrome Lined",
+                    "4.7\" Takedown",
+                    "7.2\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Magazine": [
+                    "9 Rnd",
+                    "Fast Mag",
+                    "9 Rd Speed Mag",
+                    "STANAG 12 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 12 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Dual Wield"
+                ]
+            }
+        },
+        "Diamatti": {
+            "name": "Diamatti",
+            "type": "Pistol",
+            "mag_size": "15 rounds",
+            "attachments": {
+                "Optic": [
+                    "Quickdot LED",
+                    "Otero Mini Reflex",
+                    "Microflex LED"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 9",
+                    "Flashguard 9",
+                    "Sound Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "7.8\" Extended",
+                    "6.5\" Cavalry Lancer",
+                    "7.2\" Reinforced Heavy",
+                    "7.8\" Chrome Lined",
+                    "6.5\" Takedown",
+                    "7.2\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Magazine": [
+                    "24 Rnd",
+                    "Fast Mag",
+                    "24 Rd Speed Mag",
+                    "STANAG 30 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 30 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Dual Wield"
+                ]
+            }
+        },
+        "AMP63": {
+            "name": "AMP63",
+            "damage": "33",
+            "type": "Pistol",
+            "mag_size": "15 rounds",
+            "reload_time": "2 seconds",
+            "rate_of_fire": "652 RPM",
+            "attachments": {
+                "Optic": [
+                    "Quickdot LED",
+                    "Otero Mini Reflex",
+                    "Microflex LED"
+                ],
+                "Muzzle": [
+                    "Muzzle Brake 9",
+                    "Flashguard 9",
+                    "Sound Suppressor",
+                    "Infantry Compensator",
+                    "SOCOM Eliminator",
+                    "Agency Suppressor"
+                ],
+                "Barrel": [
+                    "6.1\" Extended",
+                    "5.9\" Cavalry Lancer",
+                    "6.1\" Reinforced Heavy",
+                    "6.8\" Chrome Lined",
+                    "6.4\" Takedown",
+                    "6.4\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Magazine": [
+                    "20 Rnd",
+                    "Fast Mag",
+                    "20 Rd Speed Mag",
+                    "STANAG 25 Rnd",
+                    "Vandal Speed Loader",
+                    "Salvo 22 Rnd Fast Mag"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Dual Wield"
+                ]
+            }
+        },
+        "Hauer 77": {
+            "name": "Hauer 77",
+            "type": "Shotgun",
+            "mag_size": "5 rounds",
+            "attachments": {
+                "Optic": [
+                    "Millstop Reflex",
+                    "Quickdot LED",
+                    "Microflex LED"
+                ],
+                "Muzzle": [
+                    "Duckbill Choke",
+                    "Flash Cone 12 GA",
+                    "Sound Suppressor",
+                    "Infantry V-Choke",
+                    "SOCOM Blast Mitigator",
+                    "Agency Choke"
+                ],
+                "Barrel": [
+                    "22\" Extended",
+                    "20.4\" Cavalry Lancer",
+                    "21.6\" Reinforced Heavy",
+                    "24.1\" Ranger",
+                    "19.3\" Hammer Forged",
+                    "25.2\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Magazine": [
+                    "6 Rnd Tube",
+                    "STANAG 8 Rnd Tube"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Shotgun Stock",
+                    "Duster Pad",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Marathon Stock"
+                ]
+            }
+        },
+        "Gallo SA12": {
+            "name": "Gallo SA12",
+            "type": "Shotgun",
+            "mag_size": "7 rounds",
+            "attachments": {
+                "Optic": [
+                    "Millstop Reflex",
+                    "Quickdot LED",
+                    "Microflex LED"
+                ],
+                "Muzzle": [
+                    "Duckbill Choke",
+                    "Flash Cone 12 GA",
+                    "Sound Suppressor",
+                    "Infantry V-Choke",
+                    "SOCOM Blast Mitigator",
+                    "Agency Choke"
+                ],
+                "Barrel": [
+                    "22.7\" Extended",
+                    "23.5\" Cavalry Lancer",
+                    "21.4\" Reinforced Heavy",
+                    "24.6\" Ranger",
+                    "20.3\" Hammer Forged",
+                    "24.8\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Magazine": [
+                    "9 Rnd Tube",
+                    "STANAG 12 Rnd Tube"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Marathon Stock"
+                ]
+            }
+        },
+        "Streetsweeper": {
+            "name": "Streetsweeper",
+            "damage": "134",
+            "type": "Shotgun",
+            "mag_size": "12 shells",
+            "reload_time": "14.1s",
+            "rate_of_fire": "300 RPM",
+            "attachments": {
+                "Optic": [
+                    "Millstop Reflex",
+                    "Quickdot LED",
+                    "Microflex LED"
+                ],
+                "Muzzle": [
+                    "Duckbill Choke",
+                    "Flash Cone 12 Ga",
+                    "Sound Suppressor",
+                    "Infantry V-Choke",
+                    "SOCOM Blast Mitigator",
+                    "Agency Choke"
+                ],
+                "Barrel": [
+                    "13.7\" Extended",
+                    "14.6\" Cavalry Lancer",
+                    "13\" Reinforced Heavy",
+                    "14.6\" Ranger",
+                    "13.3\" Hammer Forged",
+                    "14.4\" Task Force"
+                ],
+                "Body": [
+                    "Steady Aim Laser",
+                    "Mounted Flashlight",
+                    "SOF Target Designator",
+                    "SWAT 5mw Laser Sight",
+                    "Tiger Team Spotlight",
+                    "Ember Sighting Point"
+                ],
+                "Magazine": [
+                    "15 Rnd Drum",
+                    "STANAG 18 Rnd Drum"
+                ],
+                "Handle": [
+                    "Speed Tape",
+                    "Dropshot Wrap",
+                    "Field Tape",
+                    "SASR Jungle Grip",
+                    "Serpent Wrap",
+                    "Airborne Elastic Wrap"
+                ],
+                "Stock": [
+                    "Tactical Stock",
+                    "Wire Stock",
+                    "Duster Stock",
+                    "No Stock",
+                    "SAS Combat Stock",
+                    "Marathon Stock"
+                ]
+            }
+        },
+        "Cigma 2": {
+            "name": "Cigma 2",
+            "type": "Launcher",
+            "attachments": {}
+        },
+        "RPG-7": {
+            "name": "RPG-7",
+            "type": "Launcher",
+            "mag_size": "1 rocket",
+            "attachments": {}
+        },
+        "Knife": {
+            "name": "Knife",
+            "type": "Melee",
+            "attachments": {}
+        },
+        "Sledgehammer": {
+            "name": "Sledgehammer",
+            "type": "Melee",
+            "attachments": {}
+        },
+        "Wakizashi": {
+            "name": "Wakizashi",
+            "type": "Melee",
+            "attachments": {}
+        },
+        "Machete": {
+            "name": "Machete",
+            "type": "Melee",
+            "attachments": {}
+        },
+        "E-Tool": {
+            "name": "E-Tool",
+            "type": "Melee",
+            "attachments": {}
+        },
+        "M79": {
+            "name": "M79",
+            "type": "Weapon Class\n",
+            "mag_size": "1 round",
+            "attachments": {}
+        },
+        "R1 Shadowhunter": {
+            "name": "R1 Shadowhunter",
+            "damage": "250",
+            "type": "Special",
+            "mag_size": "1 bolt",
+            "reload_time": "2.2 seconds",
+            "rate_of_fire": "24 RPM",
+            "attachments": {
+                "Optic": [
+                    "Hawksmoor",
+                    "Microflex LED",
+                    "Millstop Reflex",
+                    "Quickdot LED"
+                ]
+            }
+        },
+        "Ballistic Knife": {
+            "name": "Ballistic Knfie",
+            "type": "Warzone",
+            "attachments": {}
+        },
+        "Nail Gun": {
+            "name": "Nail Gun",
+            "damage": "50",
+            "type": "Special",
+            "mag_size": "15 nails",
+            "attachments": {}
+        }
+    },
+    "wildcards": {
+        "Danger Close": {
+            "name": "Danger Close",
+            "description": "Equip extra lethal and tactical equipment, and start with max ammo.",
+            "attachment amount": 5,
+            "type of weapons": "standard",
+            "perk amount": 3
+        },
+        "Law Breaker": {
+            "name": "Law Breaker",
+            "description": "Equip any weapon in either slot and equip any perks.",
+            "attachment amount": 5,
+            "type of weapons": "all",
+            "perk amount": 3
+        },
+        "Gunfighter": {
+            "name": "Gunfighter",
+            "description": "Unlocks 3 additional attachment slots for your primary weapon.",
+            "attachment amount": 8,
+            "type of weapons": "standard",
+            "perk amount": 3
+        },
+        "Perk Greed": {
+            "name": "Perk Greed",
+            "description": "Equip 3 extra perks.",
+            "attachment amount": 5,
+            "type of weapons": "standard",
+            "perk amount": 6
+        }
+    },
+    "perks": {
+        "Engineer": {
+            "name": "Engineer",
+            "description": "Detect enemy equipment and Scorestreaks through walls. See enemy Scorestreaks on your minimap. Re-roll Care Packages.",
+            "perk slot": "1"
+        },
+        "Paranoia": {
+            "name": "Paranoia",
+            "description": "Hear an alert when an enemy aims at you. Your vision pulses if the enemy is outside of your view.",
+            "perk slot": "1"
+        },
+        "Flak Jacket": {
+            "name": "Flak Jacket",
+            "description": "Take less damage from enemy explosives and Molotov and Combat Bow flames.",
+            "perk slot": "1"
+        },
+        "Tactical Mask": {
+            "name": "Tactical Mask",
+            "description": "Maximized resistance to Flashbang and Stun Grenade. Immune to gas.",
+            "perk slot": "1"
+        },
+        "Forward Intel": {
+            "name": "Forward Intel",
+            "description": "See indicators for enemy reinforcements on your minimap. Minimap shows a larger area.",
+            "perk slot": "1"
+        },
+        "Assassin": {
+            "name": "Assassin",
+            "description": "Enemies on a Killstreak have a crosshair indicator on your minimap. Receive extra Score for taking them down.",
+            "perk slot": "2"
+        },
+        "Gearhead": {
+            "name": "Gearhead",
+            "description": "Reduce Field Upgrade cooldown. Store up to two Field Upgrade charges.",
+            "perk slot": "2"
+        },
+        "Scavenger": {
+            "name": "Scavenger",
+            "description": "Replenish ammo from fallen players.",
+            "perk slot": "2"
+        },
+        "Quartermaster": {
+            "name": "Quartermaster",
+            "description": "Recharge Equipment over 25 seconds.",
+            "perk slot": "2"
+        },
+        "Tracker": {
+            "name": "Tracker",
+            "description": "See imprint of enemy footsteps. Aim at enemies to reveal them on your team's minimap.",
+            "perk slot": "2"
+        },
+        "Gung-Ho": {
+            "name": "Gung-Ho",
+            "description": "Fire your weapon and use Equipment while sprinting. Move at full speed when reloading. Switch weapons faster. Take less damage from falling. Fire more accurately while sliding.",
+            "perk slot": "3"
+        },
+        "Ghost": {
+            "name": "Ghost",
+            "description": "Undetectable by enemy Spy Planes whenever you are moving, planting or defusing bombs, or controlling Scorestreaks.",
+            "perk slot": "3"
+        },
+        "Cold Blooded": {
+            "name": "Cold Blooded",
+            "description": "AI-controlled Scorestreaks will not target you, and player-controlled Scorestreaks will not highlight you. Show up cold on Thermal. Players in vehicles won't see your nameplate.",
+            "perk slot": "3"
+        },
+        "Ninja": {
+            "name": "Ninja",
+            "description": "Move more quietly. Speak only when necessary.",
+            "perk slot": "3"
+        },
+        "Spycraft": {
+            "name": "Spycraft",
+            "description": "Hack enemy Field Upgrades. Immune to Counter Spy Plane, Jammer, Field Mic, Tracker, and Paranoia. Won't trigger Proximity Mines or Gas Mines. Booby trap enemy Care Packages.",
+            "perk slot": "3"
+        }
+    },
+    "scorestreaks": {
+        "Combat Bow": {
+            "score": "500",
+            "cooldown": "120 sec.",
+            "description": "Arrows burn targets and the surrounding area.",
+            "name": "Combat Bow"
+        },
+        "RC-XD": {
+            "score": "800",
+            "cooldown": "90 sec.",
+            "description": "Remote-controlled car strapped with explosives.",
+            "name": "RC-XD"
+        },
+        "Spy Plane": {
+            "score": "1000",
+            "cooldown": "90 sec.",
+            "description": "Reveal enemy positions through the Fog of War.",
+            "name": "Spy Plane"
+        },
+        "Counter-Spy Plane": {
+            "score": "1400",
+            "cooldown": "90 sec.",
+            "description": "Scramble enemy mini-maps and disabled hostile Missle Turrets for a short time.",
+            "name": "Counter-Spy Plane"
+        },
+        "Armor": {
+            "score": "1600",
+            "cooldown": "60 sec.",
+            "description": "Reduces incoming bullet damage. Destroyed after it absorbs too much damage.",
+            "name": "Armor"
+        },
+        "Sentry Turret": {
+            "score": "1800",
+            "cooldown": "60 sec.",
+            "description": "Deploy a deadly automated turret that targets enemy players, vehicles, and equipment.",
+            "name": "Sentry Turret"
+        },
+        "Care Package": {
+            "score": "2000",
+            "cooldown": "90 sec.",
+            "description": "Airdrop a random Scorestreak. Crate self-destructs after use.",
+            "name": "Care Package"
+        },
+        "Death Machine": {
+            "score": "2200",
+            "cooldown": "90 sec.",
+            "description": "Deadly machine gun with high damage rounds that suppress enemies in the line of fire.",
+            "name": "Death Machine"
+        },
+        "Air Patrol": {
+            "score": "2400",
+            "cooldown": "60 sec.",
+            "description": "Call in a squadron of jets to attack enemy air Scorestreaks. Counter enemy Air Patrols.",
+            "name": "Air Patrol"
+        },
+        "Napalm Strike": {
+            "score": "2500",
+            "cooldown": "30 sec.",
+            "description": "Launch a targeted carpet bomb strike of explosive napalm.",
+            "name": "Napalm Strike"
+        },
+        "Hand Cannon": {
+            "score": "2800",
+            "cooldown": "90 sec.",
+            "description": "Massive high-caliber revolver that fires devastating rounds with increased bullet penetration.",
+            "name": "Hand Cannon"
+        },
+        "Artillery": {
+            "score": "3000",
+            "cooldown": "30 sec.",
+            "description": "Launch three targeted artillery strikes. Unused strikes can be saved for later.",
+            "name": "Artillery"
+        },
+        "Cruise Missile": {
+            "score": "3500",
+            "cooldown": "90 sec.",
+            "description": "Steer a trio of missiles with boost and air brake controls. Secondary missles auto-fire at painted targets.",
+            "name": "Cruise Missile"
+        },
+        "Attack Helicopter": {
+            "score": "3800",
+            "cooldown": "60 sec.",
+            "description": "Call in armed support helicopter.",
+            "name": "Attack Helicopter"
+        },
+        "War Machine": {
+            "score": "4000",
+            "cooldown": "60 sec.",
+            "description": "High-explosive grenade launcher.",
+            "name": "War Machine"
+        },
+        "Strafe Run": {
+            "score": "5000",
+            "cooldown": "30 sec.",
+            "description": "Twin strafing planes attack with heavy machine gun fire and air-to-air rockets.",
+            "name": "Strafe Run"
+        },
+        "H.A.R.P.": {
+            "score": "6000",
+            "cooldown": "60 sec.",
+            "description": "High-Altitude Reconnaissance Plane that shows both enemy position and direction on the mini-map.",
+            "name": "H.A.R.P."
+        },
+        "VTOL Escort": {
+            "score": "6200",
+            "cooldown": "90 sec.",
+            "description": "Lay waste to enemy infantry and vehicles from the cockpit of a powerful VTOL jet.",
+            "name": "VTOL Escort"
+        },
+        "Chopper Gunner": {
+            "score": "8000",
+            "cooldown": "60 sec.",
+            "description": "Be the gunner in a close air support helicopter.",
+            "name": "Chopper Gunner"
+        },
+        "Gunship": {
+            "score": "10000",
+            "cooldown": "90 sec.",
+            "description": "Be the gunner in a close air support gunship.",
+            "name": "Gunship"
+        }
+    }
+}

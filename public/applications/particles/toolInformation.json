@@ -1,0 +1,34 @@
+{
+    "version": 1,
+    "name": "Particle Generator",
+    "title": "Particle Generator for {game}",
+    "description": "A tool to generate all sorts of shapes with particles.",
+    "game_description": "Generate cool shapes with particles in {game}!",
+    "data": ["particleInformation.json"],
+    "keywords": ["{game} particle generator", "{game} particles", "{game} particle shapes", "{game} particle custom shapes", "{game} particle text", "{game} particle command generator"],
+    "gameSpecificWords": {
+        "normal": []
+    },
+    "explanation": [
+        {
+            "title":"What is a {game} Resource Calculator?",
+            "text":"This is a resource calculator for {game}. Here you can select wich type and how many blocks/items you need for your project in {game}. Our calculator then tells you which resources you need to make your blocks/items. It does this by taking all the recipes of {game} out of our database and using those to calculate the best option for you. This all happens on our server so it is super fast and easy!"
+        },
+        {
+            "title":"How to use the Mindustry Resource Calculator?",
+            "text":"Everyone can use our Mindustry Resource Calculator for free! It's super easy to use. First you need to find the item you want to make in Mindustry. You do this by typing the name of the item in our search bar or by selecting the item in one of the tabs. When you have found your item, click on it and type the amount you need from this item. The resource menu now shows which resources you need and how many of every resource to make your item. The guide menu shows you wich steps you have to make to make your item. Now you can go back to your game and make your item! If anything is unclear please email us at the email address below."
+        },
+        {
+            "title":"What is the purpose of this Mindustry Resource Calculator?",
+            "text":"The purpose of this tool is to make it easier for you to create a certain amount of item without wasting time collecting too many resources that you don't need to use. Also, if you use the Mindustry Resource Calculator, you don't have to memorize every methods to create every item in Mindustry, because this tool will tell you exactly how to make the item you want to create in Mindustry. Finally, this tool saves your time because you don't have to calculate the amount of resources you need to create your items."
+        },
+        {
+            "title":"How to calculate the amount of resources in Mindustry?",
+            "text":"This website calculates the amount of resources for an item based on its recipe in Mindustry. It finds that recipe in our database for Mindustry and gets the items used in that recipe. It than finds the recepies for these items and checks wich items are used in these. It repeats this process until it finds the base resources. These are resources you can't make in Mindustry or that you can gather in the world of Mindustry. It than returns the amount of base resources you need and our website displays them to you together with a nice picture of the needed item."
+        }
+    ],
+    "settings": {
+        "content": true,
+        "visible": true
+    }
+}

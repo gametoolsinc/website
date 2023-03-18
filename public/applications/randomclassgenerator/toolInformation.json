@@ -1,0 +1,35 @@
+{
+    "version": 4,
+    "application": {
+        "name": "Random Class Generator",
+        "description": "A tool that gives you a random class.",
+        "keywords": []
+    },
+    "tool": {
+        "name": "{game_name}: Random Class Generator",
+        "description": "A tool that gives you a random class in {game_name}!",
+        "keywords": [
+            "{game_name} random class generator", 
+            "{game_name} random loadout generator", 
+            "{game_name} class generator", 
+            "{game_name} class"],
+        "game_specific_words": [],
+        "introduction": "The {game_name} Random Class Generator gives you a random class to use during a match in {game_name}, consisting of weapons, attachments, throwables and perks, all randomised. This can come in especially useful when you want a challenge in {game_name}, because it is challenging to try to win a match with a random configuration. See how well you will do by trying out this challenge!",
+        "examples": [
+            {
+                "title": "How to use the {tool_name}?",
+                "text": "First of all, click the button ‘generate class’. Your configuration will be automatically randomised, after which it will appear on screen. Open {game_name}, navigate to your class menu, and edit or create a new class according to the configuration given. Now head into a match and start dominating!"
+            }
+        ],
+        "questions": [
+            {
+                "title": "Why use the {tool_name}?",
+                "text": "{game_name} is really fun, but after some time it can get boring. The longer you play, the better you get. But eventually, this process will stall and your skills will no longer progress. In this situation it is useful to start a challenge, like playing with a random class. You can do this manually, but this process is cumbersome. That is where this {tool_name} comes in."
+            },
+            {
+                "title": "How to calculate a random class yourself?",
+                "text": "The first step for this process is to write down all the possible classes on different pieces of paper. Then put all these pieces of paper inside some things. Shuffle it around and pick a random one. The class that is written on that piece of paper will be your class. This is a very slow process, that is why we suggest you use our tools to do the randomisation for you!"
+            }
+        ]
+    }
+}

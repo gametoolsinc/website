@@ -1,0 +1,36 @@
+article {
+    max-width: 90ch;
+    margin: auto;
+    width: 100%;
+}
+
+article .information p {
+    font-size: 1rem;
+}
+
+article h1 {
+    font-size: 2rem;
+}
+
+article h2 {
+    margin: 0px;
+}
+
+article p {
+    display: block;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+article img {
+    float: right;
+    margin: 10px 0px 10px 10px;
+    clear: both;
+    width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+    article img {
+        width: 100%;
+    }
+}

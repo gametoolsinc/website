@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "application": {
+        "name": "Command Generator",
+        "description": "Generator for Minecraft commands",
+        "keywords": []
+    },
+    "tool": {
+        "name": "{game} Command Generator",
+        "description": "Generate all kinds of commands and paste them into your {game} world",
+        "game_specific_words": [],
+        "keywords": [
+            "{name}",
+            "{game} command generator",
+            "{game} command form"
+        ],
+        "explanation": [
+            {
+                "title": "Why can it be useful to link up portals in {game}?",
+                "text": "In {game}, it can often be quite tiring to cover great distances in the overworld. By linking up portals, you can shorten your travel time significantly, because travelling 1 block in the Nether is equal to travelling 8 blocks in the overworld. This is really useful for having a quick way to get to your villages, strongholds and creations around your world. Follow the instructions above to know more about how you can link up your portals."
+            }
+        ]
+    }
+}

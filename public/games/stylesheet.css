@@ -1,0 +1,113 @@
+.tools {
+    max-width: 2000px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+    margin: 20px auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    width: 93%;
+    background: white;
+    backdrop-filter: blur(5px);
+    height: fit-content;
+}
+
+/* main title */
+.main_title {
+    position: relative;
+    transform: translateY(-50%);
+    margin-top: -15px;
+    background-color: var(--main);
+    width: fit-content;
+    max-width: 600px;
+    padding: 20px 120px 20px 80px;
+}
+
+.main_title::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 39px solid white;
+    border-left: 50px solid transparent;
+}
+
+.main_title h1 {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .main_title::after {
+        display: none;
+    }
+
+    .main_title{
+        width: 100%;
+        padding: 20px 0px;
+    }
+}
+
+
+/* pages */
+.pages{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(400px, 24%), 1fr));
+    gap: 10px;
+}
+
+@media (max-width: 450px){
+    .pages {
+        grid-template-columns: repeat(auto-fill, minmax(60%, 1fr));
+    }
+}
+
+.pages .page{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+}
+
+.pages .page > a {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+}
+
+.pages .page img{
+    display: block;
+    transition: .3s ease;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    object-fit: contain;
+    height: 90%;
+    width: 90%;
+}
+
+.pages .page:hover img{
+    transform: scale(1.02) translateY(-49%);
+}
+
+.pages .page .gradient{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-top: 18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.65) 100%);
+}
+
+.pages .page .gradient .page_title,.pages .page .gradient p{
+    margin: 8px 10px;
+    text-align: center;
+    color: white;
+}

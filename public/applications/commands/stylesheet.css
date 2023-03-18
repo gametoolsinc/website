@@ -1,0 +1,253 @@
+/* General */
+.generator-container {
+    display:grid;
+    grid-template-columns:auto 1fr;
+    margin: 0px 15px;
+}
+
+/* Input  style */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input:focus {
+    outline: none;
+}
+input[type=text] {
+    width: 100px;
+}
+input[type=number] {
+    width: 50px;
+}
+select {
+    border: 1px solid gray;
+    font-family: inherit;
+    order: 1;
+}
+
+/* Page Menu */
+.page-menu {
+    margin-right: 10px;
+    width: fit-content;
+    min-width: 250px;
+    background-color: rgba(230, 230, 230, 0.8);
+}
+.page-menu h2 {
+    display: block;
+    padding: 10px 10px 0px 10px;
+    margin: 0px;
+}
+.page-menu .page-menu-item {
+    padding: 7px 10px;
+    font-size: 1em;
+    background-color: #ffffff00;
+    transition: .3s ease;
+}
+.page-menu .page-menu-item:hover {
+    background-color: #f8f8f8;
+}
+.page-menu .page-menu-item a {
+    text-decoration: none;
+    color: rgb(50,50,50);
+}
+
+/* Generator */
+.generator {
+    width: 100%;
+    display: flex;
+    min-height: 500px;
+}
+.generator > div {
+    width: 100%;
+    padding: 20px;
+    padding-top: 10px;
+}
+.generator > div h2 {
+    margin: 0;
+}
+
+
+/* Form */
+.form {
+    background-color: rgb(225,225,225);
+}
+.form p {
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+}
+.form .input-field {
+    font-size: 13px;
+}
+.parent-div {
+    margin-bottom: 20px;
+}
+.parent-div:not(.select), .parent-div > .toggle-div {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+.parent-div > p {
+    margin-bottom: 10px;
+}
+.parent-div > .input-field, .parent-div > .toggle-div > .input-field {
+    padding: 5px 0px;
+}
+.parent-div > div:nth-child(odd), .parent-div > .toggle-div > div:nth-child(odd) {
+    background-color: rgba(240,240,240, 20%);
+}
+.parent-div > div:nth-child(even), .parent-div > .toggle-div > div:nth-child(even) {
+    background-color: rgba(230,230,230, 40%);
+}
+
+/* Form element types */
+select {
+    font-size: inherit;
+}
+.input-field input {
+    font-family: inherit;
+    border: 1px solid gray;
+    color: rgba(50,50,50);
+}
+.input-field p {
+    margin: 0;
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    padding: 0px 10px;
+    text-align: right;
+}
+.texteditor {
+    background-color: white;
+    box-shadow: 0px 0px 21px -9px rgba(0,0,0,0.66);
+}
+.texteditor .settings-bar {
+    display: flex;
+    background: rgb(245,245,245);
+}
+.texteditor .settings-bar .setting {
+    border: none;
+    padding: 5px 10px;
+    background: transparent;
+    transition: .2s ease;
+    cursor: pointer;
+    min-width: 35px;
+    box-sizing: border-box;
+    text-align: center;
+    font: inherit;
+}
+.texteditor .settings-bar .setting:hover {
+    background: rgb(235,235,235);
+}
+.texteditor .settings-bar .setting * {
+    margin: 0;
+}
+.texteditor .output-input {
+    padding: 5px;
+    min-height: 100px;
+    font-family: 'minecraftregular';
+    font-size: 1.3em;
+    /* background: url('https://p4.wallpaperbetter.com/wallpaper/252/303/689/background-dirt-minecraft-minimalistic-wallpaper-preview.jpg');
+    background-size: cover; */
+}
+.texteditor .output-input b {
+    font-family: 'minecraftbold';
+} 
+.texteditor .output-input i {
+    font-family: 'minecraftitalic';
+}
+.texteditor .output-input u {
+    
+}
+.texteditor .output-input s {
+    
+}
+.texteditor .output-input:focus {
+    outline: none;
+}
+
+/* New textedtior Quill */
+.texteditor-container {
+    margin-top: 10px;
+    box-shadow: 0px 0px 21px -9px rgba(0,0,0,0.66);
+    max-width: 750px;
+}
+.texteditor2 {
+    height: initial!important;
+    font-family: 'minecraftregular'!important;
+    font-size: 1.3em!important;
+    background-color: white;
+    min-height: 120px;
+    word-wrap: break-word;
+}
+.texteditor2 strong {
+    font-family: 'minecraftbold';
+}
+.texteditor2 em {
+    font-family: 'minecraftitalic'!important;
+}
+.ql-toolbar {
+    background-color: rgb(245,245,245);
+}
+.ql-snow {
+    border: none!important;
+}
+
+/* Output */
+.output {
+    background-color: #54b85e;
+}
+.sticky-container {
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.output textarea {
+    display: block;
+    min-height: 100px;
+    border: none;
+    font-family: inherit;
+    font-size: 1em;
+    padding: 10px;
+    resize: none;
+}
+textarea:focus {
+    outline: none;
+}
+.output .output-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(245,245,245);
+    padding: 3px 5px;
+}
+.output .output-details .copy {
+    position: relative;
+    margin: 2px;
+}
+.output .output-details #copy {
+    position: relative;
+    font-family: inherit;
+    border: none;
+    background-color: rgb(216,216,216);
+    cursor: pointer;
+    z-index: 2;
+    display: block;
+}
+.output .output-details .copy::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(50,50,50);
+    left: 2px;
+    top: 2px;
+    z-index: 1;
+}
+.output .output-details p {
+    font-size: 13px;
+    margin: 0;
+}

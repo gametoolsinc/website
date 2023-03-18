@@ -1,0 +1,27 @@
+{
+    "Single Items": {
+        "size": 1,
+        "important": true,
+        "start": true
+    },
+    "Small Stacks": {
+        "size": 16
+    },
+    "Stacks": {
+        "size": 64,
+        "important": true,
+        "start": true
+    },
+    "Chest": {
+        "size": 1728
+    },
+    "Shulker Box": {
+        "size": 1728
+    },
+    "Double Chest": {
+        "size": 3456
+    },
+    "Chest of Shulker Boxes": {
+        "size": 46656
+    }
+}

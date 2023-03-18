@@ -1,0 +1,99 @@
+.unit_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.unit_container .switch_units {
+    width: fit-content;
+    height: fit-content;
+    z-index: 2;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: rgb(255 255 255 / 50%);
+    cursor: pointer;
+}
+.unit_container .switch_units p {
+    margin: 0;
+    user-select: none;
+    width: max-content;
+}
+
+.unit_container > div {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.unit_container > div select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    padding: 5px;
+    border: none;
+    background-color: #f0fff1;
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.unit_container > div select:focus, .unit_container > div input:focus  {
+    outline: none;
+}
+
+.unit_container > div .content {
+    background-color: #54b85e;
+    background-color: var(--main);
+    /* display: flex; */
+    padding: 20px;
+    min-height: 300px;
+    position: relative;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.unit_container > div .content::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 5px;
+    top: 5px;
+    background-color: rgba(49, 49, 49, 0.5);
+    z-index: -1;
+}
+.unit_container > div .content input {
+    width: 50px;
+    padding: 3px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    font-size: inherit;
+}
+.unit_container > div .content > * {
+    margin: 3px;
+    /* display: inline-block; */
+    display: block;
+}
+.right_unit select {
+    display: block;
+    margin-left: auto;
+}
+
+/* .explanation .boxes { (overal hetzelfde voor consistency (Padding heb ik toegevoegd aan main)
+    padding: 0px 40px;
+} */
+
+@media screen and (max-width: 900px) {
+    .unit_container {
+        flex-wrap: wrap;
+    }
+    .unit_container .switch_units {
+        margin-left: 20px;
+    }
+    .right_unit select {
+        margin-left: 0px;
+    }
+}

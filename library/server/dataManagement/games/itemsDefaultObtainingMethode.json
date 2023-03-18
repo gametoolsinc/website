@@ -1,0 +1,32 @@
+{
+	"methode": "general",
+	"text": "With {input} make {output}",
+	"image": "/public/applications/resources/arrow.png",
+	"input": [
+	{
+		"x": 0,
+		"y": 0,
+		"size": 18
+	},
+	{
+		"x": 18,
+		"y": 0,
+		"size": 18
+	},
+	{
+		"x": 0,
+		"y": 50,
+		"size": 18
+	},
+	{
+		"x": 18,
+		"y": 50,
+		"size": 18
+	}],
+	"output": [
+	{
+		"x": 66,
+		"y": 23,
+		"size": 19
+	}]
+}

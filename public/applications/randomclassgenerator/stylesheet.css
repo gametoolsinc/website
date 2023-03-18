@@ -1,0 +1,233 @@
+
+.tool {
+    text-align: center; 
+    color: black;
+}
+.tool * {
+    box-sizing: border-box;
+    margin: 0;
+}
+.explanation .boxes {
+    margin-bottom: 0px;
+}
+.wrapper > h1 {
+    margin: 10px 0px 0px 0px;
+    font-family: 'Lato', sans-serif;
+}
+.wrapper .counter {
+    margin-bottom: 10px;
+}
+.tool {
+    margin-bottom: auto;
+}
+.button {
+    padding: 15px 40px;
+    background: #F8DE7E;
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+    color: black;
+    user-select: none;
+}
+.generated_class {
+    min-height: 80%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: 
+        'primary other'
+        'secondary other'
+        'equipment other';
+    gap: 10px;    
+    padding: 0px 15px;  
+    margin-bottom: 20px;
+}
+.generated_class > div {
+    display: flex;
+    flex-direction: column;
+    transition: opacity .3s ease, transform .3s ease;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.primary_weapon {
+    grid-area: primary;
+}
+.secondary_weapon {
+    grid-area: secondary;
+}
+.equipment {
+    grid-area: equipment;
+}
+.other {
+    grid-area: other;
+}
+.title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.attachment_count {
+    display: flex;
+    margin-left: 20px;
+}
+.attachment_count span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #F8DE7E;
+    margin-right: 5px;
+}
+
+.generated_class .content {
+    display: flex;
+    border-top: 2px solid #F8DE7E;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+.info {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info img {
+    width: 100%;
+}
+.attachments {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 25%));
+}
+.attachment {
+    width: 100%;
+    padding: 0px 5px;
+    margin-bottom: 5px;
+}
+.attachment .attachment_content {
+    display: flex; 
+    align-items: center;
+    background-color: rgba(57,56,71,0.2);
+    padding-right: 5px;
+    margin-top: 5px;
+    /* border-top: 1px solid rgba(50,50,50,0.8); */
+}
+
+.attachment .attachment_content img {
+    display: block;
+    width: 30%;
+    max-height: 45px;
+    object-fit: contain;
+    margin-right: 5px;
+    /* background-color: #dedede; */
+    background: linear-gradient(135deg, rgb(206, 206, 206) 0%, rgb(228, 228, 228) 50%, rgb(206, 206, 206) 100%);
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+}
+.attachment .attachment_content p {
+    width: 60%;
+    font-size: 14px;
+}
+
+.equipment .equipments {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.equipment .equipments .item img {
+    max-width: 200px;
+    margin-top: 5px;
+} 
+.other .content {
+    flex-direction: column;
+    height: 100%;
+    padding: 0px 10px;
+    padding-top: 10px;
+}
+.other .perk {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.other .perk .perk_item {
+    display: flex;
+    align-items: center;
+    min-width: 170px;
+}
+.other .perk .perk_item img {
+    width: 81px;
+    height: 54px;
+    object-fit: contain;
+    max-width: 200px;
+    display: block;
+}
+
+@keyframes primaryWeapon {
+    0% {opacity: 0; transform: translateY(-20px)}
+    20% {opacity: 1; transform: translateY(0)}
+    40% {opacity: 1}
+    80% {opacity: 1}
+    100% {opacity: 1}
+}
+@keyframes secondaryWeapon {
+    0% {opacity: 0; transform: translateY(-20px)}
+    20% {opacity: 0; transform: translateY(-20px)}
+    40% {opacity: 1; transform: translateY(0)}
+    80% {opacity: 1}
+    100% {opacity: 1}
+}
+@keyframes equipment {
+    0% {opacity: 0; transform: translateY(-20px)}
+    20% {opacity: 0; transform: translateY(-20px)}
+    40% {opacity: 0; transform: translateY(-20px)}
+    80% {opacity: 1; transform: translateY(0)}
+    100% {opacity: 1}
+}
+@keyframes other {
+    0% {opacity: 0; transform: translateY(-20px)}
+    20% {opacity: 0; transform: translateY(-20px)}
+    40% {opacity: 0; transform: translateY(-20px)}
+    80% {opacity: 0; transform: translateY(-20px)}
+    100% {opacity: 1; transform: translateY(0)}
+}
+
+@media screen and (max-width: 1200px) {
+    .generated_class {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto 1fr;
+        grid-template-areas: 
+            'primary'
+            'secondary'
+            'equipment'
+            'other';
+    }
+    .other .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(max(200px, 24%), 1fr));
+    }
+    .attachments {
+        grid-template-columns: repeat(auto-fill, minmax(max(200px, 24%), 1fr));
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .primary_weapon .content, .secondary_weapon .content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .primary_weapon .info, .secondary_weapon .info {
+        align-self: center;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .primary_weapon .info img, .secondary_weapon .info img {
+        max-height: 120px;
+        width: auto;
+        order: 2;
+    }
+    .attachments {
+        grid-template-columns: repeat(auto-fill, minmax(max(200px, 24%), 1fr));
+    }
+}

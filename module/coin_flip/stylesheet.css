@@ -1,0 +1,21 @@
+.coin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coin-throw {
+    width: 100%;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        transform: scale(0.7);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

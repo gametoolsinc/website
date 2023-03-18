@@ -1,0 +1,327 @@
+{
+    "platforms": [
+        "PS4",
+        "Xbox One",
+        "PC",
+        "Phone"
+    ],
+    "categories": {
+        "Weapons and powers cheats": [
+            {
+                "name": "Max Health and Armor&nbsp;",
+                "cheatcodes": {
+                    "PS4": " CIRCLE, L1, TRIANGLE, R2, X, SQUARE, CIRCLE, RIGHT, SQUARE, L1, L1, L1",
+                    "Xbox One": " B, LB, Y, RT, A, X, B, RIGHT, X, LB, LB, LB",
+                    "PC": " TURTLE",
+                    "Phone": " 1-999-887-853 [1-999-TURTLE]"
+                }
+            },
+            {
+                "name": "Invincibility",
+                "cheatcodes": {
+                    "PS4": " RIGHT, X, RIGHT, LEFT, RIGHT, R1, RIGHT, LEFT, X, TRIANGLE",
+                    "Xbox One": " RIGHT, A, RIGHT, LEFT, RIGHT, RB, RIGHT, LEFT, A, Y",
+                    "PC": " PAINKILLER",
+                    "Phone": " 1-999-7246-545-537 [1-999-PAINKILLER]"
+                }
+            },
+            {
+                "name": "Raise Wanted Level",
+                "cheatcodes": {
+                    "PS4": " R1, R1, CIRCLE, R2, LEFT, RIGHT, LEFT, RIGHT, LEFT, RIGHT",
+                    "Xbox One": " RB, RB, B, RT, LEFT, RIGHT, LEFT, RIGHT, LEFT, RIGHT",
+                    "PC": " FUGITIVE",
+                    "Phone": " 1-999-3844-8483 [1-999-FUGITIVE]"
+                }
+            },
+            {
+                "name": "Lower Wanted Level&nbsp;",
+                "cheatcodes": {
+                    "PS4": " R1, R1, CIRCLE, R2, RIGHT, LEFT, RIGHT, LEFT, RIGHT, LEFT",
+                    "Xbox One": " RB, RB, B, RT, RIGHT, LEFT, RIGHT, LEFT, RIGHT, LEFT",
+                    "PC": " LAWYERUP",
+                    "Phone": " 1-999-5299-3787 [1-999-LAWYERUP]"
+                }
+            },
+            {
+                "name": "Special ability refill",
+                "cheatcodes": {
+                    "PS4": " X, X, SQUARE, R1, L1, X, RIGHT, LEFT, X",
+                    "Xbox One": " A, A, X, RB, LB, A, RIGHT, LEFT, A",
+                    "PC": " POWERUP",
+                    "Phone": " 1-999-769-3787 [1-999-POWERUP]"
+                }
+            },
+            {
+                "name": "Parachute cheat",
+                "cheatcodes": {
+                    "PS4": " LEFT, RIGHT, L1, L2, R1, R2, R2, LEFT, LEFT, RIGHT, L1",
+                    "Xbox One": " LEFT, RIGHT, LB, LT, RB, RT, RT, LEFT, LEFT, RIGHT, LB",
+                    "PC": " SKYDIVE",
+                    "Phone": " 1-999-759-3483 [1-999-SKYDIVE]"
+                }
+            },
+            {
+                "name": "Weapons and ammo cheat",
+                "cheatcodes": {
+                    "PS4": " TRIANGLE, R2, LEFT, L1, X, RIGHT, TRIANGLE, DOWN, SQUARE, L1, L1, L1",
+                    "Xbox One": " Y, RT, LEFT, LB, A, RIGHT, Y, DOWN, X, LB, LB, LB",
+                    "PC": " TOOLUP",
+                    "Phone": " 1-999-866-587 [1-999-TOOLUP]"
+                }
+            },
+            {
+                "name": "Drunk cheat",
+                "cheatcodes": {
+                    "PS4": " TRIANGLE, RIGHT, RIGHT, LEFT, RIGHT, SQUARE, CIRCLE, LEFT",
+                    "Xbox One": " Y, RIGHT, RIGHT, LEFT, RIGHT, X, B, LEFT",
+                    "PC": " LIQUOR",
+                    "Phone": " 1-999-547-861 [1-999-LIQUOR]"
+                }
+            },
+            {
+                "name": "Fast run cheat",
+                "cheatcodes": {
+                    "PS4": " TRIANGLE, LEFT, RIGHT, RIGHT, L2, L1, SQUARE",
+                    "Xbox One": " Y, LEFT, RIGHT, RIGHT, LT, LB, X",
+                    "PC": " CATCHME",
+                    "Phone": " 1-999-2288-463 [1-999-CATCHME]"
+                }
+            },
+            {
+                "name": "Fast swim cheat",
+                "cheatcodes": {
+                    "PS4": " LEFT, LEFT, L1, RIGHT, RIGHT, R2, LEFT, L2, RIGHT",
+                    "Xbox One": " LEFT, LEFT, LB, RIGHT, RIGHT, RT, LEFT, LT, RIGHT",
+                    "PC": " GOTGILLS",
+                    "Phone": " 1-999-4684-4557 [1-999-GOTGILLS]"
+                }
+            },
+            {
+                "name": "Skyfall cheat",
+                "cheatcodes": {
+                    "PS4": " L1, L2, R1, R2, LEFT, RIGHT, LEFT, RIGHT, L1, L2, R1, R2, LEFT, RIGHT, LEFT, RIGHT",
+                    "Xbox One": " LB, LT, RB, RT, LEFT, RIGHT, LEFT, RIGHT, LB, LT, RB, RT, LEFT, RIGHT, LEFT, RIGHT",
+                    "PC": " SKYFALL",
+                    "Phone": " 1-999-759-3255 [1-999-SKYFALL]"
+                }
+            },
+            {
+                "name": "Super jump",
+                "cheatcodes": {
+                    "PS4": " LEFT, LEFT, TRIANGLE, TRIANGLE, RIGHT, RIGHT, LEFT, RIGHT, SQUARE, R1, R2",
+                    "Xbox One": " LEFT, LEFT, Y, Y, RIGHT, RIGHT, LEFT, RIGHT, X, RB, RT",
+                    "PC": " HOPTOIT",
+                    "Phone": " 1-999-467-8648 [1-999-HOPTOIT]"
+                }
+            },
+            {
+                "name": "Low gravity&nbsp;",
+                "cheatcodes": {
+                    "PS4": " LEFT, LEFT, L1, R1, L1, RIGHT, LEFT, L1, LEFT",
+                    "Xbox One": " LEFT, LEFT, LB, RB, LB, RIGHT, LEFT, LB, LEFT",
+                    "PC": " FLOATER",
+                    "Phone": " 1-999-356-2837 [1-999-FLOATER]"
+                }
+            },
+            {
+                "name": "Explosive punches",
+                "cheatcodes": {
+                    "PS4": " RIGHT, LEFT, X, TRIANGLE, R1, CIRCLE, CIRCLE, CIRCLE, L2",
+                    "Xbox One": " RIGHT, LEFT, A, Y, RB, B, B, B, LT",
+                    "PC": " HOTHANDS",
+                    "Phone": " 1-999-4684-2637 [1-999-HOTHANDS]"
+                }
+            },
+            {
+                "name": "Bullet time",
+                "cheatcodes": {
+                    "PS4": " SQUARE, L2, R1, TRIANGLE, LEFT, SQUARE, L2, RIGHT, X",
+                    "Xbox One": " X, LT, RB, Y, LEFT, X, LT, RIGHT, A",
+                    "PC": " DEADEYE",
+                    "Phone": " 1-999-3323-393 [1-999-DEADEYE]"
+                }
+            },
+            {
+                "name": "Explosive bullets",
+                "cheatcodes": {
+                    "PS4": " RIGHT, SQUARE, X, LEFT, R1, R2, LEFT, RIGHT, RIGHT, L1, L1, L1",
+                    "Xbox One": " RIGHT, X, A, LEFT, RB, RT, LEFT, RIGHT, RIGHT, LB, LB, LB",
+                    "PC": " HIGHEX",
+                    "Phone": " 1-999-444-439 [1-999-HIGHEX]"
+                }
+            },
+            {
+                "name": "Flaming bullets&nbsp;",
+                "cheatcodes": {
+                    "PS4": " L1, R1, SQUARE, R1, LEFT, R2, R1, LEFT, SQUARE, RIGHT, L1, L1",
+                    "Xbox One": " LB, RB, X, RB, LEFT, RT, RB, LEFT, X, RIGHT, LB, LB",
+                    "PC": " INCENDIARY",
+                    "Phone": " 1-999-462-363-4279 [1-999-INCENDIARY]"
+                }
+            },
+            {
+                "name": "Slowmo",
+                "cheatcodes": {
+                    "PS4": " TRIANGLE, LEFT, RIGHT, RIGHT, SQUARE, R2, R1",
+                    "Xbox One": " Y, LEFT, RIGHT, RIGHT, X, RT, RB",
+                    "PC": " SLOWMO",
+                    "Phone": " 1-999-756-966 [1-999-SLOWMO]"
+                }
+            },
+            {
+                "name": "Weather cheats",
+                "cheatcodes": {
+                    "PS4": " R2, X, L1, L1, L2, L2, L2, SQUARE",
+                    "Xbox One": " RT, A, LB, LB, LT, LT, LT, X",
+                    "PC": " MAKEITRAIN",
+                    "Phone": " 1-999-625-348-7246 [1-999-MAKEITRAIN]"
+                }
+            },
+            {
+                "name": "Slidey cars&nbsp;",
+                "cheatcodes": {
+                    "PS4": " TRIANGLE, R1, R1, LEFT, R1, L1, R2, L1",
+                    "Xbox One": " Y, RB, RB, LEFT, RB, LB, RT, LB",
+                    "PC": " SNOWDAY",
+                    "Phone": " 1-999-7669-329 [1-999-SNOWDAY]"
+                }
+            },
+            {
+                "name": "Director mode",
+                "cheatcodes": {
+                    "PC": " JRTALENT",
+                    "Phone": " 1-999-5782-5368 [1-999-JRTALENT]"
+                }
+            },
+            {
+                "name": "Black cellphone cheat",
+                "cheatcodes": {
+                    "Phone": " 1-999-367-3767 [1-999-EMPEROR or 1-999-EMP-DROP]"
+                }
+            }
+        ],
+        "Vehicle cheats": [
+            {
+                "name": "Spawn Buzzard Attack Helicopter",
+                "cheatcodes": {
+                    "PS4": " CIRCLE, CIRCLE, L1, CIRCLE, CIRCLE, CIRCLE, L1, L2, R1, TRIANGLE, CIRCLE, TRIANGLE",
+                    "Xbox One": " B, B, LB, B, B, B, LB, LT, RB, Y, B, Y",
+                    "PC": " BUZZOFF",
+                    "Phone": " 1-999-2899-633 [1-999-BUZZOFF]"
+                }
+            },
+            {
+                "name": "Spawn Stunt Plane",
+                "cheatcodes": {
+                    "PS4": " CIRCLE, RIGHT, L1, L2, LEFT, R1, L1, L1, LEFT, LEFT, X, TRIANGLE",
+                    "Xbox One": " B, RIGHT, LB, LT, LEFT, RB, LB, LB, LEFT, LEFT, A, Y",
+                    "PC": " BARNSTORM",
+                    "Phone": " 1-999-227-678-676 [1-999-BARNSTORM]"
+                }
+            },
+            {
+                "name": "Spawn Duster Crop Plane",
+                "cheatcodes": {
+                    "PS4": " RIGHT, LEFT, R1, R1, R1, LEFT, TRIANGLE, TRIANGLE, X, CIRCLE, L1, L1",
+                    "Xbox One": " RIGHT, LEFT, RB, RB, RB, LEFT, Y, Y, A, B, LB, LB",
+                    "PC": " FLYSPRAY",
+                    "Phone": " 1-999-3597-7729 [1-999-FLYSPRAY]"
+                }
+            },
+            {
+                "name": "Spawn Dodo Seaplane&nbsp;",
+                "cheatcodes": {
+                    "PC": " EXTINCT",
+                    "Phone": " 1-999-398-4628 [1-999-EXTINCT]"
+                }
+            },
+            {
+                "name": "Spawn Kraken Sub",
+                "cheatcodes": {
+                    "PC": " BUBBLES",
+                    "Phone": " 1-999-282-2537 [1-999-BUBBLES]"
+                }
+            },
+            {
+                "name": "Spawn Duke O'Death&nbsp;",
+                "cheatcodes": {
+                    "PC": " DEATHCAR",
+                    "Phone": " 1-999-3328-4227 [1-999-DEATHCAR]"
+                }
+            },
+            {
+                "name": "Spawn Comet Sports Car",
+                "cheatcodes": {
+                    "PS4": " R1, CIRCLE, R2, RIGHT, L1, L2, X, X, SQUARE, R1",
+                    "Xbox One": " RB, B, RT, RIGHT, LB, LT, A, A, X, RB",
+                    "PC": " COMET",
+                    "Phone": " 1-999-266-38 [1-999-COMET]"
+                }
+            },
+            {
+                "name": "Spawn Rapid GT Sports Car",
+                "cheatcodes": {
+                    "PS4": " R2, R2, L1, CIRCLE, RIGHT, L1, R1, RIGHT, LEFT, CIRCLE, R2",
+                    "Xbox One": " RT, RT, LB, B, RIGHT, LB, RB, RIGHT, LEFT, B, RT",
+                    "PC": " RAPIDGT",
+                    "Phone": " 1-999-727-4348 [1-999-RAPIDGT]"
+                }
+            },
+            {
+                "name": "Spawn Limo",
+                "cheatcodes": {
+                    "PS4": " R2, RIGHT, L2, LEFT, LEFT, R1, L1, CIRCLE, RIGHT",
+                    "Xbox One": " RT, RIGHT, LT, LEFT, LEFT, RB, LB, B, RIGHT",
+                    "PC": " VINEWOOD",
+                    "Phone": " 1-999-8463-9663 [1-999-VINEWOOD]"
+                }
+            },
+            {
+                "name": "Spawn Trashmaster",
+                "cheatcodes": {
+                    "PS4": " CIRCLE, R1, CIRCLE, R1, LEFT, LEFT, R1, L1, CIRCLE, RIGHT",
+                    "Xbox One": " B, RB, B, RB, LEFT, LEFT, RB, LB, B, RIGHT",
+                    "PC": " TRASHED",
+                    "Phone": " 1-999-8727-433 [1-999-TRASHED]"
+                }
+            },
+            {
+                "name": "Spawn Caddy Golf Cart",
+                "cheatcodes": {
+                    "PS4": " CIRCLE, L1, LEFT, R1, L2, X, R1, L1, CIRCLE, X",
+                    "Xbox One": " B, LB, LEFT, RB, LT, A, RB, LB, B, A",
+                    "PC": " HOLEIN1",
+                    "Phone": " 1-999-4653-461 [1-999-HOLEIN1]"
+                }
+            },
+            {
+                "name": "Spawn Sanchez Dirt Bike",
+                "cheatcodes": {
+                    "PS4": " CIRCLE, X, L1, CIRCLE, CIRCLE, L1, CIRCLE, R1, R2, L2, L1, L1",
+                    "Xbox One": " B, A, LB, B, B, LB, B, RB, RT, LT, LB, LB",
+                    "PC": " OFFROAD",
+                    "Phone": " 1-999-633-7623 [1-999-OFFROAD]"
+                }
+            },
+            {
+                "name": "Spawn PCJ Motorbike",
+                "cheatcodes": {
+                    "PS4": " R1, RIGHT, LEFT, RIGHT, R2, LEFT, RIGHT, SQUARE, RIGHT, L2, L1, L1",
+                    "Xbox One": " RB, RIGHT, LEFT, RIGHT, RT, LEFT, RIGHT, X, RIGHT, LT, LB, LB",
+                    "PC": " ROCKET",
+                    "Phone": " 1-999-762-538 [1-999-ROCKET]"
+                }
+            },
+            {
+                "name": "Spawn BMX Bike",
+                "cheatcodes": {
+                    "PS4": " LEFT, LEFT, RIGHT, RIGHT, LEFT, RIGHT, SQUARE, CIRCLE, TRIANGLE, R1, R2",
+                    "Xbox One": " LEFT, LEFT, RIGHT, RIGHT, LEFT, RIGHT, X, B, Y, RB, RT",
+                    "PC": " BANDIT",
+                    "Phone": " 1-999-226-348 [1-999-BANDIT]"
+                }
+            }
+        ]
+    }
+}

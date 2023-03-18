@@ -1,0 +1,213 @@
+.converter-container {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.converter-container * {
+    margin: 0;
+    box-sizing: border-box;
+}
+.converter-container button {
+    position: relative;
+    top: 0;
+    border: none;
+    padding: 5px 20px;
+    font-size: 0.9em;
+    font-family: inherit;
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+    transition: .1s ease;
+    cursor: pointer;
+}
+.converter-container button:hover {
+    border-bottom-width: 1px; 
+    top: 2px;
+    margin-bottom: 2px;
+}
+.converter-container > div {
+    padding: 20px;
+}
+.upload-container {
+    background-color: rgba(226, 226, 226);
+    display: flex;
+    flex-direction: column;
+}
+.upload-container .toolbar {
+    display: flex;
+    justify-content: space-between;
+}
+.upload-container input {
+    display: block;
+    font-family: inherit;
+}
+input[type=file]::-webkit-file-upload-button {
+    border: none;
+    padding: 5px 10px;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-right: 10px;
+    background-color: #9fe29f;
+}
+.upload-container #convert {
+    display: block;
+    background-color: #68c268;
+}
+
+.result-container {
+    background-color: rgba(243, 243, 243, 0.9);
+    min-height: 400px;
+}
+
+
+
+.result-tree node {
+    margin-left: 20px;
+    display: block;
+}
+node span {
+    position: relative;
+    font-size: 0.9em;
+    display: inline-block;
+    transition: .3s ease;
+}
+node text {
+    font-size: 0.9em;
+}
+node span[contenteditable]:hover {
+    background-color: white;
+}
+node span text {
+    margin: 0px 5px!important;
+    padding: 3px 0px;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: .1s ease;
+    min-width: 20px;
+}
+
+node span text:focus {
+    outline: none;
+}
+node span[data-key] text:focus {
+    border-bottom: 1px solid black;
+}
+node span[data-key] {
+    font-weight: bold;
+}
+node span[data-key]::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-90%);
+    width: 10px;
+    height: 12px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+span[data-type] {
+    content: '\{\}';
+    font-size: 0.9em;
+    display: inline-block;
+    position: relative;
+    padding: 2px;
+    font-weight: normal;
+    width: 22px;
+    height: 22px;
+    line-height: 19px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-left: 5px;
+    border-radius: 3px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+span[data-type=byte] { background-color: #da57fb; }
+span[data-type=short] { background-color: #fb5757; }
+span[data-type=int] { background-color: #575cfb; }
+span[data-type=long] { background-color: #cbcbcb; }
+span[data-type=float] { background-color: #57ccfb; }
+span[data-type=double] { background-color: #fb8557; }
+span[data-type="byte arr"] { background-color: black; }
+span[data-type=string] { background-color: #4fc55d; }
+span[data-type=compound] { background-color: black; }
+span[data-type=new] { background-color: rgb(20, 170, 0); }
+span[data-type=delete] { background-color: rgb(255, 52, 52); }
+
+node input {
+    font-size: 0.9em;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    width: 60px;
+    transition: background-color .3s ease;
+    padding: 3px;
+}
+node input:hover {
+    background-color: white;
+}
+node ul[data-array] {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+node ul[data-array] span {
+    padding: 3px 5px;
+}
+node ul[data-array] span:focus {
+    outline: none;
+}
+
+/* Remove arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.menu-open {
+    display: block!important;
+}
+.tooltip-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: max-content;
+    left: 0;
+    font-size: 0.8em;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    z-index: 1;
+    cursor: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    user-select: none;
+}
+.tooltip-menu div {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    padding-right: 5px;
+    transition: .2s ease;
+}
+.tooltip-menu div:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+.tooltip-menu span {
+    margin-left: 0!important;
+}
+.tooltip-menu b:not(:first-child) {
+    display: block;
+    margin-top: 10px;
+}

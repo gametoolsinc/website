@@ -1,0 +1,33 @@
+html {
+    overflow-x: hidden;
+}
+
+:root {
+    --border-radius: 16px;
+    --page-width: min(1600px, calc(98% - 15px));
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    background: var(--background);
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    box-sizing: border-box;
+    width: var(--page-width);
+    height: fit-content;
+}
+
+.ad {
+    width: 100%;
+    margin-bottom: 22px;
+}

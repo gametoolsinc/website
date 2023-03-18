@@ -1,0 +1,43 @@
+{
+    "version": 4,
+    "application": {
+        "name": "Smelting Time Calculator",
+        "description": "Calculate the time needed to smelt an item.",
+        "keywords": []
+    },
+    "tool": {
+        "name": "Smelting Time Calculator for {game_name}",
+        "description": "Calculate the time needed to smelt an item in {game_name}!",
+        "game_specific_words": [],
+        "keywords": [
+            "{game_name} smelting calculator",
+            "{game_name} smelting time",
+            "{game_name} smelting time calculator",
+            "{game_name} blast furnace smelt time",
+            "{game_name} furnace smelt time",
+            "{game_name} smoker smelt time",
+            "{game_name} furnace calculator"
+        ],
+        "introduction": "Sometimes when you are playing {game_name} you have to smelt large quantities of items. This can take a lot of time. With this tool you can calculate exactly how much time this will take. So you know how long you have to leave {game_name} running to smelt all your items.",
+        "examples": [
+            {
+                "title": "How long does smelting 100 items take in {game_name}?",
+                "text": "A regular furnace can smelt 1 item per 10 seconds. So with a regular furnace, smelting 100 items will take 16 minutes and 40 seconds. The blast furnace and smoker are faster, taking only 5 seconds to smelt 1 item. For 100 items, this will cost 8 minutes and 20 seconds. Note: not all items can be smelted in a blast furnace or in a smoker."
+            },
+            {
+                "title": "How long does smelting 1000 items take in {game_name}?",
+                "text": "A regular furnace can smelt 1 item per 10 seconds. So with a regular furnace, smelting 1000 items will take 2 hours, 46 minutes and 40 seconds. The blast furnace and smoker are faster, taking only 5 seconds to smelt 1 item. For 1000 items, this will cost 1 hour, 23 minutes and 20 seconds. Note: not all items can be smelted in a blast furnace or in a smoker."
+            }
+        ],
+        "questions": [
+            {
+                "title": "How to calculate the smelting time in {game_name}?",
+                "text": "First, find out in what furnace you want to smelt your items in. Different furnaces can have different speeds, so choose your preferred furnace. Once you've determined where, you have to find out how much. Fill this number in the input field. The time it will take should automatically be calculated."
+            },
+            {
+                "title": "How to use the {tool_name}?",
+                "text": "The first step is to determine how many items you are going to need. You can enter this amount in the amount input box. When you do this, we automatically calculate how long it will take to smelt this item in one furnace. The duration of the smelting process is displayed under the input box."
+            }
+        ]
+    }
+}

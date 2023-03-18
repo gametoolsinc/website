@@ -1,0 +1,54 @@
+{
+    "version": 4,
+    "application": {
+        "name": "Unit Calculator",
+        "description": "A tool to convert different types of units to other units.",
+        "keywords": []
+    },
+    "tool": {
+        "name": "{game_name} {units.first_unit_name} Calculator",
+        "description": "Here you can convert {units.second_unit_name} to {units.first_unit_name}. You can also convert many other units to other units for {game_name}.",
+        "game_specific_words": [
+            "units"
+        ],
+        "keywords": [
+            "{tool_name}",
+            "{game_name} {units.second_unit_name} Calculator",
+            "{game_name} Unit Converter",
+            "{game_name} Numbers Converter"
+        ],
+        "introduction": "Welcome to the {tool_name}! If you are playing {game_name} you are always using a lot of blocks. {units.first_unit_name} only goes to 64, but a lot of times you are using more than 64 Items. This tool can convert between the different types of units for you! We also explain the mathematics behind it so you can also do it yourself.",
+        "examples": [
+            {
+                "title": "How many {units.first_unit_name} are <script>document.write({units.first_unit_size} * 10 + 1)</script> {units.second_unit_name}?",
+                "text": "You can calculate the anwer of this question by dividing <script>document.write({units.first_unit_size} * 10 + 1)</script> with {units.first_unit_size}. This will result in 10 with as remainder 1. So the answer to the questions is 10 {units.first_unit_name} with as remainder 1 {units.second_unit_name}."
+            },
+            {
+                "title": "How many {units.first_unit_name} are <script>document.write({units.first_unit_size} * 56)</script> {units.second_unit_name}?",
+                "text": "You can calculate the anwer of this question by dividing <script>document.write({units.first_unit_size} * 56)</script> with {units.first_unit_size}. This will result in 56. So the answer to the questions is 56 {units.first_unit_name}."
+            },
+            {
+                "title": "How many {units.first_unit_name} are <script>document.write({units.first_unit_size} * 64)</script> {units.second_unit_name}?",
+                "text": "You can calculate the anwer to this question by dividing <script>document.write({units.first_unit_size} * 64)</script> with {units.first_unit_size}. This will result in 64 {units.first_unit_name}."
+            }
+        ],
+        "questions": [
+            {
+                "title": "How to calculate the number of {units.first_unit_name} in {game_name}?",
+                "text": "You can calculate the number of {units.first_unit_name} by dividing the number of {units.second_unit_name} you have by 64 and then rounding your answer down to the nearest whole number. The number that you just calculated is how many {units.first_unit_name} you have! You can then calculate the number of {units.second_unit_name} remaining by subtracting the number of {units.first_unit_name} multiplied by 64 from the total number of {units.second_unit_name}. If you follow these steps, you can easily calculate how many {units.first_unit_name} a given number of {units.second_unit_name} is."
+            },
+            {
+                "title": "How to use the {tool_name}?",
+                "text": "A {tool_name} is a calculator that can convert {units.second_unit_name} to {units.first_unit_name}, {units.first_unit_name} to {units.second_unit_name}, and many other combinations of units. All you need to do is select the unit in which you have an amount and select the desired unit. Then enter your amount and we will convert it to the amount in your desired unit."
+            },
+            {
+                "title": "Why is this {tool_name} useful?",
+                "text": "{game_name} has its own units in the game. It can often be hard to wrap your head around all the different units, it's therefore useful to have a simple calculator which calculates between these units. Our Resource Calculator for example requires you to fill in an integer instead of '12 {units.first_unit_name} and 2 {units.second_unit_name}'. By using this tool, you can quickly convert these {units.first_unit_name} into integers."
+            },
+            {
+                "title": "Why can't you just divide {units.second_unit_name} by {units.first_unit_size} in a regular calculator?",
+                "text": "If you would just divide a number by 64 you would often end up with a decimal number. This will give you an idea of the amount of {units.first_unit_name}, but nothing about the amount of {units.second_unit_name} left over. In a regular calculator it will cost you 2 steps to convert a number to {units.first_unit_name}, but a {tool_name} will calculate this all at once, which makes converting large amounts of different units less painful."
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "name": "School",
+    "description": "Tools to make life at school easier.",
+    "visible": false,
+    "commercial use": {
+        "allowed": false,
+        "source": ""
+    },
+    "main-color": 40,
+    "pages": [
+        "articles"
+    ]
+}

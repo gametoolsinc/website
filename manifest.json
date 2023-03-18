@@ -1,0 +1,27 @@
+{
+    "name": "Gamertools",
+    "short_name": "Gamertools",
+    "background_color": "white",
+    "categories": ["games", "utilities"],
+    "description": "An application to make you a gaming pro!",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/webp"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "/favicon.ico",
+            "sizes": "16x16 32x32 48x48 256x256"
+        }
+    ]
+}

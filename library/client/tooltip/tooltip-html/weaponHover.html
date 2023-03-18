@@ -1,0 +1,26 @@
+<div class="tooltip-content" data-tooltip-onload="hoverInfo()">
+    <h2>{weaponName}</h2>
+</div>
+
+<style>
+    .tooltip-content {
+        background-color: rgb(20,20,20);
+        padding: 10px;
+        color: white;
+    }
+    .tooltip-content h2 {
+        margin: 0;
+        border-bottom: 1px solid #F8DE7E;
+    }
+    .grid_table {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgba(0,0,0,0.4);
+    }
+    .grid_table p {
+        margin: 3px 10px;
+    }
+    .grid_table p:nth-child(even) {
+        text-align: right;
+    }
+</style>

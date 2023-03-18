@@ -1,0 +1,394 @@
+{
+    "commands": {
+        "teleport": "/tp {targetselector} {coordinates, targetselector}",
+        "setblock": "/setblock {coordinates} -1 {blockselector} {old block handling}",
+        "fill": "/fill {coordinates} {coordinates} {blockselector} {old block handling}"
+    },
+    "types": {
+        "coordinates": {
+            "information": {
+                "type name": "Specify coordinates",
+                "background color": "#ff9999"
+            },
+            "X": {
+                "main": "true",
+                "type": "input",
+                "argument name": "x",
+                "default value": "~"
+            },
+            "Y": {
+                "main": "true",
+                "type": "input",
+                "argument name": "y",
+                "default value": "~"
+            },
+            "Z": {
+                "main": "true",
+                "type": "input",
+                "argument name": "z",
+                "default value": "~"
+            }
+        },
+        "targetselector": {
+            "information": {
+                "type name": "Select player/entity",
+                "background color": "#99c0ff"
+            },
+            "Target": {
+                "main": "true",
+                "type": "select",
+                "options": {
+                    "Nearest Player": {
+                        "type": "option",
+                        "set value": "@p"
+                    },
+                    "Random Player": {
+                        "type": "option",
+                        "set value": "@r"
+                    },
+                    "All Players": {
+                        "type": "option",
+                        "set value": "@a"
+                    },
+                    "Entity": {
+                        "type": "option",
+                        "set value": "@e",
+                        "set display": {
+                            "type": "input",
+                            "argument name": "type",
+                            "argument of": "Target",
+                            "display name": "Entity Type"
+                        }
+                    },
+                    "Player that executes": {
+                        "type": "option",
+                        "set value": "@s"
+                    },
+                    "Player with name": {
+                        "type": "option",
+                        "set display": {
+                            "type": "input",
+                            "display name": "Player Name"
+                        }
+                    }
+                },
+                "arguments": {
+                    "Limit": {
+                        "type": "number",
+                        "argument name": "limit"
+                    },
+                    "Sort": {
+                        "type": "select",
+                        "argument name": "sort",
+                        "options": {
+                            "Not specified": {
+                                "type": "option",
+                                "set value": ""
+                            },
+                            "Nearest": {
+                                "type": "option",
+                                "set value": "nearest"
+                            },
+                            "Furthest": {
+                                "type": "option",
+                                "set value": "furthest"
+                            },
+                            "Random": {
+                                "type": "option",
+                                "set value": "random"
+                            },
+                            "Arbitrary": {
+                                "type": "option",
+                                "set value": "arbitrary"
+                            }
+                        }
+                    },
+                    "coordinates": {
+                        "type": "coordinates"
+                    },
+                    "Selecting targets by": {
+                        "type": "select",
+                        "options": {
+                            "Radius": {
+                                "type": "option",
+                                "set display": {
+                                    "type": "range",
+                                    "argument name": "distance",
+                                    "content": {
+                                        "Min. radius": {
+                                            "type": "number"
+                                        },
+                                        "Max. radius": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            },
+                            "Volume": {
+                                "type": "option",
+                                "set display": {
+                                    "type": "box",
+                                    "content": {
+                                        "Positive Distance X": {
+                                            "type": "number",
+                                            "argument name": "dx"
+                                        },
+                                        "Positive Distance Y": {
+                                            "type": "number",
+                                            "argument name": "dy"
+                                        },
+                                        "Positive Distance Z": {
+                                            "type": "number",
+                                            "argument name": "dz"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Rotation vertical": {
+                        "type": "range",
+                        "argument name": "x_rotation",
+                        "content": {
+                            "Min. vertical rotation": {
+                                "type": "number"
+                            },
+                            "Max. vertical rotation": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "Rotation horizontal": {
+                        "type": "range",
+                        "argument name": "y_rotation",
+                        "content": {
+                            "Min. horizontal rotation": {
+                                "type": "number"
+                            },
+                            "Max. horizontal rotation": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "Team": {
+                        "type": "select",
+                        "argument name": "team",
+                        "options": {
+                            "Targets in set team": {
+                                "type": "option",
+                                "set display": {
+                                    "type": "input",
+                                    "display name": "Team Name"
+                                }
+                            },
+                            "Targets not in set team": {
+                                "type": "option",
+                                "set display": {
+                                    "type": "input",
+                                    "display name": "Team Name",
+                                    "prefix": "!"
+                                }
+                            },
+                            "Targets in any team": {
+                                "type": "option",
+                                "set value": ""
+                            },
+                            "Targets not in any team": {
+                                "type": "option",
+                                "set value": "!"
+                            }
+                        }
+                    },
+                    "Name": {
+                        "type": "select",
+                        "argument name": "name",
+                        "options": {
+                            "This name": {
+                                "type": "option",
+                                "set display": {
+                                    "type": "input",
+                                    "display name": "Name"
+                                }
+                            },
+                            "Not this name": {
+                                "type": "option",
+                                "set display": {
+                                    "type": "input",
+                                    "display name": "Name",
+                                    "prefix": "!"
+                                }
+                            }
+                        }
+                    },
+                    "NBT": {
+                        "type": "select",
+                        "argument name": "nbt",
+                        "options": {
+                            "Targets matching this NBT": {
+                                "type": "option",
+                                "set display": {
+                                    "type": "input",
+                                    "display name": "NBT:"
+                                }
+                            },
+                            "Targets not matching this NBT": {
+                                "type": "option",
+                                "set display": {
+                                    "type": "input",
+                                    "display name": "NBT:",
+                                    "prefix": "!"
+                                }
+                            }
+                        }
+                    },
+                    "Game mode": {
+                        "type": "select",
+                        "argument name": "gamemode",
+                        "options": {
+                            "Not specified": {
+                                "type": "option",
+                                "set value": ""
+                            },
+                            "Survival mode": {
+                                "type": "option",
+                                "set value": "survival"
+                            },
+                            "Creative mode": {
+                                "type": "option",
+                                "set value": "creative"
+                            },
+                            "Spectator mode": {
+                                "type": "option",
+                                "set value": "spectator"
+                            },
+                            "Adventure mode": {
+                                "type": "option",
+                                "set value": "adventure"
+                            },
+                            "Not survival mode": {
+                                "type": "option",
+                                "set value": "!survival"
+                            },
+                            "Not creative mode": {
+                                "type": "option",
+                                "set value": "!creative"
+                            },
+                            "Not spectator mode": {
+                                "type": "option",
+                                "set value": "!spectator"
+                            },
+                            "Not adventure mode": {
+                                "type": "option",
+                                "set value": "!adventure"
+                            }
+                        }
+                    },
+                    "Level": {
+                        "type": "range",
+                        "argument name": "level",
+                        "content": {
+                            "Min. XP level": {
+                                "type": "number"
+                            },
+                            "Max. XP level": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "Advancements": {
+                        "type": "input",
+                        "argument name": "advancements"
+                    },
+                    "Tag": {
+                        "type": "input",
+                        "argument name": "tag"
+                    },
+                    "Scores": {
+                        "type": "list",
+                        "list type": "key=value",
+                        "content": {
+                            "type": "range",
+                            "argument name": {
+                                "type": "input"
+                            },
+                            "content": {
+                                "Min. score": {
+                                    "type": "number"
+                                },
+                                "Max. score": {
+                                    "type": "number"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "block": {
+            "information": {
+                "type name": "/execute if block",
+                "background color": "#ffa1ff",
+                "set value": "block"
+            },
+            "position": {
+                "type": "coordinates"
+            },
+            "block type": {
+                "type": "blockselector"
+            }
+        },
+        "blocks": {
+            "information": {
+                "type name": "/execute if blocks",
+                "set value": "blocks"
+            }
+        },
+        "data": {
+            "information": {
+                "type name": "/execute if data",
+                "set value": "data"
+            }
+        },
+        "blockselector": {
+            "information": {
+                "type name": "Select block",
+                "background color": "#c5c8fc"
+            },
+            "Block": {
+                "type": "select",
+                "main": "true",
+                "options": {
+                    "use file": {
+                        "file": "blocksInformation.json",
+                        "key as value": "code"
+                    }
+                }
+            }
+        },
+        "old block handling": {
+            "information": {
+                "type name": "Old Block Handling",
+                "background color": "#d28aff"
+            },
+            "BlockHandling": {
+                "type": "select",
+                "main": "true",
+                "options": {
+                    "replace": {
+                        "type": "option",
+                        "set value": "replace"
+                    },
+                    "destroy": {
+                        "type": "option",
+                        "set value": "destroy"
+                    },
+                    "keep": {
+                        "type": "option",
+                        "set value": "keep"
+                    }
+                }
+            }
+        }
+    }
+
+}

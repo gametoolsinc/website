@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "name": "GTA V",
+    "description": "An action/adventure game",
+    "visible": true,
+    "commercial use": {
+        "allowed": false,
+        "source": ""
+    },
+    "main-color": 217,
+    "pages": [
+        "cheatcodes"
+    ]
+}

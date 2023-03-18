@@ -1,0 +1,50 @@
+{
+    "version": 4,
+    "application": {
+        "name": "Resource Calculator",
+        "description": "A tool to calculate the amount of (base) resources needed to make an item with the help of a guide in your game.",
+        "keywords": []
+    },
+    "tool": {
+        "name": "{game_name} Resource Calculator",
+        "description": "A {tool_name} that calculates the amount of raw recources you need for your builds and creations! It also provides a guide on how to create the items! All quick and easy!",
+        "game_specific_words": [
+            "items"
+        ],
+        "keywords": [
+            "{tool_name}",
+            "{game_name} block calculator",
+            "{game_name} crafting calculator",
+            "{game_name} item calculator"
+        ],
+        "introduction": "Welcome to the {tool_name}! In {game_name} you have to craft a lot of items to make progression in the game or to build something epic. This  {tool_name} can calculate the amount of resources needed to make a certain amount of items. When using this tool, you will never have too little resources to finish your build.",
+        "examples": [
+            {
+                "title": "What are the base resources for {items.difficult_item_name}?",
+                "text": "They are <span class='base-resources' item-id='{items.difficult_item_id}'></span>"
+            },
+            {
+                "title": "What are the base resources for {items.medium_item_name}?",
+                "text": "They are <span class='base-resources' item-id='{items.medium_item_id}'></span>"
+            }
+        ],
+        "questions": [
+            {
+                "title": "How to calculate the amount of resources in {game_name}?",
+                "text": "You can calculate the amount of resources needed for an item by checking the needed input items in the recipe to make your item. Then you check the needed input items for these items. You repeat this process until your input items are items you can gather in {game_name}. These items are the resources required to make your desired item."
+            },
+            {
+                "title": "How to use the {tool_name}?",
+                "text": "First you need to decide which item and how many of that item you want to make in {game_name}. After you know this, find your item by typing the name of the item in the search bar or by selecting the item in one of the tabs. When you have found your item, click on it and type in the amount you need of this item. The resource menu now shows which resources and how many you need to make your item. The guide menu shows you the steps you have to make to create your item. Now you can go back to your game and make your item!"
+            },
+            {
+                "title": "Why is the {tool_name} useful?",
+                "text": "When you are creating something in {game_name} you want to concentrate on the creating part and not on the part where you need to gather the required resources. This tool calculates how many items you are going to need for your creation, so that you don’t spend too much time gathering resources. This way, you will have more time to focus on your epic creations."
+            },
+            {
+                "title": "How many items exist in {game_name}?",
+                "text": "This is a difficult question, because there are a lot of versions of {game_name}. When we look at the most recent version of {game_name} and we also included unobtainable items, then there are {items.amount} items in {game_name}."
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "name": "Mindustry",
+    "description": "A sandbox video game that is about making the biggest factory possible.",
+    "visible": true,
+    "commercial use": {
+        "allowed": false,
+        "source": ""
+    },
+    "main-color": 220,
+    "pages": [
+        "resources"
+    ]
+}

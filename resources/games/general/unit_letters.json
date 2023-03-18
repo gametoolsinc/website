@@ -1,0 +1,65 @@
+{
+    "Letters": {
+        "size": 1
+    },
+    "Words": {
+        "size": 4.7,
+        "important": true,
+        "start": true
+    },
+    "Pages": {
+        "size": 2350
+    },
+    "Romans": {
+        "size": 940000
+    },
+    "Seconds to read": {
+        "size": 17.6,
+        "categories": [
+            "Reading Time"
+        ]
+    },
+    "Minutes to read": {
+        "size": 1057.6,
+        "categories": [
+            "Reading Time"
+        ]
+    },
+    "Hours to read": {
+        "size": 63450,
+        "categories": [
+            "Reading Time"
+        ]
+    },
+    "Days to read": {
+        "size": 1522800,
+        "start": true,
+        "categories": [
+            "Reading Time"
+        ]
+    },
+    "Seconds to speech": {
+        "size": 10.966666,
+        "categories": [
+            "Speaking Time"
+        ]
+    },
+    "Minutes to speech": {
+        "size": 658,
+        "categories": [
+            "Speaking Time"
+        ]
+    },
+    "Hours to speech": {
+        "size": 39480,
+        "categories": [
+            "Speaking Time"
+        ]
+    },
+    "Days to speech": {
+        "size": 947520,
+        "categories": [
+            "Speaking Time"
+        ]
+    }
+}

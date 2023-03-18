@@ -1,0 +1,30 @@
+{
+    "version": 4,
+    "application": {
+        "name": "Scoreboard",
+        "description": "A tool to keep track of your score.",
+        "keywords": []
+    },
+    "tool": {
+        "name": "{game_name} Scoreboard",
+        "description": "Keep track of your {game_name} scores on this scoreboard! It also features a dice and coin for randomness.",
+        "game_specific_words": [
+        ],
+        "keywords": [
+            "{tool_name}"
+        ],
+        "introduction": "{tool_name} is a scoreboard for keeping track of the score of you and your opponent during a match of {game_name}. This scoreboard also features some helpful tools, like a dice and a coin flipper for random results, but a button to show the history of the entire match. The latter of which you can use to check what has happened over the course of the {game_name} match. Don’t worry, we’ve got an undo button in case you made a mistake.",
+        "examples": [
+            {
+                "title": "From my start score 5389 is subtracted, how much will I have left?",
+                "text": "Your start score is always 8000. Your score gets subtracted by 5389, so your new score will be 8000 - 5389 = <b>2611</b>."
+            }
+        ],
+        "questions": [
+            {
+                "title": "Why can't you just track your scores on a piece of paper?",
+                "text": "This is definitely an option, but is not the best option available. Our tool is all very organised, so minimal mistakes will be made by calculating your scores. As a bonus feature you also have access to a random dice thrower and coin flipper."
+            }
+        ]
+    }
+}

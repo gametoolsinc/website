@@ -1,0 +1,247 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.map-generate {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 'selector selector'
+                         'steps img-display';
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.map-generate .step-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(150px, 10%), 1fr));
+    background-color: white;
+    border-bottom: 2px solid lightgray;
+    grid-area: selector;
+}
+.map-generate .step-selector .step {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    transition: .3s ease;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.map-generate .step-selector .active {
+    background-color: rgb(104, 194, 104);
+}
+.map-generate .step-selector .step p {
+    margin: 0;
+}
+.map-generate .step-selector .step span {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.map-generate .steps {
+    display: grid;
+    position: relative;
+    transition: height .5s ease;
+    grid-area: steps;
+    overflow: hidden;
+    min-height: 500px;
+}
+.map-generate .steps .step-content {
+    grid-row: 1;
+    grid-column: 1;
+    padding: 20px;
+    padding-bottom: 3.5em;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+.map-generate .steps .step-content h3 {
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 0;
+    color: rgb(102, 102, 102);
+}
+.map-generate .steps .upload {
+    display: flex;
+}
+.map-generate .steps .upload > div {
+    width: 100%;
+}
+.map-generate .steps .crop-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.map-generate .steps .crop-container #crop-canvas {
+    display: block;
+}
+.map-generate .steps .crop-container .cropper-view-box {
+    outline-color: black;
+}
+.map-generate .steps .step-content .result-option {
+    padding: 5px 30px;
+    background-color: #68c268;
+    cursor: pointer;
+    margin-top: 10px;
+    width: fit-content;
+}
+.step-content .progress-container {
+    position: relative;
+    display: grid;
+}
+.step-content .progress-container > div {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    background-color: white;
+}
+#progress-bar {
+    height: 30px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+#progress-bar #slider {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(230,230,230);
+    transition: width .1s ease;
+}
+#progress-bar, #finished-convert {
+    visibility: hidden;
+}
+
+.active {
+    z-index: 2;
+}
+.map-generate .steps .step-content h2 {
+    margin: 0;
+}
+.upload-file-button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #349beb;
+}
+input[type=file] {
+    padding-top: 10px;
+    font-family: 'Poppins';
+    width: 100%;
+}
+input[type=file]:focus {
+    outline: none;
+}
+input[type=file]::-webkit-file-upload-button {
+    border: none;
+    padding: 5px 10px;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-right: 10px;
+}
+.input-field {
+    display: flex;
+    margin: 5px 0px;
+}
+.input-field input, .input-field select {
+    margin-left: 10px;
+    border: 1px solid black;
+    padding: 3px;
+    width: 50px;
+    font-family: inherit;
+    background-color: white;
+}
+.input-field select {
+    width: 150px;
+}
+.map-generate .steps .step-content .button {
+    position: absolute;
+    padding: 5px 30px;
+    background-color: #68c268;
+    cursor: pointer;
+    user-select: none;
+}
+.button:not(.back) {
+    display: none;
+}
+*[completed=true] .button {
+    display: block!important;
+}
+.next {
+    bottom: 10px;
+    right: 10px;
+} 
+.back {
+    bottom: 10px;
+    left: 10px;
+    background-color: #ebebeb!important;
+}
+.image-display {
+    grid-area: img-display;
+    display: block;
+    padding: 20px;
+    background-color: rgb(240,240,240);
+}
+.image-display h2 {
+    margin: 0;
+}
+.image-display .image {
+    max-width: 400px;
+    display: block;
+    overflow: hidden;
+}
+.image-display #image {
+    visibility: hidden;
+}
+.image-display #image-converted {
+    image-rendering: pixelated;
+}
+#finished-convert ol li, #finished-convert ol .input-field {
+    font-size: 0.9em;
+}
+/* Tabs */
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.tab-container .tab-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(max(250px,30%),1fr));
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.tab-container .tab-selector > * {
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgb(250,250,250);
+    text-align: center;
+}
+.tab-container .tabs {
+    display: grid;
+    position: relative;
+}
+.tab-container .tabs .tab-item {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    background-color: rgb(240,240,240);
+}
+.selected {
+    background-color: rgb(240,240,240)!important;
+}
+
+@media screen and (max-width: 900px) {
+    .map-generate {
+        grid-template-areas:    'selector selector'
+                                'steps steps'
+                                'img-display img-display';
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "name": "Particle Generator",
+    "title": "Particle Generator for {game}",
+    "description": "Make all kinds of shapes with particles using the Particle Generator for {game}!",
+    "game_description": "Make all kinds of shapes with particles using the Particle Generator for {game}!",
+    "keywords": ["{game} particle generator", "{game} particles"],
+    "data": "particleInformation.json",
+    "explanation": [
+        {
+            "title":"What are cheatcodes in {game}?",
+            "text":"Cheatcodes in {game} are a serie of codes you can type into {game} to gain acces to advantages. Like getting some coins for free or getting an extra live. These codes were put in by the developers of {game} so that the public can try to find and use them."
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "version": 4,
+    "application": {
+        "name": "Nether Calculator",
+        "description": "A tool to convert overworld coordinates to nether coordinates",
+        "keywords": []
+    },
+    "tool": {
+        "name": "Nether Calculator for {game_name}",
+        "description": "A tool to convert overworld coordinates to nether coordinates in {game_name}!",
+        "game_specific_words": [],
+        "keywords": [
+            "{game_name} nether portal calculator",
+            "{game_name} coordinate calculator",
+            "{game_name} nether calculator",
+            "{game_name} portal link calculator",
+            "How to link up nether portals in {game_name}"
+        ],
+        "introduction": "Are you using nether portals a lot in your {game_name} world? This tool will help you with placing your nether portals in the correct places so that they correctly link. This {tool_name} will convert Overworld coördinates to their corresponding Nether coordinates. This is done by dividing your coördinates by 8 (except for the Y-coördinate). These Nether Coordinates will tell you where to put your portal in the Nether so they will be linked up correctly.",
+        "examples": [
+            {
+                "title": "Where are you in the nether when you are in the overworld at (700, 700, 700)?",
+                "text": "For the x and z axis, you need to divide the overworld coordinates with eight. The y axis stays the same in the nether. If you calculate this you find out that (700, 700, 700) is at (87, 700, 87) in the nether."
+            }
+        ],
+        "questions": [
+            {
+                "title": "How to calculate Nether coordinates in {game_name}?",
+                "text": "You can calculate nether coordinates by dividing your overworld X and Z coordinates by 8. Your Y coordinate will stay the same. The Nether Portal Calculator will do the calculating for you so you will always have the correct coordinates. Check the instructions for the linking process."
+            },
+            {
+                "title": "Why can it be useful to link up portals in {game_name}?",
+                "text": "In {game_name}, it can often be quite tiring to cover great distances in the overworld. By linking up portals, you can shorten your travel time significantly, because travelling 1 block in the Nether is equal to travelling 8 blocks in the overworld. This is really useful for having a quick way to get to your villages, strongholds and creations around your world. Follow the instructions above to know more about how you can link up your portals."
+            },
+            {
+                "title": "What is the purpose of {tool_name}?",
+                "text": "The purpose of this tool is to convert coordinates in {game_name} to Nether coordinates, and the other way around. It will also give you clear instructions on how to use these coördinates to link up portals in {game_name}. I created this tool because I found converting coördinates using a regular calculator inconvenient and because I found it hard to find the right instructions for linking up portals in {game_name}."
+            },
+            {
+                "title": "What is the size of a Nether Portal?",
+                "text": "The minimum size of a nether portal is 4x5. The maximum size is 23x23. These sizes both include the border of the structure. You can build a nether portal in any size between these two sizes, as long as the shape is a rectangle."
+            }
+        ]
+    }
+}

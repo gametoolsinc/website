@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "name": "Astroneer",
+    "description": "A sandbox adventure game where you can explore different planets.",
+    "visible": false,
+    "commercial use": {
+        "allowed": false,
+        "source": ""
+    },
+    "main-color": 214,
+    "pages": [
+        "resources"
+    ]
+}
