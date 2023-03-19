@@ -1,7 +1,8 @@
+let chart;
 
 async function place_graph() {
     // Get data
-    const response = await fetch("/library/client/view/views.json");
+    const response = await fetch("/resources/views.json");
     const data = await response.json();
 
     // convert data to coordinates
@@ -36,7 +37,7 @@ async function place_graph() {
     let datasets = []
     for (let page in pages) {
         let borderColor = 'rgb(' + 255 * Math.random() + ', ' + 255 * Math.random() + ', ' + 255 * Math.random() + ')'
-        let data = pages[page]["data"].sort((a,b) => new Date(a.x) - new Date(b.x));
+        let data = pages[page]["data"].sort((a, b) => new Date(a.x) - new Date(b.x));
         datasets.push({
             label: page,
             data: data,
@@ -48,7 +49,11 @@ async function place_graph() {
 
     console.log(datasets)
 
-    let chart = new Chart(document.getElementById('chart'), {
+    if (chart != null){
+        chart.destroy()
+    }
+
+    chart = new Chart(document.getElementById('chart'), {
         type: "line",
         data: {
             // labels: labels,
@@ -76,6 +81,7 @@ async function place_graph() {
                     //         quarter: 'MMM YYYY'
                     //     }
                     // }
+                    min: moment(document.getElementById("date").value),
                 },
                 y: {
                     display: true,
@@ -93,5 +99,7 @@ async function place_graph() {
         }
     });
 }
+
+document.getElementById("date").value = moment().subtract(7,'w').format('YYYY-MM-DD');;
 
 place_graph()

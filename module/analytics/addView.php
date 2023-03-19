@@ -13,7 +13,7 @@ try {
 
     $today = date("Y-m-d");
 
-    $page_views_path = $_SERVER['DOCUMENT_ROOT'] . '/resources/main/views.json';
+    $page_views_path = $_SERVER['DOCUMENT_ROOT'] . '/resources/views.json';
 
     $file = fopen($page_views_path, 'r+');
     flock($file, LOCK_EX);

@@ -10,14 +10,16 @@
     <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@0.1.1"></script>
 
-    <script src="/public/main/pageViews/javascript.js"></script>
-    <link href="stylesheet.css" rel="stylesheet">
+    <script src="/module/analytics/show/makeGraph.js" defer></script>
+    <link href="/module/analytics/show/graph.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/resources/games/general/logo.svg" type="image/svg+xml" sizes="any">
 </head>
 
 <body>
-    <h1>Page views tools</h1>
+    <h1>Analytics</h1>
+    <button onclick="place_graph()">Draw</button>
+    <input id="date" type="date"/>
     <canvas id="chart"></canvas>
 </body>
 

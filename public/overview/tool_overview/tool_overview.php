@@ -2,6 +2,7 @@
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/webpage/webpage.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/module/link/link.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/tool.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/tools.php");
 
 $current_game_id = "";
 $current_application_id = "";
@@ -73,9 +74,8 @@ $webpage->startContent();
     <?php
     $links = new LinkGrid($webpage);
 
-    $toolIds = Tool::getAllToolIds();
-    foreach ($toolIds as $toolId) {
-        $tool = new Tool($toolId);
+    $tools = new Tools();
+    foreach ($tools->getAllTools() as $tool) {
         if (
             $tool->isVisible()
             && ($tool->getGame()->getId() == $current_game_id || $current_game_id == "")

@@ -267,9 +267,9 @@ class Webpage
 
     static function upgradeUrl(string $url): string
     {
-        $start = explode("/", "$_SERVER[REQUEST_URI]")[1];
-        if ($start == "debug") {
-            $url = "/debug" . $url;
+        $current_url = $_SERVER["REQUEST_URI"];
+        if (str_contains($current_url, "type=debug")) {
+            $url = $url . "?type=debug";
         }
         return $url;
     }

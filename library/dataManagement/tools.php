@@ -1,15 +1,33 @@
 <?php
-// Open /library/dataManagement/tools.php
+
 class Tools
 {
-    private static function executeSql($sql)
+    private string $path;
+    private SQLite3 $db;
+
+    function __construct()
     {
-        $db = new SQLite3($_SERVER['DOCUMENT_ROOT'] . '/resources/tools/tools.sqlite');
-        $db->exec($sql);
-        $db->close();
+        $this->path = "/resources/tools/tools.sqlite";
+        $this->db = new SQLite3($_SERVER['DOCUMENT_ROOT'] . $this->path);
+        // $this->db->close()
     }
 
-    static public function createDatabase()
+    /**
+     * @return Tool[]
+     */
+    public function getAllTools(): array
+    {
+        $tools = [];
+        $sql = "SELECT id FROM Tool";
+        $ret = $this->db->query($sql);
+        while ($row = $ret->fetchArray(SQLITE3_ASSOC)) {
+            $tool = new Tool($row["id"]);
+            array_push($tools, $tool);
+        }
+        return $tools;
+    }
+
+    public function createDatabase()
     {
         $sql = "CREATE TABLE Tool (
             id INTEGER PRIMARY KEY,
@@ -18,16 +36,16 @@ class Tools
             application TEXT NOT NULL,
             subject TEXT NOT NULL
         );";
-        Tools::executeSql($sql);
+        $this->db->exec($sql);
     }
 
-    static public function deleteDatabase()
+    public function deleteDatabase()
     {
         $sql = "DROP TABLE Tool;";
-        Tools::executeSql($sql);
+        $this->db->exec($sql);
     }
 
-    static public function addAllTools()
+    public function addAllTools()
     {
         Tools::addTool(1, 1, 'minecraft', 'unit', 'items');
         Tools::addTool(2, 1, 'minecraft', 'resources', '-');
@@ -51,22 +69,16 @@ class Tools
         Tools::addTool(20, 1, 'general', 'colourPicker', '');
     }
 
-    static function addTool($id, $released, $game, $application, $subject)
+    function addTool($id, $released, $game, $application, $subject)
     {
         $sql = "INSERT INTO Tool VALUES ($id, $released, '$game', '$application', '$subject')";
-        Tools::executeSql($sql);
+        $this->db->exec($sql);
     }
 
-    static public function executeAll()
+    public function reset()
     {
-        Tools::deleteDatabase();
-        Tools::createDatabase();
-        Tools::addAllTools();
+        $this->deleteDatabase();
+        $this->createDatabase();
+        $this->addAllTools();
     }
-}
-
-
-// Testing
-if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
-    Tools::executeAll();
 }

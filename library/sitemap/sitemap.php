@@ -2,6 +2,7 @@
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/game.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/application.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/tool.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/tools.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/articles/articles.php");
 
 
@@ -37,9 +38,8 @@ class Sitemap
         }
 
         // Tools
-        $toolIds = Tool::getAllToolIds();
-        foreach ($toolIds as $toolId){
-            $tool = new Tool($toolId);
+        $tools = new Tools();
+        foreach ($tools->getAllTools() as $tool){
             if ($tool->isVisible()){
                 array_push($this->pages, new Page($tool->getUrl(), "yearly", 1.0));
             }

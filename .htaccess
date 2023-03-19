@@ -24,7 +24,7 @@ RewriteRule ^(.*)/$ /$1 [L,R=301]
 Options -Indexes
 
 # rewrite to sitemap
-RewriteRule sitemap.xml /public/main/sitemap/sitemap.php
+#RewriteRule sitemap.xml /public/main/sitemap/sitemap.php
 
 # acces denied to file that start with .
 RewriteCond %{SCRIPT_FILENAME} -d [OR]

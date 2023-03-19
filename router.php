@@ -11,6 +11,7 @@ if (array_key_exists("type", $_GET)) {
 
 $special_pages = [
     "/^\/adminGamertools$/" => "/public/main/admin/webpage.php?",
+    "/^\/sitemap\.xml$/" => "/public/main/sitemap/sitemap.php?",
 ];
 
 foreach ($special_pages as $page => $replace) {

@@ -2,6 +2,7 @@
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/game.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/application.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/tool.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/tools.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/articles/articles.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/webpage/webpage.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/module/link/link.php");
@@ -65,9 +66,8 @@ $webpage->startContent();
     <?php
     $links = new LinkGrid($webpage);
     $links->setAmountOfRows(1);
-    $toolIds = Tool::getAllToolIds();
-    foreach ($toolIds as $toolId) {
-        $tool = new Tool($toolId);
+    $tools = new Tools();
+    foreach ($tools->getAllTools() as $tool) {
         if ($tool->isVisible()) {
             $links->newLink(LinkType::tool, $tool->getName(), $tool->getDescription(), [$tool->getGame()->getPreviewImage(), $tool->getApplication()->getIcon()], $tool->getUrl());
         }

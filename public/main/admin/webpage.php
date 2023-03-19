@@ -6,6 +6,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/library/sitemap/sitemap.php";
 $sitemap = new Sitemap();
 $output = $sitemap->getXml();
 $xml = simplexml_load_string($output);
+
 ?>
 
 <!DOCTYPE html>
@@ -20,14 +21,20 @@ $xml = simplexml_load_string($output);
 
 <body>
     <h1>Admin Controls</h1>
+    
     <h2>Page views</h2>
-    <a href="/public/main/pageViews/webpage.php">Webpage</a>
+    <input type='button' value='Show analytics' onclick='window.open("/public/main/admin/actions/showAnalytics.php")' />
+
+    <h2>Tools</h2>
+    <input type='button' value='Reset tools database' onclick='window.open("/public/main/admin/actions/resetToolsDatabase.php")' />
+    
     <h2>Articles</h2>
     <input type='button' value='New article' onclick='window.open("/public/articles/post/newArticle.php")' />
     <input type='button' value='Edit article' onclick='window.open("/public/articles/editArticle.php?id="+window.prompt("Enter article id"))' />
     <input type='button' value='Delete article' onclick='window.open("/public/articles/post/deleteArticle.php?id="+window.prompt("Enter article id"))' />
+    
     <h2>Caching Controls</h2>
-    <input type='button' value='Recach all webpages' onclick='window.open("/public/main/admin/cachAll.php")' />
+    <input type='button' value='Recach all webpages' onclick='window.open("/public/main/admin/actions/cachAll.php")' />
     <h3>Cached webpages</h3>
     <table>
         <thead>

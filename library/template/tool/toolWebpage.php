@@ -94,7 +94,8 @@ class ToolWebpage
                 </div>";
 
         echo "<h1>{$this->tool->getName()}</h1>";
-        echo "<main class='tool'>";
+
+        echo "<main class='tool'>"; // Start tool
     }
 
     function endContent()

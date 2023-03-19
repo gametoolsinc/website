@@ -11,19 +11,6 @@ class Tool
     private string $subject;
     private bool $released;
 
-    static function getAllToolIds()
-    {
-        $ids = [];
-        $db = new SQLite3($_SERVER['DOCUMENT_ROOT'] . '/resources/tools/tools.sqlite');
-        $sql = "SELECT id FROM Tool";
-        $ret = $db->query($sql);
-        while ($row = $ret->fetchArray(SQLITE3_ASSOC)) {
-            array_push($ids, $row["id"]);
-        }
-        $db->close();
-        return $ids;
-    }
-
     function __construct(int $id)
     {
         $db = new SQLite3($_SERVER['DOCUMENT_ROOT'] . '/resources/tools/tools.sqlite');
