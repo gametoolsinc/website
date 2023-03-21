@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var url = window.location.href;
     if (!url.includes('/debug') && !url.includes('views.js')) {
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "/module/analytics/views.php");
+        xhr.open("POST", "/module/analytics/addView.php");
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
             }

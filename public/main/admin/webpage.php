@@ -71,7 +71,7 @@ $xml = simplexml_load_string($output);
                 $html = str_replace("{title}", $path, $html);
                 $html = str_replace("{location}", $url, $html);
                 $html = str_replace("{last update}", date("d-m-Y H:i:s", $lastUpdate), $html);
-                $html = str_replace("{refrechCache}", $host . "/cach" . $path, $html);
+                $html = str_replace("{refrechCache}", $host . $path . "?type=cach", $html);
                 echo $html;
             }
             ?>
