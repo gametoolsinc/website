@@ -1,5 +1,5 @@
 <?php
-
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/imageHost/imageHost.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/game.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/application.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/articles/articles.php");
@@ -15,7 +15,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/webpage/webpage.php"
         </div>
         <a href="<?= \Webpage::upgradeUrl("/") ?>">
             <div class="logo">
-                <img loading="lazy" src="/resources/main/logo.png" alt="logo"></img>
+                <img loading="lazy" src=<?= ImageHost::getBetterUrl("/resources/main/logo.png") ?> alt="logo"></img>
             </div>
         </a>
         <div class="navigation">

@@ -1,17 +1,21 @@
-.nether_calculator { /* , .explanation (overal hetzelfde voor consistency (Padding heb ik toegevoegd aan main)*/
+.nether_calculator {
+    /* , .explanation (overal hetzelfde voor consistency (Padding heb ik toegevoegd aan main)*/
     margin: auto;
     max-width: 1200px;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
 
-.nether_calculator > h2 {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
     margin: 0;
 }
-.box_container, .test_coordinates {
+
+.nether_calculator>h2 {
+    margin: 0;
+}
+
+.box_container,
+.test_coordinates {
     display: flex;
     gap: 30px;
     width: 100%;
@@ -19,61 +23,77 @@ input[type=number]::-webkit-outer-spin-button {
     font-family: 'Poppins', sans-serif;
     margin-bottom: 10px;
 }
-.box_container > div, .test_coordinates > div {
+
+.box_container>div,
+.test_coordinates>div {
     background-size: cover;
     width: 50%;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 }
+
 @media screen and (max-width: 800px) {
-    .box_container, .test_coordinates {
+
+    .box_container,
+    .test_coordinates {
         flex-direction: column;
     }
-    .box_container > div, .test_coordinates > div {
+
+    .box_container>div,
+    .test_coordinates>div {
         width: 100%;
     }
 }
+
 .overworld {
-    background: url('/resources/games/minecraft/user_interface/overworld.jpg');
+    background: url('https://i.ibb.co/BfPQq6X/overworld.jpg');
 }
+
 .nether {
-    background: url('/resources/games/minecraft/user_interface/nether.jpg');
+    background: url('https://i.ibb.co/HgCLHXk/nether.jpg');
     /* margin-left: 30px; */
 }
+
 .gradient {
     width: 100%;
     padding-bottom: 20px;
     color: white;
-    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.6) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
     border-radius: inherit;
 }
-.gradient h1, .gradient h2 {
+
+.gradient h1,
+.gradient h2 {
     margin: 0;
     text-align: left;
     font-weight: 500;
     font-size: 2em;
     padding: 10px 20px;
 }
+
 .content {
     padding: 0px 20px 40px 20px;
 }
-.content > div {
+
+.content>div {
     display: flex;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     margin: 0;
     width: fit-content;
     margin-bottom: 3px;
     border-radius: 7px;
     overflow: hidden;
 }
-.content > div h2 {
+
+.content>div h2 {
     margin: 0;
     padding: 5px 10px;
     min-width: 50px;
     text-align: center;
 }
-.content > div input {
-    background-color: rgba(255,255,255,0.5);
+
+.content>div input {
+    background-color: rgba(255, 255, 255, 0.5);
     border: none;
     font-size: 20px;
     padding-left: 10px;
@@ -81,16 +101,21 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     font-family: inherit;
 }
-.content > div input:focus {
+
+.content>div input:focus {
     outline: none;
 }
+
 .instructions {
     margin: 0;
     margin-bottom: 10px;
 }
+
 .test_coordinates {
     margin-top: 10px;
 }
-.portal1, .portal2 {
+
+.portal1,
+.portal2 {
     background: url('/data/minecraft/user_interface/portal.jpg');
 }

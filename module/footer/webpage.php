@@ -1,3 +1,8 @@
+<?php
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/imageHost/imageHost.php");
+
+?>
+
 <footer>
     <div class="footer_wrapper">
         <div class="information">
@@ -9,7 +14,7 @@
                 "Gamertools provides an array of tools for various games. Our tools are designed to enhance your gaming experience by enabling you to optimize your gaming strategy or improve your understanding of the game better.",
             ];
             $text = $texts[array_rand($texts)];
-            echo "<p>".$text."</p>";
+            echo "<p>" . $text . "</p>";
             ?>
         </div>
         <!-- <div class="social">
@@ -24,7 +29,7 @@
             <h2>Contact</h2>
             <div class="contact_links">
                 <div class="contact_link">
-                    <img loading="lazy" src="/module/footer/emailIcon.svg" alt="email icon">
+                    <img loading="lazy" src=<?= ImageHost::getBetterUrl("/module/footer/emailIcon.svg"); ?> alt="email icon">
                     <a href="mailto:gametoolsinc@gmail.com">gametoolsinc@gmail.com</a>
                 </div>
             </div>
@@ -35,15 +40,15 @@
             $url = Webpage::upgradeUrl("/articles/1661622627");
             echo "<p><a href='$url'>Cookie policy</a></p>";
             $url = Webpage::upgradeUrl("/articles/1661622858");
-            echo "<p><a href='$url'>Privacy policy</a></p>"; 
+            echo "<p><a href='$url'>Privacy policy</a></p>";
             ?>
             <p><a onclick="return klaro.show();" href="#">Change cookie preferences</a></p>
         </div>
     </div>
     <div class="copyright">
         <?php
-            $year = date("Y");
-            echo "<p>© GamerTools 2021-$year</p>";
+        $year = date("Y");
+        echo "<p>© GamerTools 2021-$year</p>";
         ?>
     </div>
 </footer>

@@ -2,7 +2,8 @@
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/articles/articles.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/webpage/webpage.php");
 
-class Article {
+class Article
+{
     private int $id;
     private string $title;
     private array $articleParts;
@@ -17,7 +18,7 @@ class Article {
             array_push($items, $row);
         }
 
-        if (count($items) != 1){
+        if (count($items) != 1) {
             trigger_error("'{$id}' id not found!", E_USER_WARNING);
         }
 
@@ -30,41 +31,46 @@ class Article {
         $content["content"] = [];
         $this->articleParts = [];
         while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
-            if (ctype_digit($row["type"])){
+            if (ctype_digit($row["type"])) {
                 $type = $row["type"];
             } else {
-                $type = constant('ArticlePartTypes::'. $row["type"]); // Old system
+                $type = constant('ArticlePartTypes::' . $row["type"]); // Old system
             }
             $this->articleParts[$row["position"]] = new ArticlePart($row["position"], $type, $row["content"]);
         }
     }
 
-    function getId(): int {
+    function getId(): int
+    {
         return $this->id;
     }
 
-    function getTitle(): string{
+    function getTitle(): string
+    {
         return $this->title;
     }
 
-    function getUrl(): string {
+    function getUrl(): string
+    {
         return Webpage::upgradeUrl("/articles/{$this->getId()}");
     }
 
-    function getImage():string {
-        return "/resources/articles/article.png";
+    function getImage(): string
+    {
+        return ImageHost::getBetterUrl("/resources/articles/article.png");
     }
 
-    function getIntroduction(): string {
+    function getIntroduction(): string
+    {
         $introduction = "";
-        foreach ($this->articleParts as $articelPart){
-            if ($articelPart->getType() == ArticlePartTypes::text){
+        foreach ($this->articleParts as $articelPart) {
+            if ($articelPart->getType() == ArticlePartTypes::text) {
                 $introduction = $articelPart->getContent();
                 break;
             }
         }
         $short_introduction = tokenTruncate($introduction, 150);
-        if ($short_introduction != $introduction){
+        if ($short_introduction != $introduction) {
             $short_introduction .= "...";
         }
         return $short_introduction;
@@ -73,19 +79,22 @@ class Article {
     /**
      * @return ArticlePart[]
      */
-    function getArticleParts(): array{
+    function getArticleParts(): array
+    {
         return $this->articleParts;
     }
 
-    function placeArticleParts() {
-        foreach ($this->articleParts as $articelPart){
+    function placeArticleParts()
+    {
+        foreach ($this->articleParts as $articelPart) {
             $articelPart->place();
         }
     }
 
-    function getAmountOfWords(): int{
+    function getAmountOfWords(): int
+    {
         $total = 0;
-        foreach ($this->articleParts as $articelPart){
+        foreach ($this->articleParts as $articelPart) {
             $total += $articelPart->getAmountOfWords();
         }
         return $total;
@@ -99,33 +108,37 @@ abstract class ArticlePartTypes
     const image = 2;
 }
 
-class ArticlePart {
+class ArticlePart
+{
     private int $type;
     private string $content;
     private int $position;
 
-    function __construct(int $position, int $type, string $content){
+    function __construct(int $position, int $type, string $content)
+    {
         $this->position = $position;
         $this->type = $type;
         $this->content = $content;
     }
 
-    function getType(): int 
+    function getType(): int
     {
         return $this->type;
     }
 
-    function getContent(): string 
+    function getContent(): string
     {
         return $this->content;
     }
 
-    function getPosition(): int {
+    function getPosition(): int
+    {
         return $this->position;
     }
 
-    function place(){
-        if ($this->type == ArticlePartTypes::title){
+    function place()
+    {
+        if ($this->type == ArticlePartTypes::title) {
             echo "<h2>{$this->content}</h2>";
         } else if ($this->type == ArticlePartTypes::text) {
             echo "<p>{$this->content}</p>";
@@ -136,25 +149,29 @@ class ArticlePart {
         }
     }
 
-    function getAmountOfWords(): int{
+    function getAmountOfWords(): int
+    {
         $total = 0;
-        if ($this->type == ArticlePartTypes::text){
+        if ($this->type == ArticlePartTypes::text) {
             $total += str_word_count($this->content);
         }
         return $total;
     }
 }
 
-function tokenTruncate($string, $your_desired_width) {
+function tokenTruncate($string, $your_desired_width)
+{
     $parts = preg_split('/([\s\n\r]+)/u', $string, -1, PREG_SPLIT_DELIM_CAPTURE);
     $parts_count = count($parts);
-  
+
     $length = 0;
     $last_part = 0;
     for (; $last_part < $parts_count; ++$last_part) {
-      $length += strlen($parts[$last_part]);
-      if ($length > $your_desired_width) { break; }
+        $length += strlen($parts[$last_part]);
+        if ($length > $your_desired_width) {
+            break;
+        }
     }
-  
+
     return implode(array_slice($parts, 0, $last_part));
-  }
+}

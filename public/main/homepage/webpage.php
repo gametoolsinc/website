@@ -1,4 +1,5 @@
 <?php
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/imageHost/imageHost.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/game.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/application.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/tool.php");

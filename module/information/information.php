@@ -1,4 +1,5 @@
 <?php
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/imageHost/imageHost.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/template/webpage/webpage.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . "/module/module.php");
 
@@ -52,15 +53,15 @@ class Information extends Module
         $cell_scores = [];
         foreach ($this->cells_types as $key => $value) {
             $count = count($value);
-            foreach ($value as $i=>$cell){
-                array_push($cell_scores, ["score"=>$i/ $count, "cell"=>$cell]);
+            foreach ($value as $i => $cell) {
+                array_push($cell_scores, ["score" => $i / $count, "cell" => $cell]);
             }
         }
 
-        usort($cell_scores, fn($a, $b) => strcmp($a["score"], $b["score"]));
+        usort($cell_scores, fn ($a, $b) => strcmp($a["score"], $b["score"]));
 
         $cells = [];
-        foreach ($cell_scores as $key => $value){
+        foreach ($cell_scores as $key => $value) {
             array_push($cells, $value["cell"]);
         }
 
@@ -132,7 +133,9 @@ class Cell
         } else {
             $file = "";
         }
-        return $pathResources . $file;
+        $url = $pathResources . $file;
+        $url = ImageHost::getBetterUrl($url);
+        return $url;
     }
 
     private function str_includes($needle, $haystack)

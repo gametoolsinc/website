@@ -1,5 +1,6 @@
 <?php
 include_once($_SERVER['DOCUMENT_ROOT'] . "/library/dataManagement/games/gameDataManagement.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/library/imageHost/imageHost.php");
 
 class Items extends GameDataManagement
 {
@@ -13,7 +14,9 @@ class Items extends GameDataManagement
     {
         $this->versions = [];
 
-        $this->spritePath = $tool->getGame()->getPathResources() . "/icons.png";
+        $url = $tool->getGame()->getPathResources() . "/icons.png";
+        $url = ImageHost::getBetterUrl($url);
+        $this->spritePath = $url;
         $data = $this->openFile($tool->getGame()->getPathResources() . "items.json");
 
         $this->items = [];
@@ -36,8 +39,7 @@ class Items extends GameDataManagement
     function getGameSpecificWords()
     {
         $items = $this->getItems();
-        usort($items, function($a, $b)
-        {
+        usort($items, function ($a, $b) {
             return strcmp($b->getValue(), $a->getValue());
         });
 
@@ -131,7 +133,9 @@ class Item
 
     function getLocationImage(): string
     {
-        return $this->data["location image"];
+        $url = $this->data["location image"];
+        $url = ImageHost::getBetterUrl($url);
+        return $url;
     }
 
     function getCategories(): array
@@ -154,7 +158,7 @@ class Item
 
     function getVersion(): array
     {
-        if (array_key_exists("version", $this->data)){
+        if (array_key_exists("version", $this->data)) {
             return $this->data["version"];
         } else {
             return [];
@@ -223,7 +227,9 @@ class ObtainingMethode
 
     function getImage(): string
     {
-        return $this->data["image"];
+        $url = $this->data["image"];
+        $url = ImageHost::getBetterUrl($url);
+        return $url;
     }
 
     function getInput(): array
